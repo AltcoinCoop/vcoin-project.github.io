@@ -1,0 +1,68 @@
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="{{ site.url }}/">{{ site.title }}</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        {% for link in site.data.navigation %}
+				    {% if link.url contains 'http' %}
+				        {% assign domain = '' %}
+				        {% else %}
+				        {% assign domain = site.url %}
+				    {% endif %}
+				    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+				{% endfor %}
+				<li>
+					<a href="https://twitter.com/vcoin" target="_blank">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x icon-background"></i>
+							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.reddit.com/r/vcoin/" target="_blank">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x icon-background"></i>
+							<i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</li>	
+				<li>
+					<a href="https://bitcointalk.org/index.php?topic=1059746" target="_blank">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x icon-background"></i>
+							<i class="fa fa-btc fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</li>	
+				<li>
+					<a href="https://github.com/vcoin-project/vcoin" target="_blank">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x icon-background"></i>
+							<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="http://webchat.freenode.net/?channels=vcoin" target="_blank">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x icon-background"></i>
+							<i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://minkiz.co/abe/chain/VCoin" target="_blank">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x icon-background"></i>
+							<i class="fa fa-search fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</li>
+				<li>&nbsp;</li>
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
