@@ -1,13 +1,10 @@
 ---
-layout: page
+layout: admin
 excerpt: "VCoin - Open Source, Peer-to-peer Crypto-currency."
 tags: [home, vcoin, software, crypto, peer-to-peer]
 image:
   feature:
 ---
-
-{% include _toc.html %}
-
 ---
 
 #Welcome to the VCoin community!
