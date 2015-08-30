@@ -1,8 +1,8 @@
-#CLAM Project Website
+#VCoin Project Website
 
-This is the open source, community maintained, CLAM Project website.
+This is the open source, community maintained, VCoin project website.
 
-[Live Site](http://clamclient.com)
+[Live Site](https://vcoin-project.github.io)
 
 ---
 
