@@ -1,8 +1,8 @@
 ---
-layout: post-index
+layout: news
 title: News and Announcements
-modified: 2014-07-31T13:23:02.362000-04:00
-excerpt: "CLAM Network News and Announcements."
+modified: 2015-08-30T01:00:00.000000-01:00
+excerpt: "News and Announcements."
 image:
-  feature: easterisland.jpg
+  feature: 
 ---

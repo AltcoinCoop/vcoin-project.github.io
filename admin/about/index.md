@@ -3,9 +3,7 @@ layout: page
 excerpt: "VCoin - Open Source, Peer-to-peer Crypto-currency."
 tags: [home, vcoin, software, crypto, peer-to-peer]
 image:
-  feature: header.jpg
-  credit: CLAMs Rising over Bora Bora
-  creditlink: images/header.jpg
+  feature:
 ---
 
 {% include _toc.html %}
