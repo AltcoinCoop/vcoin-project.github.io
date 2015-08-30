@@ -1,12 +1,12 @@
 # Site navigation links
 
 
-- title: Start
-  url: /start/
+- title: Engineering
+  url: /engineering/
   excerpt: Get started with the VCoin network.
   
-- title: Learn
-  url: /learn/
+- title: Social
+  url: /social/
   excerpt: Delve deeper and learn about the VCoin network.
   
 - title: News

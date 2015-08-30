@@ -5,54 +5,109 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 {% include _head.html %}
+<style type="text/css">
+.masthead.segment { min-height: 200px; }
+.masthead h1.ui.header { margin-top: 0.3em; }
+.ui.text.container { max-width: none !important; }
+</style>
 </head>
 
-<body class="post-index">
+<body id="vcoin" class="index">
+
+  <noscript>
+    <div class="noscript">
+    Your browser settings show that JavaScript is disabled. (Good call, we too browse with javascript disabled). If you enable it for this site, you’ll get the full benefit of the user-oriented enhancements: nice fonts, drop-down menus, active tabs and the like. We recommend that you turn on Javascript and then refresh this page. <a href="http://www3.qwest.com/cgi-bin/qwest.cfg/php/enduser/std_adp.php?p_faqid=1095" target="_blank">How do I turn on Javascript?</a>
+    </div>
+  </noscript>
+
 
 {% include _browser-upgrade.html %}
-
 {% include _navigation.html %}
 
-{% if page.image.feature %}
-  <div class="image-wrap">
-  <img src=
-    {% if page.image.feature contains 'http' %}
-      "{{ page.image.feature }}"
-    {% else %}
-      "{{ site.url }}/images/{{ page.image.feature }}"
-    {% endif %}
-  alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-  {% endif %}
-  </div><!-- /.image-wrap -->
-{% endif %}
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
 
-<div id="main" role="main">
-  <div class="article-author-side">
-    {% include _author-bio.html %}
-  </div>
-  <div id="index">
-    <h3><a href="{{ site.url}}/posts/">News</a></h3>
-    {% for post in site.posts %}    
-    <article>
-      {% if post.link %}
-        <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
-      {% else %}
-        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <img src="/assets/images/vcoin.svg" class="navicon"/>
+        <a class="item" href="/">Home</a>
+        <a class="item" href="/engineering/">Engineering</a>
+        <a class="item" href="/social/">Social</a>
+        <a class="item" href="/organisation/">Organisation</a>
+        <a class="active item" href="/news/">News</a>
+        <div class="right item">
+          <a class="ui disabled inverted button">Log in</a>
+          <a class="ui disabled inverted button">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        All the posts
+      </h1>
+      {% if page.image.feature %}
+        <div>
+        <img src=
+          {% if page.image.feature contains 'http' %}
+            "{{ page.image.feature }}"
+          {% else %}
+            "/images/{{ page.image.feature }}"
+          {% endif %}
+        alt="{{ page.title }} feature image">
+        {% if page.image.credit %}
+          <span>Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+        {% endif %}
+        </div><!-- /.image-wrap -->
       {% endif %}
-    </article>
-    {% endfor %}
-  </div><!-- /#index -->
-</div><!-- /#main -->
+      <!--
+      <h2>Do whatever you want when you want to.</h2>
+      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+      -->
+    </div>
 
-<div class="footer-wrap">
-  <footer>
-    {% include _footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
+  </div>
 
-{% include _scripts.html %}
-  
+    <!--
+    <div class="article-author-side">
+      {% include _author-bio.html %}
+    </div>
+    -->
+    <div class="ui vertical stripe segment">
+      <div class="ui text container">
+        <div class="ui items">
+        {% for post in site.posts %}
+          <div class="ui item">
+            <div class="content">
+              <h3 class="ui header">
+              {% if post.link %}
+                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"
+                  ><i class="fa fa-link"></i></a>
+              {% else %}
+                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}<i class="fa fa-link"></i></a>
+              {% endif %}
+              </h3>
+              <div class="meta">
+                <h4 class="ui header">{{post.excerpt}}</h4>
+              </div>
+              <div class="description">
+                <p>Posted by {{author.name}} <time datetime="{{post.date}}">{{post.date}}</time>
+                on {{post.date | date_to_string}}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+
+  {% include _footer.html %}
+  {% include _scripts.html %}
+
 </body>
 </html>

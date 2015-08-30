@@ -1,9 +1,10 @@
 ---
 layout: post
-title: “VCoin is a Teal organisation”
+title: VCoin is a Teal organisation
 date: 2015-08-25T04:32:04+01:00
 modified:
-excerpt: “VCoin, as n altcoin, naturally follows properties characteristic of a Teal organisation. This is a Good Thing. ”
+excerpt: VCoin, as an altcoin, naturally follows properties characteristic of a Teal organisation. This is a Good Thing.
+author: graham_higgins
 tags: []
 ---
 

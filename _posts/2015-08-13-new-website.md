@@ -1,8 +1,9 @@
 ---
 layout: post
-title: “New VCoin project website”
+title: New VCoin project website
 modified:
-excerpt: “The VCoin project announces a new open source website powered by github.com.  We welcome pull requests and the contribution of the community.”
+excerpt: The VCoin project announces a new open source website powered by github.com.  We welcome pull requests and the contribution of the community.
+author: graham_higgins
 date: 2015-08-13T18:06:11+01:00
 tags: []
 ---
