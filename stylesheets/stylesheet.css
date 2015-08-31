@@ -17,6 +17,7 @@ a {
     text-decoration: underline; }
 */
 img.navicon {height:48px; width:48px;}
+.ui.text.container blockquote {font-style: italic; padding:1em; background-color: rgba(127, 127, 127, 0.08);}
 
 .btn {
   display: inline-block;

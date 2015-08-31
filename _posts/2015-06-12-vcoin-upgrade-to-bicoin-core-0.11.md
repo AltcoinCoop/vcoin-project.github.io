@@ -1,9 +1,9 @@
 ---
 layout: post
 title: VCoin upgrade to Bitcoin Core 0.11
-date: 2015-06-18T16:33:58+01:00
+date: 2015-06-12T16:33:58+01:00
 modified:
-excerpt: The upgrade to Core 0.11 is now available for testing on testnet.
+excerpt: The upgrade to Core 0.11 is mostly complete.
 author: graham_higgins
 tags: []
 ---

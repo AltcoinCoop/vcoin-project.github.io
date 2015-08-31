@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A brief report on progess
+title: A brief report on progress
 date: 2015-06-18T16:33:58+01:00
 modified:
 excerpt: The upgrade to Core 0.11 is now available for testing on testnet.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A short progess report
+title: A short progress report
 date: 2015-07-01T11:42:43+01:00
 modified:
 excerpt: A discussion of the possible VCoin adoption of experimental features in Elements Alpha.
