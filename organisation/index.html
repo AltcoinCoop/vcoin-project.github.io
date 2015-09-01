@@ -6,36 +6,155 @@ image:
   feature:
 ---
 
+<script src="/assets/js/vendor/library/springy.js"></script>
+<script src="/assets/js/vendor/library/springyui.js"></script>
+<script>
+var graph = new Springy.Graph();
 
-    <div class="ui vertical stripe quote segment">
-      <div class="ui equal width stackable internally celled grid">
-        <div class="center aligned row">
-          <div class="column">
-            <h3>Org chart</h3>
-            <p>Current org chart here</p>
+var vcoin = graph.newNode({
+  label: 'VCoin',
+  image: {src: "/assets/images/avatar/vcoin.png"},
+  src: "/assets/images/avatar/vcoin.png",
+  ondoubleclick: function() { 
+    window.location = 'https://bitcointalk.org/index.php?topic=1059746'; }
+});
+
+var gjhiggins = graph.newNode({
+    label: 'gjhiggins',
+    font: "Lato",
+    src: "/assets/images/avatar/gjh.png",
+    ondoubleclick: function() { 
+        window.location = 'https://bitcointalk.org/index.php?action=profile;u=254673'; }
+});
+
+var yobit = graph.newNode({
+    label: 'YoBit',
+    ondoubleclick: function() { 
+        window.location = 'https://yobit.net'; }
+});
+
+var bleutrade = graph.newNode({
+    label: 'Bleutrade',
+    ondoubleclick: function() { 
+        window.location = 'https://bleutrade.com'; }
+});
+
+var jc12345 = graph.newNode({
+    label: 'jc12345',
+    ondoubleclick: function() { 
+        window.location = 'https://bitcointalk.org/index.php?action=profile;u=258091'; }
+});
+var ocminer = graph.newNode({
+    label: 'ocminer',
+    ondoubleclick: function() { 
+        window.location = 'https://bitcointalk.org/index.php?action=profile;u=43526'; }
+});
+var chrisvl = graph.newNode({
+    label: 'chrisvl',
+    ondoubleclick: function() { 
+        window.location = 'https://bitcointalk.org/index.php?action=profile;u=361013'; }
+});
+var glen123 = graph.newNode({
+    label: 'glen123',
+    ondoubleclick: function() { 
+        window.location = 'http://gcpool.ddns.net/vcoin/public'; }
+});
+var samspaces = graph.newNode({
+    label: 'samspaces',
+    ondoubleclick: function() { 
+        window.location = 'https://bitcointalk.org/index.php?action=profile;u=43526'; }
+});
+var marty19 = graph.newNode({
+    label: 'Marty19',
+    ondoubleclick: function() { 
+        window.location = 'http://ispace.co.uk'; }
+});
+var crunck = graph.newNode({
+    label: 'crunck',
+    ondoubleclick: function() { 
+        window.location = 'https://bitcointalk.org/index.php?action=profile;u=307195'; }
+});
+var diks = graph.newNode({
+    label: 'diks',
+    ondoubleclick: function() { 
+        window.location = 'https://bitcointalk.org/index.php?action=profile;u=344996'; }
+});
+
+var dennistlg = graph.newNode({
+    label: 'dennistlg',
+    ondoubleclick: function() { 
+        window.location = 'https://bitcointalk.org/index.php?action=profile;u=169363'; }
+});
+
+var meisterman = graph.newNode({
+    label: 'meisterman',
+    ondoubleclick: function() { 
+        window.location = 'http://vcoin.meisterpool.org'; }
+});
+
+var ffpoolnet = graph.newNode({
+    label: 'ffpool.net',
+    ondoubleclick: function() { 
+        window.location = 'http://ffpool.net'; }
+});
+
+graph.newEdge(vcoin, gjhiggins, {color: '#00A0B0', label: "developer"});
+graph.newEdge(vcoin, chrisvl, {color: '#00A0B0', label: "developer"});
+graph.newEdge(vcoin, yobit, {color: '#EC2A85', label: "exchange"});
+graph.newEdge(vcoin, bleutrade, {color: '#EC2A85', label: "exchange"});
+graph.newEdge(vcoin, ocminer, {color: '#F7AD16', label: "poolowner"});
+graph.newEdge(vcoin, glen123, {color: '#F7AD16', label: "poolowner"});
+graph.newEdge(vcoin, crunck, {color: '#F7AD16', label: "poolowner"});
+graph.newEdge(vcoin, meisterman, {color: '#F7AD16', label: "poolowner"});
+graph.newEdge(vcoin, ffpoolnet, {color: '#F7AD16', label: "poolowner"});
+graph.newEdge(vcoin, marty19, {color: '#F7AD16', label: "poolowner"});
+
+graph.newEdge(gjhiggins, chrisvl, {color: '#00A0B0', label: "dev"});
+graph.newEdge(gjhiggins, crunck, {color: '#B7B7B7', label: "qa"});
+graph.newEdge(chrisvl, jc12345, {color: '#4D4DCD', label: "pro"});
+graph.newEdge(chrisvl, samspaces, {color: '#B7B7B7', label: "qa"});
+graph.newEdge(chrisvl, crunck, {color: '#4D4DCD', label: "dep"});
+graph.newEdge(ocminer, gjhiggins, {color: '#00A0B0', label: "dev"});
+graph.newEdge(chrisvl, glen123, {color: '#4D4DCD', label: "dep"});
+graph.newEdge(chrisvl, marty19, {color: '#4D4DCD', label: "dep"});
+graph.newEdge(chrisvl, dennistlg, {color: '#B7B7B7', label: "qa"});
+graph.newEdge(chrisvl, diks, {color: '#CC333F', label: "pro"});
+graph.newEdge(jc12345, diks, {color: '#CC333F', label: "pro"});
+
+jQuery(function(){
+  var springy = jQuery('#springydemo').springy({
+    graph: graph
+  });
+});
+</script>
+
+    <div class="ui vertical stripe segment">
+      <div class="ui middle aligned stackable grid container">
+        <div class="row">
+          <div class="eleven wide column">
+            <h3 class="ui header">Who’s who in VCoin</h3>
+            <p>Current at 1st September 2015.</p>
+            <canvas id="springydemo" width="640" height="480" />
           </div>
-          <div class="column">
-            <h3>Sitrep</h3>
+          <div class="five wide right floated column">
+            <h3 class="ui header">Sitrep</h3>
             <p>Situation report here</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="center aligned column">
+            <a class="ui disabled huge button"></a>
           </div>
         </div>
       </div>
     </div>
+
 
     <div class="ui vertical stripe segment">
       <div class="ui text container">
         <h3 class="ui header">VCoin is a Teal organisation</h3>
         <p>Teal organisations are cool, groovy and very much the next thing.</p>
         <a class="ui large green button" href="/vcoin-is-a-teal-organisation/">Read More</a>
-        <!--
-        <h4 class="ui horizontal header divider">
-          <a href="#">About VCoin</a>
-        </h4>
-        <h3 class="ui header">Did We Tell You About Our Coin?</h3>
-        <p>When we write “Our Coin”, we don’t mean, like, “we the authors”, we mean “all of us”. It’s very specifically, even painfully, inclusive. Why? Because of the network effect, a kind of “virtuous spiral” that comes into effect when people align their interests and work together to solve common problems.</p>
-        <p>It’s sort of like the old “united we stand, divided we fall” thing, except that we’re a bit fed up with standing around, so we’re giving things a bit of a gentle push on our own account. Right? Good.</p>
-        <a class="ui large button">I'm Still Quite Interested</a>
-        -->
       </div>
     </div>
 
