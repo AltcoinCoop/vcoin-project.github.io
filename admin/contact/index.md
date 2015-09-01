@@ -14,7 +14,7 @@ There **are** no contact details. There’s no-one **to** contact. It’s just u
 
 There is no central authority, no Head Office, no “Management”, no “Powers That Be”, no-one.
 
-VCoin has a discussion thread on [bitcointalk]()
+For advice, see VCoin’s [original announcement on cryptocointalk.com](https://cryptocointalk.com/topic/38482-ann-vcoin-sha256-pow/) and the [current discussion thread on bitcointalk](https://bitcointalk.org/index.php?topic=1059746.0)
 
 To report issues experienced with the installation or running of the software of the the application/wallet, [raise an issue ticket](https://github.com/vcoin-project/vcoin/issues) in the vcoin Github repository. To report issues experienced with the content/functioning of this web site, [raise an issue ticket](https://github.com/vcoin-project/vcoin-project.github.io/issues) in the separate Github repository for the site content.
 
