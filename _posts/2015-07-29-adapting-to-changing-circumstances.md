@@ -32,11 +32,11 @@ And so it continues ...
 Carl Benedikt Frey and Michael A. Osborne, September 17, 2013
 
 
-    **We examine how susceptible jobs are to computerisation**. To assess this, we begin by implementing a novel methodology to estimate the probability of computerisation for 702 detailed occupations, using a Gaussian process classifier.
+> **We examine how susceptible jobs are to computerisation**. To assess this, we begin by implementing a novel methodology to estimate the probability of computerisation for 702 detailed occupations, using a Gaussian process classifier.
 
-    Based on these estimates, we examine expected impacts of future computerisation on US labour market outcomes, with the primary objective of analysing the number of jobs at risk and the relationship between an occupation’s probability of computerisation, wages and educational attainment. 
+> Based on these estimates, we examine expected impacts of future computerisation on US labour market outcomes, with the primary objective of analysing the number of jobs at risk and the relationship between an occupation’s probability of computerisation, wages and educational attainment. 
 
-    **According to our estimates, about 47 percent of total US employment is at risk**. We further provide evidence that wages and educational attainment exhibit a strong negative relationship with an occupation’s probability of computerisation.
+> **According to our estimates, about 47 percent of total US employment is at risk**. We further provide evidence that wages and educational attainment exhibit a strong negative relationship with an occupation’s probability of computerisation.
 
 
 We’re now living on the steep bit of the exponential curve and change is happening even faster. The well-staffed drafting office of the 50s was pretty much extinct by the 1980s in terms of vacancies in the classifieds. What are the odds that the job of “web site designer” will have all but vanished by, ooh say 2045? 2030? 2025? That's assuming it's not basically just an anachronism right now, given the front-end / back-end distinction that is apparently beginning to dominate thinking.

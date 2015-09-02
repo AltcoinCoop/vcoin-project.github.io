@@ -101,8 +101,9 @@ var ffpoolnet = graph.newNode({
         window.location = 'http://ffpool.net'; }
 });
 
-graph.newEdge(vcoin, gjhiggins, {color: '#00A0B0', label: "developer"});
-graph.newEdge(vcoin, chrisvl, {color: '#00A0B0', label: "developer"});
+graph.newEdge(vcoin, gjhiggins, {color: '#00A0B0', label: "contributor"});
+graph.newEdge(vcoin, chrisvl, {color: '#00A0B0', label: "contributor"});
+graph.newEdge(vcoin, jc12345, {color: '#00A0B0', label: "contributor"});
 graph.newEdge(vcoin, yobit, {color: '#EC2A85', label: "exchange"});
 graph.newEdge(vcoin, bleutrade, {color: '#EC2A85', label: "exchange"});
 graph.newEdge(vcoin, ocminer, {color: '#F7AD16', label: "poolowner"});
@@ -112,17 +113,18 @@ graph.newEdge(vcoin, meisterman, {color: '#F7AD16', label: "poolowner"});
 graph.newEdge(vcoin, ffpoolnet, {color: '#F7AD16', label: "poolowner"});
 graph.newEdge(vcoin, marty19, {color: '#F7AD16', label: "poolowner"});
 
-graph.newEdge(gjhiggins, chrisvl, {color: '#00A0B0', label: "dev"});
+graph.newEdge(gjhiggins, chrisvl, {color: '#00A0B0', label: "org"});
 graph.newEdge(gjhiggins, crunck, {color: '#B7B7B7', label: "qa"});
-graph.newEdge(chrisvl, jc12345, {color: '#4D4DCD', label: "pro"});
+graph.newEdge(chrisvl, jc12345, {color: '#4D4DCD', label: "org"});
 graph.newEdge(chrisvl, samspaces, {color: '#B7B7B7', label: "qa"});
-graph.newEdge(chrisvl, crunck, {color: '#4D4DCD', label: "dep"});
-graph.newEdge(ocminer, gjhiggins, {color: '#00A0B0', label: "dev"});
-graph.newEdge(chrisvl, glen123, {color: '#4D4DCD', label: "dep"});
-graph.newEdge(chrisvl, marty19, {color: '#4D4DCD', label: "dep"});
+graph.newEdge(chrisvl, crunck, {color: '#4D4DCD', label: "com"});
+graph.newEdge(ocminer, gjhiggins, {color: '#00A0B0', label: "org"});
+graph.newEdge(chrisvl, glen123, {color: '#4D4DCD', label: "com"});
+graph.newEdge(chrisvl, marty19, {color: '#4D4DCD', label: "com"});
 graph.newEdge(chrisvl, dennistlg, {color: '#B7B7B7', label: "qa"});
-graph.newEdge(chrisvl, diks, {color: '#CC333F', label: "pro"});
-graph.newEdge(jc12345, diks, {color: '#CC333F', label: "pro"});
+graph.newEdge(chrisvl, diks, {color: '#CC333F', label: "com"});
+graph.newEdge(jc12345, diks, {color: '#CC333F', label: "com"});
+graph.newEdge(jc12345, gjhiggins, {color: '#CC333F', label: "org"});
 
 jQuery(function(){
   var springy = jQuery('#springydemo').springy({
@@ -170,7 +172,7 @@ jQuery(function(){
     <div class="ui vertical stripe segment">
       <div class="ui text container">
         <h3 class="ui header">VCoin is a Teal organisation</h3>
-        <p>Teal organisations are cool, groovy and very much the next thing.</p>
+        <p>Teal organisations are highly-regarded for their conceptual elegance and practical efficiency. They are very much the coming thing.</p>
         <a class="ui large green button" href="/vcoin-is-a-teal-organisation/">Read More</a>
       </div>
     </div>
