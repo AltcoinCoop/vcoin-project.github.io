@@ -9,8 +9,7 @@
 .masthead.segment { min-height: 200px; }
 .masthead h1.ui.header { margin-top: 0.3em; }
 .ui.text.container { max-width: none !important; }
-time { color:#666; }
-p.tm { font-style: italic; font-size: 90%; color: #aaa; }
+ul li code {text-decoration: line-through;}
 </style>
 </head>
 
@@ -39,8 +38,8 @@ p.tm { font-style: italic; font-size: 90%; color: #aaa; }
         <a class="item" href="/">Home</a>
         <a class="item" href="/engineering/">Engineering</a>
         <a class="item" href="/social/">Social</a>
-        <a class="item" href="/organisation/">Organisation</a>
-        <a class="active item" href="/news/">News</a>
+        <a class="active item" href="/organisation/">Organisation</a>
+        <a class="item" href="/news/">News</a>
         <div class="right item">
           <a class="ui disabled inverted button">Log in</a>
           <a class="ui disabled inverted button">Sign Up</a>
@@ -50,29 +49,37 @@ p.tm { font-style: italic; font-size: 90%; color: #aaa; }
 
     <div class="ui text container">
       <h1 class="ui inverted header">
-        Sitrep and skinny 
+        {{page.title}}
       </h1>
-      {% if page.image.feature %}
-        <div class="ui segment">
-        <img src=
-          {% if page.image.feature contains 'http' %}
-            "{{ page.image.feature }}"
-          {% else %}
-            "/images/{{ page.image.feature }}"
-          {% endif %}
-        alt="{{ page.title }} feature image">
-        {% if page.image.credit %}
-          <span>Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-        {% endif %}
-        </div>
-      {% endif %}
+      <!--
+      <h2>VCoin is a Teal organisation.</h2>
+      <div class="ui huge primary button">Find out more about Teal <i class="right arrow icon"></i></div>
+      -->
     </div>
 
   </div>
 
-  {{content}}
+    <div class="container">
+      <div class="ui sub secondary pointing menu">
+        <a class="item" href="/organisation/">Index</a>
+        <a class="item" href="/organisation/teal/">Teal</a>
+        <a class="item" href="/organisation/teal/about-teal/">About Teal</a>
+        <a class="item" href="/organisation/groundwork/">Groundwork</a>
+        <a class="item" href="/organisation/roles/">Roles</a>
+      </div>
+    </div>
 
-  {% include _footer.html %}
+    <div class="ui vertical stripe segment">
+      <div class="ui text container">
+        {{content}}
+      </div>
+    </div>
+
+
+  <footer>
+    {% include _footer.html %}
+  </footer>
+
   {% include _scripts.html %}
 
 </body>

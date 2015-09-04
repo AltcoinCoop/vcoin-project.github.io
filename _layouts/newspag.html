@@ -48,24 +48,18 @@ p.tm { font-style: italic; font-size: 90%; color: #aaa; }
       </div>
     </div>
 
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        Sitrep and skinny 
-      </h1>
-      {% if page.image.feature %}
-        <div class="ui segment">
-        <img src=
-          {% if page.image.feature contains 'http' %}
-            "{{ page.image.feature }}"
-          {% else %}
-            "/images/{{ page.image.feature }}"
-          {% endif %}
-        alt="{{ page.title }} feature image">
-        {% if page.image.credit %}
-          <span>Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-        {% endif %}
-        </div>
-      {% endif %}
+    <div class="container">
+      <div class="ui sub secondary pointing menu">
+        <a class="item" href="/society/">Index</a>
+        <a class="item" href="/society/sub/">Subsection</a>
+        <a class="item" href="/society/node">Node</a>
+      </div>
+    </div>
+
+    <div class="ui vertical stripe segment">
+      <div class="ui text container">
+        {{content}}
+      </div>
     </div>
 
   </div>

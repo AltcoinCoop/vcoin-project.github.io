@@ -6,9 +6,47 @@ excerpt: "News and Announcements."
 image:
   feature: 
 ---
+<script src="/assets/js/vendor/library/d3.v3.min.js"></script>
+<script src="/assets/js/vendor/library/raphael.min.js"></script>
+<script src="/assets/js/vendor/library/morris.min.js"></script>
+<style type="text/css">
+#sitrep {font-size: 1rem;}
+.sitrep span {color: #bbb; padding-right: 1rem;}
+</style>
 
+
+    <div class="ui container segment">
+      <div class="ui large green button" id="update">Update stats<i class="right arrow icon"></i></div>
+    </div>
+
+    <div class="ui vertical stripe quote segment">
+      <div class="ui equal width stackable internally celled grid">
+        <div class="center aligned row">
+          <div class="column">
+            <h3 class="ui header">Bleutrade VNC-BTC daily closing prices</h3>
+            <div id="bleutrade" style="height: 350px;"></div>
+          </div>
+          <div class="column">
+            <h3 class="ui header">Sitrep</h3>
+            <p id="bleutradesitrep"></p>
+            <!-- Doesn't offer CORS
+            <p id="yobit"></p>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- doesn't offer CORS
     <div class="ui vertical stripe segment">
       <div class="ui text container">
+        <h3 class="ui header">Coinmarket cap prices</h3>
+        <div id="coinmarketcap" style="height: 350px;"></div>
+      </div>
+    </div>
+    -->
+    <div class="ui vertical stripe segment">
+      <div class="ui text container">
+      <h1 class="ui header">Recent news</h1>
       {% for post in site.posts limit:20 %}    
         <h3 class="ui header">
         {% if post.link %}
@@ -30,3 +68,116 @@ image:
       <a class="ui large primary button" href="/news/all-news" title="All News and Announcements">SHOW ALL NEWS<i class="right arrow icon"></i></a>
     </div>
   </div>
+
+<script type="text/javascript">
+  $("#update").click(function() {
+  /*//HTML extraction
+    $.ajax({
+        // coinmarketcap page
+        url: 'http://coinmarketcap.com/currencies/vcoin/',
+        type: 'GET',
+        success: function(res) {
+            var resp = $(res.responseText);
+            var mkts = resp.find('table#markets');
+            var tr = mkts.find('tr')[1];
+            var price = tr.find('td')[2].text();
+            alert(items);
+        }
+    });
+    // JSON retrieval, failing as non-CORS
+    $.getJSON( "https://yobit.net/api/3/ticker/vcoin_btc", function( data ) {
+      var items = [];
+      $.each( data, function( key, val ) {
+        items.push( "<div class=\"ui item sitrep\" id='" + key + "'><span>" + key + ":</span> " + val + "</div>" );
+      });
+      $( "<div/>", {
+          "class": "ui items",
+          html: items.join( "" )
+        }).appendTo( "#yobit" );
+    });
+    $.ajax({
+        // YoBit ticker
+        url: "https://yobit.net/api/3/ticker/vcoin_btc",
+        type: 'GET',
+        // dataType: "json",
+        success: function(res) {
+            var resp = $(res.responseText);
+            var bdy = resp.find('body');
+            alert(bdy.toString());
+            var items = [];
+            $.each( res.result[0], function( key, val ) {
+              items.push( "<div class=\"ui item sitrep\" id='" + key + "'><span>" + key + ":</span> " + val + "</div>" );
+            });
+            $( "<div/>", {
+                "class": "ui items",
+                html: items.join( "" )
+              }).appendTo( "#yobit" );
+        }
+    });
+    */
+    $.ajax({
+        // Bleutrade market summary
+        url: "https://bleutrade.com/api/v2/public/getmarketsummary?market=BLEU_BTC",
+        type: 'GET',
+        dataType: "json",
+        success: function(res) {
+            var items = [];
+            $.each( res.result[0], function( key, val ) {
+              items.push( "<div class=\"ui item sitrep\" id='" + key + "'><span>" + key + ":</span> " + val + "</div>" );
+            });
+            $( "<div/>", {
+                "class": "ui items",
+                html: items.join( "" )
+              }).appendTo( "#bleutradesitrep" );
+        }
+    });
+    $.ajax({
+        // url: 'http://coinmarketcap.com/currencies/vcoin/',
+        url: "https://bleutrade.com/api/v2/public/getcandles?market=BLEU_BTC&period=1d&count=1000&lasthours=720",
+        type: 'GET',
+        dataType: "json",
+        success: function(res) {
+            // alert(res.result[0].TimeStamp);
+            new Morris.Line({
+              // ID of the element in which to draw the chart.
+              element: 'bleutrade',
+              // Chart data records -- each entry in this array corresponds to a point on
+              // the chart.
+              data: res.result,
+              // The name of the data record attribute that contains x-values.
+              xkey: 'TimeStamp',
+              // A list of names of data record attributes that contain y-values.
+              ykeys: ['Close'],
+              // Labels for the ykeys -- will be displayed when you hover over the
+              // chart.
+              labels: ['Close']
+            });
+
+        }
+    });
+    /* // Doesn't support CORS
+    $.ajax({
+        url: 'http://coinmarketcap.com/datapoints/vcoin/price_btc/',
+        type: 'GET',
+        dataType: "json",
+        success: function(res) {
+            // alert(res.result[0].TimeStamp);
+            new Morris.Line({
+              // ID of the element in which to draw the chart.
+              element: 'coinmarketcap',
+              // Chart data records -- each entry in this array corresponds to a point on
+              // the chart.
+              data: res.result,
+              // The name of the data record attribute that contains x-values.
+              xkey: 'TimeStamp',
+              // A list of names of data record attributes that contain y-values.
+              ykeys: ['Close'],
+              // Labels for the ykeys -- will be displayed when you hover over the
+              // chart.
+              labels: ['Close']
+            });
+        }
+    });
+    */
+  });
+</script>
