@@ -23,7 +23,6 @@ Bitcointalk subscriber [chrisvl](https://bitcointalk.org/index.php?action=profil
 
 Subsequent support and development has been in the form of *ad hoc* contributions made independently by various interested Bitcointalk subscribers.
 
-The OP’s Github repository has been forked, development now proceeds in several further forks on Github. The majority of people seem to consider [https://github.com/vcoin-project](https://github.com/vcoin-project) to hold some authority.
+The original Github repository has since been forked and development now proceeds in several different forks on Github, [including this one](https://github.com/vcoin-project).
 
----
 

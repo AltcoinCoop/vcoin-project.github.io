@@ -12,6 +12,17 @@ image:
 ## What is VCoin?
 VCoin is a crypto-currency: an open source, peer-to-peer, pseudonymous, community-driven value transfer system. It allows individuals to make payments and transfer value without needing to seek permission or evade censorship.
 
+## No, really, what is VCoin?
+Really? Really really? Okay. It’s an imaginary token. But then again, so is the dollar. Not the one in your pocket, that’s a dollar *bill*, the one in your bank account. The imaginary token that the bank, if asked to produce, is legally obliged to make manifest in the form of a metal or paper token. What you do with *those* is no-one’s business but yours.
+
+Oh, except for the paper ones, they're traceable.
+
+You can also ask the bank nicely to transfer some of your dollars to someone else. But no matter how nicely you ask, the bank will only ever make changes to its database because just making an official record of the transaction’s debit and credit is good enough. 
+
+VCoin uses computer tokens instead of dollar bills. The computer tokens are cryptographic objects, modelled as “coins” for simplicity. That’s why a cryptographic “wallet” is necessary to store the “coins”.
+
+You can acquire VCoin by various means, including joining in the collective effort of processing the transactions. There’s no bank involved so the processing of transactions has to be done collectively.
+
 ## How does a crypto-currency work?
 
 The use of a crypto-currency to make payments and transfer value has a market value --- what it would cost to make the same payments/transfers (transactions) under the centralised commercial banking system.
