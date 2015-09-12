@@ -75,7 +75,7 @@ The Teal model describes a number of characteristic properties, most of which ar
 * fluid and granular roles
 * decision making fully decentralized (advice process)
 * transparent real time information sharing incl,. financials
-* questionables:
+* identified practices with questionable relevance to VCoin:
   * coaches w/o P&L responsibility when needed
   * anybody can spend any amount of money provided advice process is respected
   * formal multi-step conflict resolution process
@@ -92,7 +92,7 @@ The Teal model describes a number of characteristic properties, most of which ar
 * distributed initiatives taking
 * personal freedom for training, focus on culture-building
 * personal inquiry into one‘s learning journey and calling
-* questionables:
+* identified practices with questionable relevance to VCoin:
   * self-decorated warm spaces without status markers
   * quiet room, meditation practices, team supervision, peer coaching
   * storytelling practices to support self-disclosure and community building
