@@ -75,11 +75,12 @@ The Teal model describes a number of characteristic properties, most of which ar
 * fluid and granular roles
 * decision making fully decentralized (advice process)
 * transparent real time information sharing incl,. financials
-* `coaches w/o P&L responsibility when needed`
-* `anybody can spend any amount of money provided advice process is respected`
-* `formal multi-step conflict resolution process`
-* `focus on Team performance, peer-based process for individual appraisals`
-* `self-set salaries with peer calibration, no bonus, profit sharing`
+* questionables:
+  * coaches w/o P&L responsibility when needed
+  * anybody can spend any amount of money provided advice process is respected
+  * formal multi-step conflict resolution process
+  * focus on Team performance, peer-based process for individual appraisals
+  * self-set salaries with peer calibration, no bonus, profit sharing
 
 
 ### Teal holistic practices
@@ -91,12 +92,13 @@ The Teal model describes a number of characteristic properties, most of which ar
 * distributed initiatives taking
 * personal freedom for training, focus on culture-building
 * personal inquiry into one‘s learning journey and calling
-* `self-decorated warm spaces without status markers`
-* `quiet room, meditation practices, team supervision, peer coaching`
-* `storytelling practices to support self-disclosure and community building`
-* `regular time devoted to address conflicts`
-* `caring support to turn dismissal into a learning opportunity`
-* `recruitment interviews by future colleagues, focus on fit with organization`
+* questionables:
+  * self-decorated warm spaces without status markers
+  * quiet room, meditation practices, team supervision, peer coaching
+  * storytelling practices to support self-disclosure and community building
+  * regular time devoted to address conflicts
+  * caring support to turn dismissal into a learning opportunity
+  * recruitment interviews by future colleagues, focus on fit with organization
 
 
 ### Teal evolutionary purpose practices
