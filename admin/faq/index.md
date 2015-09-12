@@ -13,15 +13,11 @@ image:
 VCoin is a crypto-currency: an open source, peer-to-peer, pseudonymous, community-driven value transfer system. It allows individuals to make payments and transfer value without needing to seek permission or evade censorship.
 
 ## No, really, what is VCoin?
-Really? Really really? Okay. It’s an imaginary token. But then again, so is the dollar. Not the one in your pocket, that’s a dollar *bill*, the one in your bank account. The imaginary token that the bank, if asked to produce, is legally obliged to make manifest in the form of a metal or paper token. What you do with *those* is no-one’s business but yours.
+Really? Really really? Okay. It’s an imaginary token. But then again, so is the dollar in your bank account, the bank is legally obliged to issue them as dollar bills on request but everyone knows that the bank’s database is where it’s at.
 
-Oh, except for the paper ones, they're traceable.
+VCoin issues computer tokens instead of dollar bills. The computer tokens are cryptographic objects modelled as “coins” for simplicity. That’s why a cryptographic “wallet” (an application) is necessary to store the “coins”.
 
-You can also ask the bank nicely to transfer some of your dollars to someone else. But no matter how nicely you ask, the bank will only ever make changes to its database because just making an official record of the transaction’s debit and credit is good enough. 
-
-VCoin uses computer tokens instead of dollar bills. The computer tokens are cryptographic objects, modelled as “coins” for simplicity. That’s why a cryptographic “wallet” is necessary to store the “coins”.
-
-You can acquire VCoin by various means, including joining in the collective effort of processing the transactions. There’s no bank involved so the processing of transactions has to be done collectively.
+VCoins can be acquired in different ways, including joining in the collective activity of computer processing the current set of transactions for recording in the database. Payment for the processing is made in VCoin. There’s no bank involved so the processing of transactions has to be done collectively and the VCoin earned is designed to act as an incentive to continue.
 
 ## How does a crypto-currency work?
 
@@ -32,13 +28,13 @@ As part of an essential balance of interests, the network imposes modest and pro
 ## Why does it work?
 To be successful in the long run, an altcoin community must achieve a balance of conflicting interests.
 
-*Merchants* and *spenders* generate fees but they are very vulnerable to price instability and exchange rate fluctuations. However, change is the lifeblood of liquidity-bringing *day traders* who facilitate the back and forth flow of transactions.
+*Merchants* and *spenders* generate fees but they are very vulnerable to price instability and exchange rate fluctuations. However, change is the lifeblood of liquidity-bringing *day traders* who facilitate the back and forth flow of exchange transactions.
 
-*Investors* in the coin have an eye to the longer term and have little interest in transactions other than as an indicator of stability. Their main interest is in scarcity and in growing the value of their holdings through rises in the exchange price. Their gradual accumulation of coins puts a floor under the market which provides a degree of stability that supports merchants’ and spenders’ activities.
+*Investors* in the coin have an eye to the longer term and often have little interest in transactions other than as an indicator of stability. Their main interest is in scarcity and in growing the value of their holdings through rises in the exchange price. Their gradual accumulation of coins puts a floor under the market which provides a degree of stability that supports merchants’ and spenders’ activities.
 
 Ideally, anyone and everyone should be able to easily take an active role in supporting the network by contributing to the collective computing power necessary to process transactions and maintain the integrity of the public ledger. In practice however, the economies of scale for hardware and for motive power make it so much more profitable for miners to work in large, co-ordinated groups that “solo” mining is rendered pointless.
 
-Achieving a balance is crucial for the continued functioning of the coin. Imbalances affect the workings, causing the coin to become an inefficient instrument. The more accentuated the imbalance, the worse the performance of the instrument.
+Achieving a balance is vital for the continued working of the coin. Imbalances make the coin an inefficient instrument. The more exteme the imbalance, the worse the performance of the instrument.
 
 If a significant imbalance is allowed to persist, people will quickly lose interest.
 
@@ -48,6 +44,7 @@ No, far from it. Just holding VCoin will sap the community’s collective effort
 
 > “The value of your &lt;whatever&gt; can go *down* as well as up.”
 
+## 
 
 
 

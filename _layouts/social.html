@@ -48,18 +48,28 @@
 
     <div class="ui text container">
       <h1 class="ui inverted header">
-        Sociableness, society, social society. 
+        Social section. 
       </h1>
-      <!--
-      <h2>Do whatever you want when you want to.</h2>
-      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
-      -->
+      <p><em>“A dying culture invariably exhibits personal rudeness.”</em> ― Robert A. Heinlein, <em>Friday</em></p>
+      <div class="ui huge primary button">What’s New <i class="right arrow icon"></i></div>
     </div>
 
 
   </div>
 
-  {{content}}
+    <div class="container">
+      <div class="ui sub secondary pointing menu">
+        <a class="item" href="/social/">Social</a>
+        <a class="item" href="/social/school/">School</a>
+        <a class="item" href="/social/events/">Events</a>
+      </div>
+    </div>
+
+    <div class="ui vertical stripe segment">
+      <div class="ui text container">
+        {{content}}
+      </div>
+    </div>
 
   {% include _footer.html %}
   {% include _scripts.html %}
