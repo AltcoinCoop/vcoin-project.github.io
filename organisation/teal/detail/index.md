@@ -116,7 +116,7 @@ image:
       <img src="/assets/images/avatar/vcoin.png">
     </a>
     <div class="content">
-      <a class="header">coaches w/o P&L responsibility when needed</a>
+      <a class="header">coaches w/o P&amp;L responsibility when needed</a>
       <div class="description">
         <p>Irrelevant </p>
       </div>
