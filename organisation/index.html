@@ -110,6 +110,12 @@ var langly = graph.newNode({
         window.location = 'https://bitcointalk.org/index.php?action=profile;u=236007'; }
 });
 
+var disamsal = graph.newNode({
+    label: 'disamsal',
+    ondoubleclick: function() { 
+        window.location = 'https://bitcointalk.org/index.php?action=profile;u=360461'; }
+});
+
 
 graph.newEdge(vcoin, gjhiggins, {color: '#00A0B0', label: "contributor"});
 graph.newEdge(vcoin, chrisvl, {color: '#00A0B0', label: "contributor"});
@@ -123,9 +129,12 @@ graph.newEdge(vcoin, meisterman, {color: '#F7AD16', label: "poolowner"});
 graph.newEdge(vcoin, ffpoolnet, {color: '#F7AD16', label: "poolowner"});
 graph.newEdge(vcoin, marty19, {color: '#F7AD16', label: "poolowner"});
 graph.newEdge(vcoin, maicol792, {color: '#B7B7B7', label: "supporter"});
+graph.newEdge(vcoin, maicol792, {color: '#B7B7B7', label: "supporter"});
+graph.newEdge(vcoin, disamsal, {color: '#B7B7B7', label: "supporter"});
 
 graph.newEdge(gjhiggins, chrisvl, {color: '#00A0B0', label: "org"});
 graph.newEdge(gjhiggins, crunck, {color: '#B7B7B7', label: "qa"});
+graph.newEdge(gjhiggins, disamsal, {color: '#B7B7B7', label: "qa"});
 graph.newEdge(chrisvl, jc12345, {color: '#4D4DCD', label: "org"});
 graph.newEdge(chrisvl, samspaces, {color: '#B7B7B7', label: "qa"});
 graph.newEdge(chrisvl, crunck, {color: '#4D4DCD', label: "com"});
