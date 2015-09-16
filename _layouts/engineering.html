@@ -34,11 +34,11 @@
           <i class="sidebar icon"></i>
         </a>
         <img src="/assets/images/vcoin.svg" class="navicon"/>
-        <a class="item" href="/">Home</a>
-        <a class="active item" href="/engineering/">Engineering</a>
-        <a class="item" href="/social/">Social</a>
-        <a class="item" href="/organisation/">Organisation</a>
-        <a class="item" href="/news/">News</a>
+        <a id="home" class="item" href="/">Home</a>
+        <a id="engineering" class="item" href="/engineering/">Engineering</a>
+        <a id="social" class="item" href="/social/">Social</a>
+        <a id="organisation" class="item" href="/organisation/">Organisation</a>
+        <a id="news" class="item" href="/news/">News</a>
         <div class="right item">
           <a class="ui disabled inverted button">Log in</a>
           <a class="ui disabled inverted button">Sign Up</a>
@@ -55,7 +55,25 @@
 
   </div>
 
-  {{content}}
+  <div class="container">
+    <div class="ui sub secondary pointing menu">
+      <a id="active index" class="item" href="/engineering/">Index</a>
+      <a id="specs" class="item" href="/engineering/specs/">Technical specs</a>
+      <a id="charts" class="item" href="/engineering/charts/">Charts</a>
+      <a id="design" class="item" href="/engineering/design/">Design notes</a>
+      <a id="roadmap" class="item" href="/engineering/roadmap/">Roadmap</a>
+      <a id="electrum" class="item" href="/engineering/electrum/">Electrum</a>
+    </div>
+  </div>
+
+  <!-- <div class="ui vertical stripe segment">
+    <div class="ui text container">
+    -->
+    {{content}}
+  <!--
+    </div>
+  </div>
+  -->
 
   <footer>
     {% include _footer.html %}

@@ -2,6 +2,7 @@
 layout: engpage
 title: Electrum server HOW-TO
 excerpt: Step-by-step instructions on how to run an Electrum server
+slug: electrum
 image:
   feature:
 ---

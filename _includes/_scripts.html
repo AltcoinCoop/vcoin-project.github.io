@@ -15,8 +15,18 @@
   };
 </script>
 <script src="/assets/js/vendor/library/less.min.js"></script>
-
+<!--
+{{ page.categories }}
+-->
 <script type="text/javascript">
+  var sectns = '{{ page.path }}'.split('/');
+  x = sectns.pop();
+  //alert(sectns);
+  for (var sectn in sectns) {
+    var idstr = sectns[sectn];
+    $('#'+idstr).addClass('active');
+    $('index'+sectn).removeClass('active');
+  };
   // sgvizler.containerDrawAll("ex");
   $('.ui .item').on('click', function() {
     $('.ui .item').removeClass('active');

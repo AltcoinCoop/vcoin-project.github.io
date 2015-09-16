@@ -509,7 +509,7 @@ image:
 ### Expanse Development Core
 ”The Expanse Development Core is composed of the project's founders and core developers. Knowledgeable, talented individuals with  diverse technical experience related to blockchain technology.”
 
-*People are invited to join in the beta effort to test the system and the launch effort to secure the blockchain but are excluded from ‘founder’ status.*
+*People are invited to join in the beta effort to test the system and in the launch effort to secure the blockchain but are excluded from ‘founder’ status.*
 
 ### Expanse Community Collective
 “The Expanse Community Collective is the soul of the project: the people that use it. It is made of the current active expanse token holders. Every one whole expanse counts as a voting share. Holdings less than 1 Exp do not apply.”
