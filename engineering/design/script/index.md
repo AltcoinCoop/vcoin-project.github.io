@@ -17,7 +17,7 @@ image:
 title: Pay-to-Bob script
 Alice->Bob: Authentication Request
 Bob->Alice: Authentication Response
---></div>
+</div>-->
 
 <div class="diagram">
 title: Deposit
@@ -356,12 +356,14 @@ Note that while transactions like this are fun, they are not secure, because the
 
 ---
 
+
 <!--
 <script>
-  var diagram = Diagram.parse("title: Pay-to-Bob script\nAlice->Bob: Authentication Request\nBob-->Alice: Authentication Response");
+  var diagram = Diagram.parse("title: Pay-to-Bob script\nAlice->Bob: Authentication Request\nBob->Alice: Authentication Response");
   diagram.drawSVG("diagram", {theme: 'hand'});
 </script>
 -->
+
 <script>
   $(".diagram").sequenceDiagram({theme: 'simple'});
 </script>
