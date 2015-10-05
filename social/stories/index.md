@@ -30,4 +30,4 @@ There is a need to generate this “appropriate information”. There is none av
 
 So, this is a place to publish stories that people consider to be worth retailing, the “appropriate information” that informs others in an accessible and effective way, where the social norms *really* lie.
 
-<a class="ui large button" href="/social/stories/pete-vinky-and-i.md">Tell me a story</a>
+<a class="ui large button" href="/social/stories/pete-vinky-and-i.html">Tell me a story</a>
