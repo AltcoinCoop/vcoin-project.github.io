@@ -8,7 +8,7 @@ image:
 
 # Roles and functions in the VCoin community
 
-There are no roles, there are no functions. There is only a downloadable peer-to-peer cryptocurrency application and the *de facto* user/special interest group formed by those who opt to run the app or interact with the blockchain. Within that group, several conceptual divisions can be identified.
+There are no roles, there are no functions. There is only a downloadable peer-to-peer cryptocurrency application. and the user/special interest group formed by those who opt to run the app or interact with the blockchain. Within that group, several conceptual divisions can be identified.
 
 ## Miners, mining
 
@@ -21,4 +21,25 @@ Text.
 
 ---
 
-00000b62077c6e53a2c7ada6e14feb5dfdeecd6001cc83d3a281145572112b17
+## Just hang fire for 12 days ...
+
+> quote author=“TheDev” date=2015-09-21 13:38:53
+>
+> >quote author=“AUser” date=2015-09-21 12:07:53
+> >
+> >Anyone have wallet syn problem?  ::)
+> >
+> >Also mining at http://poolto.be/ but not seeing payout.  :(
+> >
+> >Please help!
+>
+>I'm really sorry,  i am not at my workstation right now...
+>
+>I will try to resolve all these problems when I get back on Oct 3
+
+---
+
+## Map good, directory not.
+
+![Image](/assets/images/graphics/bitnationteamdirectory.jpg)
+

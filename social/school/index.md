@@ -1041,6 +1041,8 @@ If you have any questions regarding our models, would like to join our team or t
         <p><em>Domain-specific opportunity</em> ^^^^</p>
         <h3 class="ui header">Referenced blog post</h3>
         <blockquote style="font-size:90%; color: #666">
+          <h3>The mortgage market’s big unanswered question…</h3>
+          <img src="/assets/images/avatar/stephen.jpg" style="float:left; padding: 0.6rem; margin:0;" alt="Stephen Smith of Legal &amp; General"/>
           <p>Most of the issues that intermediaries are thinking about on MMR come directly from the regulator’s rules. But there is one which sits squarely with the mortgage lenders. And we need an answer on it pretty fast.</p>
           <p>Under MMR, mortgage intermediaries are responsible for ensuring mortgage applications are submitted which meet the ‘lender’s expected affordability criteria’. This term is not defined – so what are we to think? Does it mean simply the criteria by which sourcing systems operate – LTV limits for example?</p>
           <p>Probably not – that is too basic. So does it more likely mean <span style="color:#ff9e04"><strong><em>the criteria of a lender which sit behind the headline product – what income, debt and expenditure requirements there are, whether the product is available to first time buyers, etc?</em></strong></span> If it is this latter, more likely requirement, <span style="color:red"><strong><em>exactly where does an intermediary get this information and how can they prove these were the criteria in place at this exact time on this exact date?</em></strong></span></p>
@@ -1049,7 +1051,7 @@ If you have any questions regarding our models, would like to join our team or t
           <p>So here we are, five months away from MMR day and we do not have the answer to this question.</p>
           <p>There are some further issues stem from this – for example, how will an intermediary record a case where, after discussion, the lender has accepted it, but outside their ‘expected criteria’? What will the lender give the intermediary to show they were happy with this case?</p>
           <p>So, <span style="color:#0BAD14"><strong><em>a plea to the lender fraternity: can you please start talking to each other about this and come up with a simple, industry view and ideally, a standard format for publishing your criteria?</em></strong></span> It’s not much to ask.</p>
-          <p>Stephen Smith is director of housing and external affairs at Legal &amp; General</p>
+          <p>From <a href="http://www.mortgagesolutions.co.uk/news/the-mortgage-market-s-big-unanswered-question-l-g/">The mortgage market’s big unanswered question…</a>, a post by Stephen Smith, director of housing and external affairs at Legal &amp; General.</p>
         </blockquote>
       </div>
       <div class="four wide right floated column">
@@ -1058,3 +1060,1537 @@ If you have any questions regarding our models, would like to join our team or t
     </div>
   </div>
 </div>
+
+---
+
+We are less than a month into Mortgage Market Review regime and it is therefore logical that there are initial teething troubles.
+
+The one that is really starting to stand out however is the issue of stress testing. It is not stress testing per se that is the issue, it is the fact that so many lenders are withholding the stress test criteria that they are using so that broker do not have a fair representation of what measures the lenders are using.
+
+As a result, when working out affordability for their clients the broker can only base their affordability checks on the published rate, but we know that lenders are using stress tests that vary from +1% to +8% of the published rate.
+
+The consequence for the borrower is that despite meeting all affordability criteria asked for, applications are coming back as declined or for much lower amounts than the borrower has requested.
+
+It hardly meets with the treating customers fairly guidelines to hide criteria on which a loan decision is made, especially if it leads to different lenders carrying out a number of credit checks that could then damage a borrower’s credit rating.
+
+There is also a danger to brokers in the quality metrics stakes; this cloak and dagger approach to stress testing will inevitably lead to more DIPs being declined as brokers do not have full information before placing a client’s application with a lender.
+
+As many lenders base their quality judgements – of both brokers and networks – on the level of DIPs that do not go through to completion, it could reflect negatively on their ratings and ultimately affect the level of proc fees that someone receives.
+
+How can a broker make a qualified decision on where to place their client’s mortgage application if part of the information being used to judge whether the client qualifies is hidden from them? In order to treat both customers and brokers fairly, all stress testing information and criteria should be in the public domain and published on every lender’s website. Without it a broker is advising in the dark without all of the information to do their job.
+
+Toni Smith is sales operations director at First Complete
+
+
+
+---
+
+The day has come and passed, the Mortgage Market Review rules are formally enforceable and the only thing left to do now is knuckle under and get used to them.
+
+Networks and lenders have been carrying out extensive training to get the industry ready for a new era of forensic customer assessments.
+
+They are designed to force borrowers to consider the reality of their spending habits rather than a superficial box ticking exercise of what they would like them to be.
+
+Personal Touch Financial Services invited Mortgage Solutions to one of its broker MMR-training session where Neil Hoare, head of commercial relationships, dissected bank statements as an underwriter would.
+
+While the responsibility for assessing the applicant’s affordability rests with the lender it is better to avoid a frustrating game of ping pong with your underwriter.
+
+In the first of two-part feature PTFS reveals how an underwriter tackles bank statement assessments.
+
+PTFS’ tips on bank statement assessments:
+
+## Regular annual spending
+
+Be prepared to push customers on their spending over birthdays, holidays and Christmas.
+
+These are permanent expenses which must be be broken down into a monthly spend and included on the application form as if they were saving for the events on a monthly basis.
+
+These are areas of spending where borrowers are often forced to go overdrawn or use a credit card which they cannot afford to pay off.
+
+Holidays fall into this category too. Question applicants on how they will pay for their annual holiday.
+
+Bank statements may reveal travel insurance payments or spending abroad which will throw into question an applicant’s insistence they don’t go on holiday.
+
+## Erratic and frequent cash withdrawals
+
+A succession of cash withdrawals staggered throughout the same evening, for example on a Friday night, suggest a lack of discipline over spending.
+
+And while this may not be a reason on its own to knock back the mortgage it could be helping to build a picture of erratic or irresponsible spending behaviour.
+
+If the withdrawals cause the applicant’s other bills to bounce it will not bode well for the applicant’s chance of getting approved.
+
+## Vices
+
+There will probably be space on the application form for tobacco or alcohol spending.
+
+Check what the applicant is telling you against pub debit card payments. Particularly high pub spending one month may be due to a one-off event.
+
+If this is apparent by comparing spending on the other two months then it would be plausible to use an average and explain why. 
+
+Gambling is a different story. Payments to gambling outlets will not be viewed positively, particularly if they are frequent.
+
+Do not fall into the trap of thinking any wins will be taken into consideration.
+
+Despite your applicant’s insistence they have ‘foolproof system’ your underwriter will not share the same view. Frequent gambling suggests a lack of self-control.
+
+## Unusual or non-descript regular transactions
+
+Magazine or newspaper subscriptions, lottery payments, hobby memberships, union subs, pet insurance, gym membership and insurance for appliances may not fit neatly into the boxes on an application form.
+
+If it is not completely clear where these payments have been added include a note at the back of the application to clarify where they have been included.
+
+It is important to consider if any of these direct debits have related regular costs associated with them for example pet food if there is pet insurance.
+
+Some direct debits may not be indicative of the product or service they are paying for.
+
+Some gym memberships look like payments for council tax if the gym is run by the local authority. Help the underwriter out by adding a line of clarification.
+
+Paypal payments can be a red herring as they show up as direct debit transaction.
+
+Payments out to another account may indicate the applicant has another account which they have not disclosed to you.
+
+## Informal sources of income
+
+Is the applicant receiving regular deposits from a source which is not their employment? The source could be a parent.
+
+Check to see if the bank account is being propped up by these deposits which would indicate the applicant is unable to maintain their lifestyle based on their own salary.
+
+The regular transfers may indicate the applicant may have another account they have not disclosed to you.
+
+## Plausibility of outgoings and the inclusion of plausibility statements
+
+Some lenders are using average spending habits based figures from the Office of National Statistics as plausibility indicators regardless of what figures are entered into the affordability calculator.
+
+Carry out a sense check when your applicant discloses their outgoings. Is a family of five spending £30 a month on electricity realistic?
+
+Where the monthly spend on a particular item is lower than average include a plausibility explanation with the reason why.
+
+Familiarise yourself with the ONS figures – do not use them instead of your applicant’s outgoings but use them as your own plausibility indicator if preferred.
+
+For the ONS average household outgoings click [HERE](http://www.ons.gov.uk/ons/rel/family-spending/family-spending/2013-edition/family-spending---list-of-tables-appendix-a--2013-edition.html#tab-List-of-Tables--Appendix-A).
+
+---
+
+Santander for Intermediaries has tightened its Help to Buy and general affordability criteria while paring back its interest-only policy three months after the launch of the Mortgage Market Review.
+
+Borrowers using the Help to Buy mortgage indemnity guarantee scheme must be using less than four-and-half times their income to support the application.
+
+For all applications, Santander’s online affordability calculator will now display a single maximum loan amount rather than different amounts for low, medium and high credit scores.
+
+To coincide with this change the lender will be updating its Office of National Statistics data which it uses to verify a clients’ stated expenditure.
+
+Applicants taking out an interest-only mortgage will need to have £150,000 equity in their property where the sale of the property is their exit strategy.
+
+In a broker alert the lender said: “As a responsible lender we want to ensure that customers have sufficient equity in their property to enable them to sell and downsize at the end of the mortgage term.”
+
+The maximum age of interest-only or part-and-part borrowers has now been restricted to 65 on maturity of the mortgage.
+
+The maximum mortgage term for the Help to Buy equity loan scheme has been increased from 25 to 35 years.
+
+The maximum loan-to-value for new build flats has been increased from 75% to 80%.
+
+The changes take effect from Friday 25 July this week
+
+---
+
+Nationwide has increased its stressed rate for all affordability calculations to 6.99% and imposed an income multiple cap of 4.75 times gross income for all employed applications from today.
+
+The building society said it had made the changes following the Financial Policy Committee’s (FPC) guidance.
+
+In June the FPC announced all lenders should apply a stressed rate which assumed a growth in base rate of 3% and placed a restriction on lending above 4.5 times gross income.
+
+It said lenders could hold up to 15% of their new mortgage book on high loan-to-income (LTI) ratios, loans above 4.5 times a borrower’s income.
+
+The rule does not come into force until October 1 but any mortgages written after June 26 will count towards this quota.
+
+But despite the high LTI allowance Nationwide has decided to impose a blanket 4.75 times cap across all employed applications.
+
+The move has caused brokers to question the purpose of the rigourous affordability checks improsed by the Mortgage Market Review (MMR).
+
+Ashley Brown, director of brokerage Moneysprite, said: “The MMR was introduced so lenders could make sensible lending decisions based on individual circumstances with a built in stress test.
+
+“The BoE has decided that because the London property market is running ‘hot’ borrowers in all parts of the country should be restrained with an arbitrary multiple. This must be a regressive step and questions why we all bothered with much of the MMR.”
+
+Brown suggested Nationwide may use its high LTI quota to boost branch network business which he said would disadvantage customers looking for advice from brokers.
+
+Dean Mason, owner of Masons Financial Planning, blamed the regulators for targeting the wrong mechanism to cool down a housing bubble.
+
+He said: “I can’t understand why the powers that be are trying to kerb the perceived ‘housing bubble’ by making it harder for borrowers when the real problem lies with agents over inflating prices, misleading vendors on expectations and intimidating buyers into committing.”
+
+Mason praised Nationwide for being a ‘haven’ for sensible lending decisions where others have missed the point of the MMR.
+
+“A maximum 4.75 times income is still generous compared to most if it is actually prepared to lend to this level where client circumstances allow,” he said.
+
+Brown said he feared the self-employed would be the most affected by the the income cap measures.
+
+“Already they are heavily penalised by affordability calculators and I suspect the new rules will continue and exacerbate this situation.”
+
+But Colin Chapman, director of intermediary firm Genesis, said the restrictions were a positive measure which would not prove to be prohibitive in many cases.
+
+“Whilst the obvious broker view point maybe to be vent frustration at what seems to be another lender retreating to ultra conservative stress testing, the overall impact will not be too troublesome. This is especially true in my local area which isn’t that affluent with very high property prices.
+
+“I think long term the cautious approach is better than the unchecked boom times of the mid 2000s. No one wants a return to the broker dark days of 2008 to 2012.”
+
+Cases where the initial decision in principle was keyed before 5.00pm Monday 21 July will be assessed under current affordability rules.
+
+From Thursday 21 August 2014 any case that requires a reprocess will be assessed under the new affordability calculation.
+
+---
+
+Following a Mortgage Solutions report on the unintended underwriting fallout of the Mortgage Market Review, appalled brokers flagged yet more outlandish underwriting roadblocks thrown in front of mortgage applicants.
+
+After a Mortgage Solutions question at the FCA’s annual public meeting, CEO Martin Wheatley dismissed lender product and underwriting clamp downs as ‘teething problems’ adding unintended consequences of the new lending rules are being ironed out.
+
+Mortgage advisers rushed to disagree, outlining a rash of illogical lender mortgage decisions.
+
+One broker said after a valuation delay the lender requested an updated pay slip. In the interim the client had a pay rise which the lender ignored, but due to the increased pension payments, the lender cut the mortgage offer by five pounds.
+
+Elsewhere, a lender spotted a regular payment in an applicant’s account for £10 a month to pay a neighbouring child for walking the dog. After the lender’s insistence, the sum was included as a household bill and the mortgage offer was reduced.
+
+Another adviser said: “I had a case of a client on £130,000 per annum and the lender [wanted] a disposable income of over £2,000 per month, which is more than the average wage earner in the UK earns net of tax and before their bills. He was doing a pound for pound remortgage with no debt problems, so [had already] evidenced the fact he lives off a lower disposable income.”
+
+Arron from Temple Capital said: “Most lenders need to revisit their criteria and perhaps gather some brokers together to ensure their criteria is more realistic. The FCA is right to be concerned that unintended consequences have stemmed from isolated compliance departments not being able to see reality.”
+
+---
+
+The Association of Mortgage Intermediaries (AMI) has been in talks with the Council of Mortgage Lenders (CML) to feedback broker concerns over how the Mortgage Market Review (MMR) has been implemented.
+
+Robert Sinclair, chief executive of AMI, said: “We have been having discussions about how well the MMR has landed and clearly there have been words around how different lenders have interpreted the affordability requirements.”
+
+Last month Martin Wheatley, chief executive of the Financial Conduct Authority, said in response to a Mortgage Solutions question that it was in talks with lenders which were being ‘too assidious’ in their assessment of a borrower’s affordability.
+
+But Wheatley said it was too strong to say that lenders’ overzealous underwriting of borrowers’ expenditure was an unintended consequence, as brokers had suggested.
+
+He said it was more accurate to refer to it as a ‘teething problem’.
+
+Wheatley brushed off the severity of the issue, which triggered a flood of broker comments to Mortgage Solutions about instances where lenders had nit-picked over trivial expenses causing delays and stress to mortgage customers.
+
+Dominik Lipnicki, director of broker firm Your Mortgage Decisions, wants to see the current fragmented approach joined together.
+
+“Why don’t we have a universal budget planner? A broker will know that as long as they ask certain questions they could be confident that they have covered everything the lender wanted to see. That would make total sense.
+
+“But instead what we have is a totally fragmented market with different ways of looking at things.”
+
+Lipnicki said that while all lenders had different exposures to risk and different niches, some uniformity would help.
+
+But Sinclair said it was these difference which allowed a broker to show their worth to the customer.
+
+“If a customer tried to find their way round this it would be impossible which is why intermediaries exist,” he added.
+
+Steve Smith, AMI board member and mortgage consultant for Springtide Capital, agreed that the complexities and variances of lenders’ approaches to affordability offered brokers an opportunity to attract more clients.
+
+“The range of lender approaches give the broker more value to add to the offering since we typically know what lender to use in which circumstance.”
+
+Smith said if a universal budget planner were introduced it may result in more questions rather than less.
+
+“Can you imagine what it would like? My guess is that it would be a lot longer than most of those being used today,” he said.
+
+A spokeswoman for the CML said: “Individual approaches by lenders to affordability assessments, in line with FCA rules, are not a matter for the CML.
+
+“However, as the MMR beds down we have fed back in general terms to our members that brokers note there are differences between lenders. It is early days, and it will not be surprising if practices continue to evolve as the new regime beds in.”
+
+AMI plans to meet with the CML later this year to discuss how the market has moved on.
+
+---
+
+Lenders want an injection of common sense into the Mortgage Market Review (MMR) rules on execution-only sales which they say are causing frustration among borrowers.
+
+Under the new rules if a borrower choses to take out a mortgage without advice using the execution-only route, the lender is not allowed to have any interaction with the customer.
+
+But lenders want the option to give borrowers information to make sure the mortgage they pick for themselves is the most suitable option available.
+
+The frustration was brought to light after the Council of Mortgage Lenders (CML) opened discussions with lenders to find out what issues have arisen as a consequence of implementing the MMR rules.
+
+A spokesman for the CML said: “In cases where the customer opts for an execution-only sale, lenders have to be sure that the borrower is choosing from a complete and up-to-date list of products.
+
+“If the customer wants to do this on the phone or in a branch, lenders would like to be able to make sure the customer has all the appropriate product information without straying into the advised sales option.”
+
+He said currently, if a new rate has been added to the lender’s website, the adviser can only ask the borrower to revisit the website but cannot say why, which is causing customers to become frustrated.
+
+The CML intends to raise the issue with the Financial Conduct Authority when it begins its review of the MMR and the unintended consequences of its implementation, later this year.
+
+---
+
+The Council of Mortgage Lenders (CML) is concerned that the Mortgage Market Review (MMR) has created an unnecessary barrier for homeowners wishing to switch their mortgage to a cheaper rate.
+
+Borrowers on a Standard Variable Rate who want to apply for new deal on similar terms are being held back by the tough new affordability requirements even if the switch can lower their monthly payments.
+
+In its newsletter, the CML said it was preparing to address the issue with the Financial Conduct Authority (FCA) when it carries out a thematic review on the unintended consequences of the MMR later this year.
+
+It said: “…we remain concerned about the level of bureaucracy in areas such as product switches.”
+
+Ahead of the FCA’s review the CML has begun talks with members to find out which areas have proved most problematic to implement resulting in unintended consequences.
+
+It emerged that lenders wanted clarity on what checks needed to be carried out if a borrower switches to a new deal and the mortgage balance increases slightly due to administration fees incurred by the switch.
+
+Currently lenders are subjecting borrowers to a full affordability assessment which many are failing to pass.
+
+A spokesman for the CML said that while the MMR was not put in place to create mortgage business it should not create mortgage prisoners asa result of minor loan size changes.
+
+He said it wants the FCA to provide more guidance in this area so lenders have the confidence to simplify the process for borrowers without the fear of falling foul of the rulebook.
+
+---
+
+## Due Diligence Compliance Analyst, First Guaranty Mortgage Corporation - Remote
+
+How it is under U.S. credit regulations ...
+
+### Position Purpose 
+
+Under general supervision and working within the Correspondent Division, analyze and validate the accuracy of financial information reported on the Loan Estimate (LE) and create the Closing Disclosure (CD) to ensure compliance with the Consumer Financial Protection Bureau’s (CFPB) rules and regulations. In addition, audit loan files to ensure that other federal and state requirements have been met. Report identified issues to management. 
+
+### Key Job Functions 
+- Audit mortgage loan files for compliance with the CFPB rules for the Loan Estimate, Closing Disclosure, and other required disclosures.
+- Verify the accuracy of the Loan Estimate to ensure the following: APR, Tolerance Cures, Detailed Category Labels, etc.
+- Ensure integrity of the Loan Estimate and Closing Disclosure and resolve issues timely in order to minimize impacts to the business processing timelines, clients, and affected consumers.
+- Monitor other required disclosures to ensure that information has been provided timely and properly in accordance with federal and state guidelines, including Mortgage Broker disclosures and timely delivery of the appraisals.
+- Follow up with business teams on recurring discrepancies, propose solutions, and support implementation as necessary.
+- Analyze process controls to ensure accurate, complete, and timely transaction processing; and bring inconsistencies and problems to the attention of management.
+- Recommend technological enhancements and process improvements.
+- Perform special projects of low to moderate complexity, or participate as a team member on more complex projects.
+
+### Minimum Experience 
+- 3-5 years of related experience in the Mortgage Industry or equivalent work experience.
+- Prior experience in the mortgage industry as a processor, underwriter, quality control auditor, or closer is ideal.
+
+### Specialized Knowledge & Skills 
+- Knowledge of mortgage industry guidelines associated with federal and state regulations including the TILA-RESPA Integrated Disclosure Rule.
+- Strong analytical and problem solving skills.
+- Excellent time management and follow up skills required.
+- Ability to work effectively with business teams, clients, and vendors to build strong relationships.
+- Working knowledge of Microsoft Office, and strong Excel spreadsheet skills required.
+- Experience with Ellie Mae Encompass is a plus.
+
+---
+
+# Cloning Litecoin
+
+1. Pre Installers.
+    - 1a. Winrar
+    - 1b. Compression
+    - 1c. MinGW
+2. Windows Deps.
+    - 2a. OpenSSL
+    - 2b.Berkeley DB
+    - 2c. Boost
+    - 2d. MiniUPNP
+    - 2e. Protoc and Libprotobuf
+    - 2f. Libpng
+    - 2g. qrencode
+3. Download and Compile QT.
+4. The Clone
+    - 4a. Source Code
+    - 4b. Copy and Replace Litecoin
+    - 4c. Copy and Replace LTC
+    - 4d. Change rpc and port numbers. 
+    - 4e. Change starting letter for addresses.
+    - 4f. Update client version number.
+    - 4g. Change Litecoin example addresses to Clonecoin Addresses. 
+    - 4h. Change char pchMessageStart and ParseHex. 
+    - 4i. Change alert keys. 
+    - 4j. Remove Merkel root and Genesis Block.
+    - 4k. Remove Nonce and testnet genesis. 
+    - 4l. Add Epoochtime and Timestamp.
+    - 4m. Fixing the checkpoints.
+    - 4n. Change max money supply and coinbase maturity.
+    - 4o. Change block times from 2.5 minutes to 30 seconds.
+    - 4p. Change re-targeting
+    - 4q. Add premine and change block rewards. 
+    - 4r. Update Images.
+    - 4s. Update Seed node/ AWS Seed node guide.
+5. Hashing the Genesis Block and Merkel Root.
+    - 5a. Ability to hash Genesis Block.
+    - 5b. Compiling Clonecoin Windows QT.
+    - 5c. Generating Merkel Root
+    - 5d. Hashing the Genesis Block.
+6. Connecting your nodes.
+    - 6a. Create a conf.
+    - 6b. Connect- server and home network.
+7. Checkpointing the premine.
+8. Clean up Your Code.
+9. Compiling Clonecoind.
+    - 9a. Compile Clonecoind.
+    - 9b. Remove and cleanup.
+10. Github for release, made easy.
+    - 10a. Easy Pushing Commits/Launch code.
+    - 10b. Easy Revert Commits
+    - 10c. Easy Pushing Updates.
+11. Common Errors
+12. Quick Logos
+13. The Website.
+    - 13a. The Template.
+    - 13b. Upload to a website.
+14. The Launch. Ninja vs Pumped vs ICO.
+    - 14a. Prelaunch
+    - 14b. The Ninja
+    - 14c. The Pumped.
+    - 14d. The ICO.
+
+
+## 1. Pre Installers.
+
+### 1a. File Compressor/Extractor
+
+Download and install Winrar or an alternate file compression tool. 
+[http://www.rarlab.com/download.htm](http://www.rarlab.com/download.htm)
+
+### 1b. Text Editor.
+
+Download and install a text editor such as [Sublime Text](http://www.sublimetext.com/). You need a text editor that can easily search and replace case sensitive text.
+
+### 1c. Download and install MingW
+
+[http://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download)
+
+Double click to install, keep the checkbox for the GUI checked and make sure to install in ``C:\MinGW``. Press continue. From the MinGW GUI interface, go to ``all packages -> MYSYS``
+Right click on the following installations and mark for installation.
+
+- ``msys-base-bin`` (may highlight other checkboxes which is fine)
+- ``msys-autoconf-bin``
+- ``msys-automake-bin``
+- ``msys-libtool-bin``
+
+Click on ``Installation -> Apply changes``. MinGW will now download the remaining packages. Make sure to remove any previous installs of MinGW before starting. 
+
+Once complete, navigate to ``C:\MinGW\bin`` and you should only have a ``mingw-get`` application. If you have ``msys-gcc`` and ``msys-w32api`` you need to delete MinGW and check the correct install packages are selected above.
+
+Download and extract mingw32 to ``C:\mingw32``, [http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.1/theads-posix/dwarf/i686-4.9.1-release-posix-dwarf-rt_v3-rev1.7z/download](http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.1/theads-posix/dwarf/i686-4.9.1-release-posix-dwarf-rt_v3-rev1.7z/download)
+
+You now need to change the path variables. Go to ``control panel->system`` and ``security->system``. Click on ``advanced system properties->environmental variables``. In the top box navigate to PATH and change to 
+
+    > C:\mingw32\bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
+
+
+Checking your MingW install.
+
+To start the MingW app navigate to ``C:\MinGW\msys\1.0\msys.bat``, create a desktop shortcut as you will use the ``msys`` command as well as the windows command prompts. Double click to start and enter the following to display the version and correct paths.
+
+    $ gcc -v
+
+Your ``msys`` output should look like the following code.
+
+    $ gcc -v
+    Using built-in specs.
+    COLLECT_GCC=c:\mingw32\bin\gcc.exe
+    COLLECT_LTO_WRAPPER=c:/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe
+    Target: i686-w64-mingw32
+    Configured with: ../../../src/gcc-4.9.1/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/
+    mingw32 --with-sysroot=/c/mingw491/i686-491-posix-dwarf-rt_v3-rev1/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++
+     --enable-shared --enable-static --disable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes -
+    -enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynam
+    ic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-isl-version-check --disable-cloog-ve
+    rsion-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls
+     --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib
+     --with-gmp=/c/mingw491/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw491/prerequisites/i686-w64-mingw32-static --with-mpc=
+    /c/mingw491/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw491/prerequisites/i686-w64-mingw32-static --with-cloog=/c/mingw491
+    /prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-dwarf-rev1, Built by MinGW-W64 project'
+     --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/c/mingw491/i686-491-posix-dwarf-rt_v3-rev1/mingw32/opt/in
+    clude -I/c/mingw491/prerequisites/i686-zlib-static/include -I/c/mingw491/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -
+    pipe -I/c/mingw491/i686-491-posix-dwarf-rt_v3-rev1/mingw32/opt/include -I/c/mingw491/prerequisites/i686-zlib-static/include -I/c/mingw4
+    91/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/c/mingw491/i686-491-posix-dwarf-rt_v3-rev1/mingw32/opt/li
+    b -L/c/mingw491/prerequisites/i686-zlib-static/lib -L/c/mingw491/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
+    Thread model: posix
+    gcc version 4.9.1 (i686-posix-dwarf-rev1, Built by MinGW-W64 project)
+
+If you are having issues I have uploaded a MinGW install [here](https://howtocloneanaltcoin.com/downloads/MinGW.rar)
+ 
+## 2. Download and Install Dependencies.
+
+Create a deps folder at ``C:\deps``.  If you want to cheat you can download the pre-built dependencies [here](http://www.mediafire.com/download/y89546s65sf8de5/deps.zip), though it is recommended to build your own.
+
+### 2a. OpenSLL
+
+Install OpenSSL dependencies on Windows.
+
+Download the latest version of OpenSSL [https://www.openssl.org/source/openssl-1.0.1j.tar.gz](https://www.openssl.org/source/openssl-1.0.1j.tar.gz) to your deps folder.
+
+Open the MinGW shell at ``C:\MinGW\msys\1.0\msys.bat`` 
+
+    $ cd /c/deps/
+    $ tar xvfz openssl-1.0.1j.tar.gz
+    $ cd openssl-1.0.1j
+    $ ./Configure no-zlib no-shared no-dso no-krb5 no-camellia no-capieng no-cast no-cms no-dtls1 no-gost no-gmp no-heartbeats no-idea no-jpake no-md2 no-mdc2 no-rc5 no-rdrand no-rfc3779 no-rsax no-sctp no-seed no-sha0 no-static_engine no-whirlpool no-rc2 no-rc4 no-ssl2 no-ssl3 mingw
+    $ make
+
+
+### 2b. Berkeley DB
+
+Download [http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz](http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz) and place in your deps folder.
+
+In the MinGW shell use the following code.
+
+    $ cd /c/deps/
+    $ tar xvfz db-4.8.30.NC.tar.gz
+    $ cd db-4.8.30.NC/build_unix
+    $ ../dist/configure --enable-mingw --enable-cxx --disable-shared --disable-replication
+    $ make
+
+
+### 2c. Boost
+
+Download Boost to your deps folder. [http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.zip/download](http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.zip/download)
+ 
+Make sure to download either the 7z or zip versions. Double click on the folder to extract ``boost_1_55_0`` in your deps folder. This may take several minutes depending on your PC's speed. 
+
+Using the Windows command prompt, bootstrap and compile boost. To bring up the windows command prompt just type ``cmd`` in the windows search bar.
+
+
+    > cd C:\deps\boost_1_55_0\
+    > bootstrap.bat mingw
+    > b2 --build-type=complete --with-chrono --with-filesystem --with-program_options --with-system --with-thread toolset=gcc variant=release link=static threading=multi runtime-link=static stage
+
+
+### 2d. Mini UPNP
+
+Download and extract MiniUPNP [http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20140911.tar.gz](http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20140911.tar.gz) to your deps folder. 
+
+Rename  folder from ``miniupnpc-1.9.20140911`` to ``miniupnpc`` then from a Windows command prompt:
+
+    $ cd C:\deps\miniupnpc
+    $ mingw32-make -f Makefile.mingw init upnpc-static
+
+
+### 2e. Protoc and Libprotobuf:
+
+Download and extract [http://protobuf.googlecode.com/files/protobuf-2.5.0.zip](http://protobuf.googlecode.com/files/protobuf-2.5.0.zip) to your deps folder.
+
+In the ``msys`` shell run
+
+    $ cd /c/deps/protobuf-2.5.0
+    $ configure --disable-shared
+    $ make
+
+
+### 2f. libpng
+
+Download and extract [http://prdownloads.sourceforge.net/libpng/libpng-1.6.14.tar.gz?download](http://prdownloads.sourceforge.net/libpng/libpng-1.6.14.tar.gz?download) to your deps folder. Extract.
+
+In ``msys`` shell run 
+
+    $ cd /c/deps/libpng-1.6.14
+    $ configure --disable-shared
+    $ make
+    $ cp .libs/libpng16.a .libs/libpng.a
+
+
+### 2g. qrencode
+
+Download and extract [http://fukuchi.org/works/qrencode/qrencode-3.4.4.tar.gz](http://fukuchi.org/works/qrencode/qrencode-3.4.4.tar.gz) to your deps folder.
+
+In ``msys`` shell run 
+
+    $ cd /c/deps/qrencode-3.4.4
+
+    $ LIBS="../libpng-1.6.14/.libs/libpng.a ../../mingw32/i686-w64-mingw32/lib/libz.a" \
+    png_CFLAGS="-I../libpng-1.6.14" \
+    png_LIBS="-L../libpng-1.6.14/.libs" \
+    configure --enable-static --disable-shared --without-tools
+
+    $ make
+
+## 3. Download and Compile QT.
+
+Download and uncompress [http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip](http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip) to ``C:\Qt\4.8.6``.
+
+ Once again check it resides in ``C:\Qt\4.8.6`` not ``C:\Qt\4.8.6\4.8.6``. Due to a bug in 4.8.6 you will need to apply the patch available [here](https://codereview.qt-project.org/#/c/84567/3/tools/configure/configureapp.cpp).
+
+ For those who can't find or work it out, you need to change the following lines in ``C:\Qt\4.8.6\tools\configure\configureapp.cpp`` or download the patched file [here](https://www.mediafire.com/?y4urdzfp0k0j0gm)
+ and replace it in C:\Qt\4.8.6\tools\configure\configureapp.cpp
+
+
+    2180  |  -  const QString mingwPath = dictionary["QMAKESPEC"].endsWith("-g++") ?
+    2180  |  +  const QString mingwPath = dictionary["QMAKESPEC"].contains("-g++") ?
+    2252  |  -  if (dictionary["QMAKESPEC"].endsWith("-g++")+
+    2252  |  +  if (dictionary["QMAKESPEC"].contains("-g++")+
+
+
+From your Windows command prompt run 
+
+    $ cd C:\Qt\4.8.6
+    $ configure -release -opensource -confirm-license -static -no-sql-sqlite -no-qt3support -no-opengl -qt-zlib -no-gif -qt-libpng -qt-libmng -no-libtiff -qt-libjpeg -no-dsp -no-vcproj -no-openssl -no-dbus -no-phonon -no-phonon-backend -no-multimedia -no-audio-backend -no-webkit -no-script -no-scripttools -no-declarative -no-declarative-debug -qt-style-windows -qt-style-windowsxp -qt-style-windowsvista -no-style-plastique -no-style-cleanlooks -no-style-motif -no-style-cde -nomake demos -nomake examples
+    $ mingw32-make
+
+
+Now we are ready to start the cloning process.
+
+If you are worried about compilation, it would be wise to jump ahead and ensure everything is working with compiling the client  before working with the clone.
+
+## 4. The Clone
+
+In this guide we will be cloning Litecoin. Litecoin is a Scrypt based coin and the original altcoin. I will be calling this coin “Clonecoin” (CLN).
+
+### 4a. Download and extract the Litecoin source.
+ 
+[https://github.com/litecoin-project/litecoin](https://github.com/litecoin-project/litecoin)
+
+In this guide I will be placing the source code in ``C:\Clonecoin``
+
+### 4b. Copy and Replace Litecoin 
+
+Using your test editor, search out and replace all instances of “Litecoin” with “Clonecoin”. Make sure your search is case sensitive and search for all instances, replace “Litecoin” with “Clonecoin”, “litecoin” with “clonecoin” etc. Run a search without case sensitivity before continuing to ensure you have all instances.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/61a9b7b8ea5db179b30f979d109847e473d0de81](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/61a9b7b8ea5db179b30f979d109847e473d0de81)
+
+
+### 4c. Copy and Replace LTC.
+ 
+Using your test editor, search out and replace all instances of “LTC” with “CLN”.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/7b6a2ad68deb97caab802c460ebfe5104fa72e2c](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/7b6a2ad68deb97caab802c460ebfe5104fa72e2c)
+
+
+### 4d. Change rpc and port numbers.
+
+Search for an appropriate port and rpc number [http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers](http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers).
+
+Litecoin uses  port 9333 testnet 19333, rpcport 9332 testnet 19332. We will change them to port 10333 testnet 11333, rpcport 10332 testnet 11332
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/7f149b069f77b3e174ca8a7b10b98287c3e663a9](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/7f149b069f77b3e174ca8a7b10b98287c3e663a9)
+
+
+### 4e. Change starting letter for addresses.
+ 
+In this case we change the 48 to 28, therefore all addresses will start with “C”.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/d0621b86a358e93495658d564640144458aab8ee](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/d0621b86a358e93495658d564640144458aab8ee)
+
+
+### 4f. Update client version number. 
+
+Since its really a fork of Litecoin we will bring the version numbers up to 1.0.0.0.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/95d0bef6e6a7bf27f3ed6d8153fccf8275524ba9](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/95d0bef6e6a7bf27f3ed6d8153fccf8275524ba9)
+
+
+### 4g. Change Litecoin example addresses to Clonecoin Addresses. 
+
+Here we change the LTC addresss ``Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2`` to a Clonecoin mystery address starting with c. (see step 6d)
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/9a5321bfb9b0482ed3b435edb815d8eee268b949](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/9a5321bfb9b0482ed3b435edb815d8eee268b949)
+
+
+### 4h. Change char pchMessageStart and ParseHex.
+ 
+We want these to be unique to Clonecoin. Be wary of changing ``pchMessageStart`` to to letters other than ``a-f``. All numbers are fine to use.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/011b9a8e713821d8010a827f7aeacf09c772a267](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/011b9a8e713821d8010a827f7aeacf09c772a267)
+
+
+### 4i. Change alert keys
+. 
+We just change these to be different from Litecoin to avoid the Litecoin messages.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/0798f246007c9196bcfcf39c2ef2222a660d59d2](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/0798f246007c9196bcfcf39c2ef2222a660d59d2)
+
+
+### 4j. Remove Merkel root and Genesis Block.
+
+These will be replaced later on. Though for now and in the near future they are no longer needed.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/46bbcb1377ac2db0f8dabc19faffb9ab6f989cb6](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/46bbcb1377ac2db0f8dabc19faffb9ab6f989cb6)
+
+### 4k. Remove Nonce and testnet genesis. 
+
+We remove the testnet genesis block and nonce.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/24cf6793c02369fc60a8b67645818f0cf7d1252a](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/24cf6793c02369fc60a8b67645818f0cf7d1252a)
+
+### 4l. Add Epochtime and Timestamp.
+ 
+To create a genesis block we need an epoch time and a verbal timestamp. The current epoch time can be obtained from [http://www.epochconverter.com/](http://www.epochconverter.com/) and the latest news headline can be used for the verbal timestamp. We also replace the testnet timestamp.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/790f9964abdb0543abe1ee1801562a004349e719](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/790f9964abdb0543abe1ee1801562a004349e719)
+
+
+### 4m. Fixing the checkpoints.
+ 
+We comment out the hardcoded checkpoint and change the genesis block checkpoint.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/fe0d86a278f4d6470bee697a25256b0340cfc9fd](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/fe0d86a278f4d6470bee697a25256b0340cfc9fd)
+
+
+### 4n. Change max money supply and coinbase maturity.
+ 
+We just multiplied total coins by 10 and reduced coin based maturity. The higher the number of confirmations the better for the network.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/c43361429062f04b5697f9e9fca19e2f15d2e634](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/c43361429062f04b5697f9e9fca19e2f15d2e634)
+
+
+### 4o. Change block times from 2.5 minutes to 30 seconds.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/8796946bd1d3d5d15d06ba0e72e4b6bbf1fe1d06](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/8796946bd1d3d5d15d06ba0e72e4b6bbf1fe1d06)
+
+
+### 4p. Change re-targeting from the ridiculous 2.5 days to every 5 minutes.
+ 
+This is cutting out a small portion of instamining. 
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/a3df6e9dc15009bdb22c60a496c109334cc55864](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/a3df6e9dc15009bdb22c60a496c109334cc55864)
+
+
+### 4q. Add premine and change block rewards.
+ 
+Since we initially increased block rewards by x10, we will increase the base reward from 50 to 500. We then add a premine on block 2 as well as a staggered decrease in block sizes.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/ddc36732b46fbc38ca06012be127ff994177192d](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/ddc36732b46fbc38ca06012be127ff994177192d)
+
+
+### 4r. Update Images.
+
+If you have not already, you will need a splash and logo.
+You will need to update ``src/rec/icons`` - ``bitcoin.png``, ``bitcoin_testnet.png``, ``bitcoin.icon``, ``bitcoin_testnet.icon`` (all 256x256 pixels), ``toolbar.png`` and ``toolbar_testnet.png`` (16x16 pixels).
+
+Also update ``src/res/images``, ``splash.png``, ``splash_testnet.png`` and ``about.png``.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/08edb2f2648acc373e60c44fbd0558c514697ff7](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/08edb2f2648acc373e60c44fbd0558c514697ff7)
+
+
+### 4s. Update Seed node- 
+
+First you will need to create a dedicated node. This is a quick easy guide.
+
+Head to [Amazon AWS console](https://console.aws.amazon.com) and create an account. Click on the EC2 link on the left. See [AWS pricing](http://aws.amazon.com/ec2/pricing/)
+
+Create and instance, select ``Microsoft Windows Server 2012 R2 Base``, select your server preference - we chose ``t2.micro`` which is free tier eligible.
+
+Click ``Next: Configure Instance Details``, highlight ``Protect against accidental termination``, click review and launch.
+
+Go to security settings, open all ports and click launch. Create a security key pair and make sure to download it and keep it safe. Launch your instance.
+
+On the aws instance home screen click the Elastic IP tab, click ``allocate Ip address`` and confirm. While still in the Elastic IP tab, click ``allocate`` and allocate to the instance by clicking the top checkbox and identifying your server. Confirm. Your instance will take around 15 minutes to launch.
+
+To connect. Click the instance tab, highlight your instance and press ``connect``. Using your key from earlier, you are now able to download a server shortcut and server password.
+
+Using your new Elastic IP, replace your new IP removing Litecoin old seed nodes. 
+
+``src/net.cpp``
+
+    static const char *strMainNetDNSSeed[][2] = {
+       {"clonecointools.com", "54.232.218.200"},
+       {NULL, NULL}
+    };
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/92e520e8a80294a1964bca707ddca704c2c0bdc9](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/92e520e8a80294a1964bca707ddca704c2c0bdc9)
+
+
+### 4.t Change the name of the ``bitcoin-qt.pro`` file to ``clonecoin-qt.pro``
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/d309822b3b6519ca6424ac74df054ad351db1d88](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/d309822b3b6519ca6424ac74df054ad351db1d88)
+
+
+
+## 5. Hashing the Genesis Block and Merkel Root. 
+
+### 5a. Ability to hash Genesis Block.
+
+We now need to add the ability to hash a new genesis block so we add the following code to main.cpp.
+
+``main.cpp``
+
+    if (true && block.GetHash() != hashGenesisBlock)
+    {
+        printf("Searching for genesis block...\n");
+        // This will figure out a valid hash and Nonce if you're
+        // creating a different genesis block:
+        uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+        uint256 thash;
+        char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
+
+        loop
+        {
+            scrypt_1024_1_1_256_sp(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
+            if (thash <= hashTarget)
+                break;
+            if ((block.nNonce & 0xFFF) == 0)
+            {
+                printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+            }
+            ++block.nNonce;
+            if (block.nNonce == 0)
+            {
+                printf("NONCE WRAPPED, incrementing time\n");
+                ++block.nTime;
+            }
+        }
+        printf("block.nTime = %u \n", block.nTime);
+        printf("block.nNonce = %u \n", block.nNonce);
+        printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
+      
+    }
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/8b2e543c6f9c6dde0ebb8a7b73fd06c6d7de18ec](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/8b2e543c6f9c6dde0ebb8a7b73fd06c6d7de18ec)
+
+
+### 5b. Compiling Clonecoin Windows QT.
+
+Create ``libleveldb.a`` and ``libmemenv.a``. 
+
+Using Msys shell, run. For this we have Clonecoin in ``C:/Clonecoin``
+
+    $ cd /C/clonecoin/src/leveldb
+    $ TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
+
+If the file already exists, Msys will inform you so.
+
+Open your ``Clonecoin-qt.pro`` file.
+
+We now need to change the dependency directory locations 
+
+    # Dependency library locations can be customized with:
+    #   BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
+    #   BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
+
+    OBJECTS_DIR = build
+    MOC_DIR = build
+    UI_DIR = build
+
+
+to
+
+
+    # Dependency library locations can be customized with:
+    #   BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
+    #   BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
+    BOOST_LIB_SUFFIX=-mgw49-mt-s-1_55
+    BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
+    BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
+    BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
+    BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
+    OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1j/include
+    OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1j
+    MINIUPNPC_INCLUDE_PATH=C:/deps/
+    MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
+    QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
+    QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
+    OBJECTS_DIR = build
+    MOC_DIR = build
+    UI_DIR = build
+
+
+and comment out the ``genleveldb`` command
+
+
+    genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS 
+
+
+to
+
+
+    #genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS 
+
+
+and add the flags for a static build.
+
+Add
+
+
+    CONFIG += static
+
+
+to 
+
+
+    CONFIG += thread
+    CONFIG += static
+
+
+and 
+ 
+
+    win32:QMAKE_LFLAGS *= -Wl,--large-address-aware
+
+
+to
+
+
+    win32:QMAKE_LFLAGS *= -Wl,--large-address-aware  -static
+
+
+Now from the Windows cmd, run  
+
+
+    > set PATH=%PATH%;C:\Qt\4.8.6\bin
+    > cd C:\clonecoin\
+    > qmake "USE_QRCODE=1" "USE_UPNP=1" "USE_IPV6=1" clonecoin-qt.pro
+    > mingw32-make -f Makefile.Release
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/5c82150b6d017412f6df4f06f86941de2bebae83](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/5c82150b6d017412f6df4f06f86941de2bebae83)
+
+
+Your ``Clonecoin-qt`` should now be available in your ``C:\clonecoin\release`` folder after around 5 minutes. If errors occur, scroll up and read them try to identify and fix.
+
+### 5c. Generating Merkel Root
+
+Start your ``Clonecoin-qt``. You should see an error Assertion failed! 
+
+Navigate to your Clonecoin appdata folder ``C:\Users\(YOUR*PC*NAME)\AppData\Roaming\Clonecoin`` and open the debug log in a text editor. The folder is hidden by default, so typing ``%appdata%`` in the Windows search bar will bring up access to the roaming\clonecoin folder.
+
+Scroll to the bottom of the text to find the following lines.
+
+    2014-11-06 17:00:04 LoadBlockIndexDB(): last block file = 0
+    2014-11-06 17:00:04 LoadBlockIndexDB(): transaction index disabled
+    2014-11-06 17:00:04 Initializing databases...
+    2014-11-06 17:00:04 71154501f2bb79422cb9d06775463810e8ae59243460250f6c942ebd3a9712dd
+    2014-11-06 17:00:04 0000000000000000000000000000000000000000000000000000000000000000
+    2014-11-06 17:00:04 d010ddcc6651af0e28e50ee36096e438b7974da9d58f1be95a968b180756a0c8
+
+
+The bottom hash is the merkel root, we take this and add it to ``main.cpp``
+
+    assert(block.hashMerkleRoot == uint256("0xd010ddcc6651af0e28e50ee36096e438b7974da9d58f1be95a968b180756a0c8"));
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/c776fb6da5599cc9a3bde9749880d9a1f9a1222a](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/c776fb6da5599cc9a3bde9749880d9a1f9a1222a)
+
+
+### 5d. Hashing the Genesis Block.
+
+We now need to recompile the client in Windows ``cmd``. You can remove the path and directory if you still have the client open.
+
+    > set PATH=%PATH%;C:\Qt\4.8.6\bin
+    > cd C:\clonecoin\
+    > qmake "USE_QRCODE=1" "USE_UPNP=1" "USE_IPV6=1" clonecoin-qt.pro
+    > mingw32-make -f Makefile.Release
+
+
+Restart the client. The previous Merkel error should  not occur and the client should appear to hang on launch. It is now hashing your genesis block.
+
+How long this takes can vary from a few seconds to minutes. Once the client hangs with a genesis block error, open your debug text file again in your Clonecoin appdata folder ``C:\Users\(YOUR*PC*NAME)\AppData\Roaming\Clonecoin``
+
+    2014-11-05 18:29:11 block.nNonce = 2110551 
+    2014-11-05 18:29:11 block.GetHash = 235b6e7fa788b4a0914a959c7ccb38f6cb2706a4c5bd68c0d64f22ba7772baf9
+
+We will now add these to ``main.ccp``.
+
+    @@ -35,7 +35,7 @@ CTxMemPool mempool;
+    unsigned int nTransactionsUpdated = 0;
+
+    map<uint256, CBlockIndex*> mapBlockIndex;
+    uint256 hashGenesisBlock("0x");
+    uint256 hashGenesisBlock("0x235b6e7fa788b4a0914a959c7ccb38f6cb2706a4c5bd68c0d64f22ba7772baf9");
+    static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Clonecoin: starting difficulty is 1 / 2^12
+    CBlockIndex* pindexGenesisBlock = NULL;
+    int nBestHeight = -1;
+    @@ -2757,7 +2757,7 @@ bool LoadBlockIndex()
+         pchMessageStart[1] = 0xb2;
+         pchMessageStart[2] = 0xa4;
+         pchMessageStart[3] = 0xdc;
+         hashGenesisBlock = uint256("0x");
+         hashGenesisBlock = uint256("0x235b6e7fa788b4a0914a959c7ccb38f6cb2706a4c5bd68c0d64f22ba7772baf9");
+       }
+
+       //
+    @@ -2804,12 +2804,12 @@ bool InitBlockIndex() {
+         block.nVersion = 1;
+         block.nTime   = 1415210670;
+         block.nBits   = 0x1e0ffff0;
+         block.nNonce  = 0;
+         block.nNonce  = 2110551;
+
+         if (fTestNet)
+         {
+           block.nTime   = 1415210670;
+           block.nNonce  = 0;
+           block.nNonce  = 2110551;
+         }
+
+         //// debug print
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/789abc8f316efe9026a781c28934e3d3df69f57a](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/789abc8f316efe9026a781c28934e3d3df69f57a)
+
+
+Recompile the Windows QT. From the Windows ``cmd``, run  
+
+    > set PATH=%PATH%;C:\Qt\4.8.6\bin
+    > cd C:\clonecoin\
+    > qmake "USE_QRCODE=1" "USE_UPNP=1" "USE_IPV6=1" clonecoin-qt.pro
+    > mingw32-make -f Makefile.Release
+
+
+Your ``Clonecoin-qt`` should now be available in your ``C:\clonecoin\release`` folder.
+
+## 6. Connecting your nodes.
+
+Now you have your client we need to connect the nodes to check everything is working. You can use testnet though its just as easy to use mainnet. 
+
+Connect to your server we set up earlier or use another local machine.
+
+### 6a. Create a conf. file.
+
+We only create this now to enable mining to check the network.
+
+Your conf. file should be placed in ``C:\Users\(YOUR**PC**NAME)\AppData\Roaming\clonecoin``.
+
+To create a conf file, right click ``new->text document``. Copy and paste the code below replacing a suitable username and password. Click ``save``, change file type to ``all`` and save as ``clonecoin.conf``. Or just [download this one](https://www.mediafire.com/?taozsy80yaay1bz)
+
+
+    rpcuser=Yourusername
+    rpcpassword=Yourpassword
+    rpcallowip=127.0.0.1
+    daemon=1
+    server=1
+    listen=1
+    port=10333
+    rpcport=10332
+    addnode=54.232.218.200
+
+
+### 6b. Connect
+
+#### Server
+
+Upload your client to the server and start the client. The two clients should connect. 
+
+#### Home Network
+
+You may need to add your local IPs to the conf file. To do this type ``cmd`` to bring up command prompt, type ``ipconfig`` and use the IPv4 address in your ``addnode`` settings on both machines.
+
+
+    rpcuser=Yourusername
+    rpcpassword=Yourpassword
+    rpcallowip=127.0.0.1
+    daemon=1
+    server=1
+    listen=1
+    port=10333
+    rpcport=10332
+    addnode=10.0.0.18
+    addnode=10.0.0.31
+
+
+Once both clients are connected you can start to mine blocks.
+
+You can either use the traditional Scrypt miner or type ``setgenerate true -1`` into your main console.
+
+Mine as many blocks as you want, checking diff adjustment and ensure block rewards are correct. It is advised to confirm some transactions, send some coins and check the client for any errors or adjustments.
+
+In this case I missed the toolbar.png and testnet_toolbar.png as a deliberate example of why you "SHOULD ALWAYS CHECK YOUR CLIENT BEFORE RELEASE"
+
+If you want to restart the chain you need to delete the chain by going to your Clonecoin roaming folder on both machines and deleting everything. 
+
+## 7. Checkpointing the premine.
+
+If you followed all the steps above you should be sitting with a lovely source code and compiled client.
+
+We have a few things to finish and checkpointing the premine is highly important.
+
+Many coin launches have been lost by people not knowing or forgetting to do this step. Without a checkpoint you can very likely kiss your premine goodbye to a hash attack on launch.
+
+Start your compiled clients on both machines. Since we deleted the blockchain earlier mine your premine, plus 2-3 blocks.
+
+Open the concole on the clonecoin client and type; ``getblockhash 1``, ``getblockhash 2``, ``getblockhash 3``. We will use these three hashes to checkpoint the premine.
+
+We also need some data from the ``C:\Users\(YOUR**PC**NAME)\AppData\Roaming\clonecoin\debug`` file. 
+
+We are looking for the details of the highest checkpointed block, in this case block 3. 
+
+    2014-11-11 15:02:57 SetBestChain: new best=718732cb3323ceaa46c8fc5fd521e7f7e31e424c59cc2a02e4e39c2c7306a649  height=3 log2_work=22.000022 tx=4 date=2014-11-11 15:02:57 progress=1.000000
+
+You will need to convert the last block time to an epochtime date i.e. in this instance, from 2014-11-11 15:02:57 to 1415718177. [Use epochconverter for convenience](http://www.epochconverter.com/)
+
+Now we add the block hashes for blocks 1, 2 and 3 and insert the highest block (block 3) details into the  checkpoint block details. We also add the estimated number of transactions per day after the checkpoint.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/d5e61c1d0e7678cc165acf9dc1a27c6d23200030.](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/d5e61c1d0e7678cc165acf9dc1a27c6d23200030.)
+
+
+Recompile your client.
+
+Back up your  ``C:\Users\(YOUR**PC**NAME)\AppData\Roaming\clonecoin`` folder. This now has your premine. 
+
+You now need to check the checkpoints are correct. On the client that does not have the premine, navigate to ``C:\Users\(YOUR**PC**NAME)\AppData\Roaming\clonecoin`` and delete everything EXCEPT ``wallet.dat`` (very important, DO NOT DELETE) and ``clonecoin.conf`` files.
+
+Restart the client. If your checkpoints are correct the client should update and sync without issues. 
+
+
+## 8. Clean up your code.
+
+Clean up your ``README`` with your new specifications, rewards, website etc.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/13fc52d07ed55d5b95071a043e88b13a6ad92a67](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/13fc52d07ed55d5b95071a043e88b13a6ad92a67)
+
+
+Remove your build deps and changes from ``clonecoin-qt.pro``
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/437d50f106d588edd95fd35eec06b2da7cf3d49e](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/437d50f106d588edd95fd35eec06b2da7cf3d49e)
+
+
+
+## 9. Compiling Clonecoind.
+
+### 9a. Compile Clonecoind
+
+Navigate to  ``C:\clonecoin\src\makefile.mingw`` and open with your text editor. You will see:
+
+
+    USE_UPNP:=-
+    USE_IPV6:=1
+
+    DEPSDIR?=/usr/local
+    BOOST_SUFFIX?=-mgw46-mt-sd-1_52
+
+    INCLUDEPATHS= \
+     -I"$(CURDIR)" \
+     -I"$(DEPSDIR)/include"
+
+    LIBPATHS= \
+     -L"$(CURDIR)/leveldb" \
+     -L"$(DEPSDIR)/lib"
+
+    LIBS= \
+     -l leveldb \
+     -l memenv \
+     -l boost_system$(BOOST_SUFFIX) \
+     -l boost_filesystem$(BOOST_SUFFIX) \
+     -l boost_program_options$(BOOST_SUFFIX) \
+     -l boost_thread$(BOOST_SUFFIX) \
+     -l boost_chrono$(BOOST_SUFFIX) \
+     -l db_cxx \
+     -l ssl \
+     -l crypto
+
+    DEFS=-D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -DBOOST_SPIRIT_THREADSAFE
+    DEBUGFLAGS=-g
+    CFLAGS=-mthreads -O2 -w -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS)
+    # enable: ASLR, DEP and large address aware
+    LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware
+
+
+change it to read:
+
+
+    USE_UPNP:=1
+    USE_IPV6:=1
+
+    DEPSDIR?=/usr/local
+    BOOST_SUFFIX?=-mgw49-mt-s-1_55
+
+    INCLUDEPATHS= \
+     -I"$(CURDIR)" \
+     -I"/c/deps/boost_1_55_0" \
+     -I"/c/deps" \
+     -I"/c/deps/db-4.8.30.NC/build_unix" \
+     -I"/c/deps/openssl-1.0.1j/include"
+     
+    LIBPATHS= \
+     -L"$(CURDIR)/leveldb" \
+     -L"/c/deps/boost_1_55_0/stage/lib" \
+     -L"/c/deps/miniupnpc" \
+     -L"/c/deps/db-4.8.30.NC/build_unix" \
+     -L"/c/deps/openssl-1.0.1j"
+
+    LIBS= \
+     -l leveldb \
+     -l memenv \
+     -l boost_system$(BOOST_SUFFIX) \
+     -l boost_filesystem$(BOOST_SUFFIX) \
+     -l boost_program_options$(BOOST_SUFFIX) \
+     -l boost_thread$(BOOST_SUFFIX) \
+     -l boost_chrono$(BOOST_SUFFIX) \
+     -l db_cxx \
+     -l ssl \
+     -l crypto
+
+    DEFS=-D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -DBOOST_SPIRIT_THREADSAFE
+    DEBUGFLAGS=-g
+    CFLAGS=-mthreads -O2 -w -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS)
+    # enable: ASLR, DEP and large address aware
+    LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware -static
+
+
+We change the deps to point to the deps we created earlier. If you chose to place your deps in a different folder, change the code to point to your folders. We also used ``-static`` in ``LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware -static`` for a static linked exe,  updated UPNP Includes and Lib paths to enable UPNP.
+
+In the Msys shell, you can now compile litecoind.
+
+    cd /c/clonecoin/src
+    make -f makefile.mingw
+    strip clonecoind.exe
+
+
+Your clonecoind should now be in your C:\clonecoin\src folder.
+
+###### [https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/6b124d98f059fb42b2b8837b520b6a626ec6f5ef](https://github.com/HowToCloneAnAltcoin/Clonecoin/commit/6b124d98f059fb42b2b8837b520b6a626ec6f5ef)
+
+
+### 9b. Remove libleveldb.a and libmemev.a from C:\Clonecoin\src\leveldb.
+
+Remove your ``Clonecoin-qt`` from the release folder and zip for release. 
+
+Delete the release, debug and build folders. This is your code for release.
+
+
+## 10. Github for release, made easy.
+
+1. Create a Github account.
+2. Download the [latest Github Windows client](https://windows.github.com/). Then run the Github install and use your login details from Github to log into the client.
+3. Navigate to you Github account, click ``repositories->new``. Enter the repository name, description and public or private. “Public” allows everyone to see your code and is recommended for advanced users who can push codes quickly. Most launches will choose a paid private account, allowing them to pre-load the release source code and open the repository from public to private instantly. Click done, then on the next screen click the green “Set up in Desktop” button. Allow the browser to launch the Github client, select the location of your Github depositories, usually in the Github folder of your documents. Click “OK”. You now have a folder that you can update your source code and easily push commits to Github.
+
+### 10a. Easy Pushing Commits/Launch Code.
+
+Copy and paste your source code into the ``documents/github/yourcoinnamefolder``. In your Windows Github client, click on your client name on the left hand side.
+
+Your Github client should recognise a host of changes if present. Fill in the commit details, select the files that need to be committed, usually all and on by default and press commit. 
+
+On the top right hand side will be a publish or sync box, click that and the Github Windows client will push the changes and source code to your repository on Github.
+
+### 10b. Easy Revert Commits.
+
+Open your Github client and ensure it's sync'd. Highlight your repository. Click on the commit to you wish to rollback, then revert.
+
+On the top right hand side will be a publish or sync box, click that and the Github Windows client will push the revert to your repository on Github.
+
+### 10c. Easy Pushing Updates.
+
+Log into your Github Windows client. Click on the altcoin tab in the left and click sync to ensure your local code is up to date.
+
+Edit your local code in your ``documents/github/yourcoinname`` folder.
+
+Once your Github client picks up the changes enter the commit details and commit to Github.
+
+## 11. Common Errors/Mistakes.
+
+### I am getting "this" error.
+
+Most errors can be solved with a little effort. The compiler will usually display an error message or warning. Read it.
+
+If it's UPNP error check your directories in your pro file, then check your UPNP deps, rebuild them.
+
+Google it. Most things can be solved far quicker with a little investigation into the errors vs posting in a forum and awaiting reply.
+
+### I am still seeing the old logos on my desktop shortcuts.
+
+Windows cache has cached the image. The easiest way to solve this is run a program such as Glarys Utilities to clear your PC. Also delete the build folder in between builds to ensure your builds are clean.
+
+### Makefile.Release:291: recipe for target 'release\clonecoin-qt.exe' failed
+
+Close your client.
+
+
+## 12. Creating your own logo.
+
+There are a few easy ways to get a logo. If you have Photoshop and want a easy template try [http://apsdfile.com/coin-generator-for-photoshop/](http://apsdfile.com/coin-generator-for-photoshop/).
+
+Install GIMP. GIMP is a free utility available to download from [http://www.gimp.org/](http://www.gimp.org/) and try youtube vids. 
+
+For those looking for an even faster alternative try tools like [http://www.onlinebadgemaker.com/3d-badge-maker](http://www.onlinebadgemaker.com/3d-badge-maker).
+
+These can be used for quick launches or temporary images while you wait, purchase or make an official one.
+
+## 13. The Website.
+
+### 13a. The Template.
+
+Download and install a free website editor, [Bluegriffon](http://bluegriffon.org/) is a prime example.
+
+Find yourself a [suitable template](http://www.freshdesignweb.com/free-html5-css3-templates.html). Download and edit the template with all your coin details. 
+
+### 13b. Upload to a website.
+
+Create an account at [Namecheap](http://www.namecheap.com/), they accept BTC.
+
+Register the domain and commission hosting at the same time, that way there is no DNS delay.
+
+Usually you can pick up a year hosting with domain and SSL if you want for under .15 BTC.
+
+If this is a one-off coin launch then a simple hosting plan will suffice. If you're looking to launch more coins, choose a dedicated server or reseller plan.
+
+Once your order is confirmed log into cpanel with the details provided, enable cloudflare and ssl of you purchased it.
+
+Single hosting plans will require support for SSL, dedicated or reseller accounts have the ability to self enable through WHM.
+
+In CPanel, go to file manager and upload your site to the public_html folder. Your website should be now viewable on your domain.
+
+
+## 14. The Launch. Ninja vs Pumped vs ICO.
+
+Launching a coin is the make or break point. The style of launch will dictate how to prepare.
+
+### 14a. Prelaunch.
+
+The key to a good launch is timing and consistency. Don't release the code early and make sure it works.
+
+Create your Bitcointalk account. The earlier the better to get rid of posting restrictions on new accounts.
+
+Create accounts on Twitter, Facebook, cryptocointalk, IRC, Reddit and all the usual channels.
+
+### 14b. The Ninja
+
+This gives the developer more time, no restrictions with no one looking or ready. With these coins you can set the network up early and don't have people looking for the code.
+
+Uploading the code to github a minute easily will likely be enough time to stop anyone searching. Website can go live early and some argue it gives miners a better chance.
+
+Usually a ninja launch involves a instamine allowing the developers to mine many blocks.
+
+### 14c. The Pumped.
+
+Harder to do. The pre-hype means you will have people looking for the code on Github and websites.
+
+Your code needs to be solid to handle a massive intake of hashing power and be prepared for the harshest critics.
+
+### 14d. The ICO.
+
+An advanced pump coin that needs a reliable escrow, good hype and delivery of goods.
+
+Most ICO's deliver nothing but BTC to the developer and broken promises to the users.
+
+Find a good escrow, take time with your code and remember to keep an open and clear communication.
+
+---
+
+## What do we call this time? - [George Monbiot, the Guardian](http://www.theguardian.com/commentisfree/2014/oct/14/age-of-loneliness-killing-us)
+
+It’s not the information age: the collapse of popular education movements left a void filled by marketing and conspiracy theories. Like the stone age, iron age and space age, the digital age says plenty about our artefacts but little about society. The anthropocene, in which humans exert a major impact on the biosphere, fails to distinguish this century from the previous 20. What clear social change marks out our time from those that precede it? To me it’s obvious. This is the Age of Loneliness.
+
+When Thomas Hobbes claimed that in the state of nature, before authority arose to keep us in check, we were engaged in a war “of every man against every man”, he could not have been more wrong. We were social creatures from the start, mammalian bees, who depended entirely on each other. The hominins of east Africa could not have survived one night alone. **We are shaped, to a greater extent than almost any other species, by contact with others.** The age we are entering, in which we exist apart, is unlike any that has gone before.
+
+Three months ago we read that loneliness has become an epidemic among young adults. Now we learn that it is just as great an affliction of older people. A study by Independent Age shows that severe loneliness in England blights the lives of 700,000 men and 1.1m women over 50, and is rising with astonishing speed.
+
+Ebola is unlikely ever to kill as many people as this disease strikes down. Social isolation is as potent a cause of early death as smoking 15 cigarettes a day; loneliness, research suggests, is twice as deadly as obesity. Dementia, high blood pressure, alcoholism and accidents – all these, like depression, paranoia, anxiety and suicide, become more prevalent when connections are cut. We cannot cope alone.
+
+Yes, factories have closed, people travel by car instead of buses, use YouTube rather than the cinema. But these shifts alone fail to explain the speed of our social collapse. These structural changes have been accompanied by a life-denying ideology, which enforces and celebrates our social isolation. **The war of every man against every man – competition and individualism, in other words – is the religion of our time, justified by a mythology of lone rangers, sole traders, self-starters, self-made men and women, going it alone.** For the most social of creatures, who cannot prosper without love, there is no such thing as society, only heroic individualism. What counts is to win. The rest is collateral damage.
+
+British children no longer aspire to be train drivers or nurses – more than a fifth say they “just want to be rich”: wealth and fame are the sole ambitions of 40% of those surveyed. A government study in June revealed that Britain is the loneliness capital of Europe. We are less likely than other Europeans to have close friends or to know our neighbours. Who can be surprised, when everywhere we are urged to fight like stray dogs over a dustbin?
+
+We have changed our language to reflect this shift. Our most cutting insult is “loser”. We no longer talk about people. Now we call them individuals. So pervasive has this alienating, atomising term become that even the charities fighting loneliness use it to describe the bipedal entities formerly known as human beings. We can scarcely complete a sentence without getting personal. Personally speaking (to distinguish myself from a ventriloquist’s dummy), I prefer personal friends to the impersonal variety and personal belongings to the kind that don’t belong to me. Though that’s just my personal preference, otherwise known as my preference.
+
+One of the tragic outcomes of loneliness is that people turn to their televisions for consolation: two-fifths of older people report that the one-eyed god is their principal company. This self-medication aggravates the disease. Research by economists at the University of Milan suggests that television helps to drive competitive aspiration. It strongly reinforces the income-happiness paradox: the fact that, as national incomes rise, happiness does not rise with them.
+
+Aspiration, which increases with income, ensures that the point of arrival, of sustained satisfaction, retreats before us. The researchers found that those who watch a lot of TV derive less satisfaction from a given level of income than those who watch only a little. TV speeds up the hedonic treadmill, forcing us to strive even harder to sustain the same level of satisfaction. You have only to think of the wall-to-wall auctions on daytime TV, Dragon’s Den, the Apprentice and the myriad forms of career-making competition the medium celebrates, the generalised obsession with fame and wealth, the pervasive sense, in watching it, that life is somewhere other than where you are, to see why this might be.
+
+So what’s the point? What do we gain from this war of all against all? Competition drives growth, but growth no longer makes us wealthier. Figures published this week show that, while the income of company directors has risen by more than a fifth, wages for the workforce as a whole have fallen in real terms over the past year. The bosses earn – sorry, I mean take – 120 times more than the average full-time worker. (In 2000, it was 47 times). And even if competition did make us richer, it would make us no happier, as the satisfaction derived from a rise in income would be undermined by the aspirational impacts of competition.
+
+The top 1% own 48% of global wealth, but even they aren’t happy. A survey by Boston College of people with an average net worth of $78m found that they too were assailed by anxiety, dissatisfaction and loneliness. Many of them reported feeling financially insecure: to reach safe ground, they believed, they would need, on average, about 25% more money. (And if they got it? They’d doubtless need another 25%). One respondent said he wouldn’t get there until he had $1bn in the bank.
+
+For this, we have ripped the natural world apart, degraded our conditions of life, surrendered our freedoms and prospects of contentment to a compulsive, atomising, joyless hedonism, in which, having consumed all else, we start to prey upon ourselves. For this, we have destroyed the essence of humanity: our connectedness.
+
+Yes, there are palliatives, clever and delightful schemes like Men in Sheds and Walking Football developed by charities for isolated older people. But **if we are to break this cycle and come together once more, we must confront the world-eating, flesh-eating system into which we have been forced**.
+
+Hobbes’s pre-social condition was a myth. But we are entering a post-social condition our ancestors would have believed impossible. Our lives are becoming nasty, brutish and long.
+
+---
+
+## 21 Bitcoin computer
+
+### 1.
+My theory is that their real motivation is to ensure that there continues to be a robust mining ecosystem when the block reward falls off to the point that nobody wants to mine anymore without high transaction fees. So they proliferate a bunch of low cost mining gadgets that people will use primarily for the convenience it offers in making micropayments and in verifying identity, while they also do mining to ensure the health of the network but not actually make any significant money for the owner.
+
+This would be the first iteration of their first gadget, which isn't cheap yet but could be if volumes are high enough, and future iterations would be cheaper and better.
+
+The identity feature is my speculation based on tweets by the CEO about the need for better identity solutions and the enormous market for solving identity fraud problems. Not sure how a gadget like this addresses that but I think it is part of their plan.
+
+### 2.
+
+The three most difficult questions with blockchain technology are "where is the blockchain data?", "where are the keys that represent my wallet?" and "how do I get my initial bitcoin?"
+
+This product very succinctly answers both questions in a reliable way.
+
+It looks like they've got some basic ability to write to the blockchain, and since this only costs a few thousand satoshis, the very small amounts of Bitcoin that this device mine will be useful.
+
+It looks like they're hoping that further profits can be driven back to the address that wrote to the blockchain.
+
+This is a really good idea but fully dependent on how hackable this is.
+
+Like, do I get the full Bitcoin JSON-RPC interface?
+
+This would let me use this device as a pretty reliable source of identification, using Bitcoin's public key infrastructure to sign and authenticate messages.
+
+It would also let me write client software on behalf of the physical device that could read and write arbitrary messages to the Bitcoin blockchain, allowing for custom colored coins, but with keychain ownership contained only within the physical device, instead of on an external server or running on a laptop.
+
+Do I have direct programmable access to the SHA-256 ASIC?
+
+This would help with content-addressable distributions systems like IPFS.
+
+It would be great if the device could expose an interface that was compatible with both Common Wallet and Common Blockchain.
+
+Common Blockchain[1] is a protocol that aims to make an abstraction of queries against the blockchain, allowing devices like the 21 Bitcoin Computer, the Bitcoin Core software, and web services like Blockcypher to expose a single interface to client software and Blockchain meta-protocols like Open Assets, Blockcast [2] and Open Publish [3].
+
+Likewise, Common Wallet is a protocol that aims to make an abstraction for wallets and key signing devices like the 21 Bitcoin Computer, Trezor, Mycellium, or Bitcoin Core, so all of these devices can sign custom transactions that were built by external libraries like Open Publish and to sign authentication messages for services like Bitstore [5].
+
+There is a very big problem with interoperability between various Bitcoin wallets, protocols, and services, and there is really no reason for this to be the case if everyone were to expose the proper interfaces, which roughly model the Bitcoin JSON-RPC.
+
+[1] https://github.com/blockai/abstract-common-blockchain
+[2] https://github.com/blockai/blockcast
+[3] https://github.com/blockai/openpublish
+[4] https://github.com/blockai/abstract-common-wallet
+[5] https://github.com/blockai/bitstore-client
+
+---
+
+## BOA patent
+
+The [Bank of America patent application](http://pdfaiw.uspto.gov/.aiw?Docid=20150262173&homeurl=http%3A%2F%2Fappft.uspto.gov%2Fnetacgi%2Fnph-Parser%3FSect1%3DPTO2%2526Sect2%3DHITOFF%2526p%3D1%2526u%3D%25252Fnetahtml%25252FPTO%25252Fsearch-bool.html%2526r%3D7%2526f%3DG%2526l%3D50%2526co1%3DAND%2526d%3DPG01%2526s1%3Dbitcoin%2526OS%3Dbitcoin%2526RS%3Dbitcoin&PageNum=&Rtype=&SectionNum=&idkey=E2F1CFDFD16C) makes not one single mention of the blockchain. 
+
+BOA are just getting their oar in first, staking a claim to be able to optionally use their current system to route wire transfers via existing cryptocurrency networks when reliability/time/control factors are an economic factor.
+
+![Image](http://i.imgur.com/D4X01Po.png)
+
+> FIG. 1 illustrates an example cryptocurrency wire transfer environment 100 according to certain embodiments. In general, wire transfers are used by enterprises, such as financial institutions, to transfer funds from one customer account to another customer account. Some wire transfers may move funds from a customer account in one country to a customer account in another country. In response, the enterprise may decide to use a cryptocurrency to transfer the funds. A cryptocurrency is typically a peer-to-peer, decentralized, digital currency whose implementation relies on the principles of cryptography to validate transactions and generate the currency itself. Some examples of cryptocurrencies are: Bitcoin, Litecoin, Ripple, Peercoin, and Dogecoin. In some instances, a cryptocurrency, such as MintChip, may be backed by a government (e.g., Canada). To transfer funds using cryptocurrency, an enterprise may receive payment from a customer and purchase a quantity of a chosen cryptocurrency, at a local cryptocurrency exchange, in an amount equivalent to the received payment. Essentially simultaneously or shortly thereafter, the enterprise may sell the quantity of the chosen cryptocurrency at a foreign cryptocurrency exchange, resulting in a foreign currency that is used by the country in which the recipient account is located. The enterprise may also transfer the quantity of the chosen cryptocurrency from the local cryptocurrency exchange to the foreign cryptocurrency exchange. 
+
+
+It’s just another app that makes calls on the API of a (dynamically-selected) cryptocurrency in order to effect wire transfers of fiat. In the BOA model, the  cryptocurrency simply acts as a carrier for any run-of-the-mill wire transfer, BOA’s system instructs the exchanges on the fiat-to-crypto-and-back conversions, effects the transfer and makes the final delivery of fiat to the recipient.
+
+The really valuable take-home from this is a US retail bank’s sober assessment of the advantages of using cryptocurrency, a useful arrow for the quiver of anyone making a cryptocurrency business pitch.
+
+And, peering ahead, a pointer to one possible future as envisaged by BOA bankers in which Bitcoin is but one cryptocurrency amongst many (or at least, several)
+
+
+And in which cryptocurrency exchanges are hosted in jurisdictions all over the globe.
+
+> wherein the first cryptocurrency exchange is located in a first country and the second cryptocurrency exchange is located in a second 
+
+## Marks out of 10
+
+### Methods
+
+Factors to consider when choosing amongst transfer methods.
+
+> consider time factors, price factors associated with particular currencies, price factors associated with particular cryptocurrencies, fees charged by third parties, volatility of particular currencies, volatility of particular cryptocurrencies, economic risk factors, currency exchange rates, or any other information that may facilitate determining one method of transfer is should be used over another method.
+
+
+### Cryptocurrency
+
+Factors to consider when choosing amongst cryptocurrencies.
+
+> Determine which cryptocurrency to use is based on cryptocurrency price, volatility of the cryptocurrency, popularity of the cryptocurrency, availability of the cryptocurrency at a local cryptocurrency exchange, availability of the cryptocurrency at a foreign cryptocurrency exchange, or any potential risk factor that may be associated with a particular cryptocurrency.
+
+
+### Cryptocurrency exchanges
+
+Factors to consider when choosing amongst cryptocurrency exchanges.
+
+> determining whether using cryptocurrency is optimal is based at least in part upon an exchange rate associated with the cryptocurrency
+
+> May choose a particular cryptocurrency exchange because the cryptocurrency is priced favorably (e.g., cheap if purchasing, expensive if selling) or because the cryptocurrency exchange has a relationship with the enterprise.
+
+“Examples of cryptocurrency exchanges are OKCoin, BitStamp, BTCChina, Cryptsy, CoinMarket, Justcoin.”
+
+“The local cryptocurrency exchange that is associated with local exchange server may be associated with the same jurisdiction (e.g., country, economic union, political union, etc.) with which a particular customer account may be associated or conducts transactions in a currency associated with the jurisdiction associated with a particular customer account”
+
+---
+
+## SOIL
+
+SOIL is an Ethereum-platform based cryptographic smart contract information and user-created application service, built directly on top of a viable digital currency. 
+
+It will be a consensus-driven and community-managed currency, with a democratically-realized stakeholder input towards further evolution of the system and its applications.
+
+Through the use of the decentralized blockchain, there will be no single individual or small group of individuals with control of the currency, the overall decision making will be achieved through consultation of fair voting by the people who invest in it. The maturation of the system, with a progression of the core devopment can be suggested, voted upon and acted upon by a fair consensus of the community which remains involved with the project, in a transparent and open process.
+
+At it's heart will be **SOIL**, a currency that will be traded as any other digital currency, on major altcoin exchanges online, and on top of this currency will be a decentralized user-created application platform ensuring a global network of computers handling the simple or complex automative needs of a growing industry.
+
+**SOIL** will focus the delivery of smart contracts to a specific sector of industry, thus building a trusted brand. **SOIL** will approach the ecological and agricultural stratum of the commercial world, bridging the gap between cryptocurrency and real-world applications of a progressively automated business sector.
+
+Farmers and ranchers worldwide are migrating towards precision agricultural methods, creating efficiency and efficacy for agricultural inputs and the spatial and temporal management of agricultural systems. [url=http://www.researchmoz.us/]ResearchMoz [/url]has predicted that the agricultural autonomous project market will grow from $817 million from 2013 to a staggering $16.3 BILLION by 2020.
+
+Modern farms are increasingly taking advantage of automated harvesting and tractors, which can operate around the clock and ensure tight operational windows can be achieved, especially for seeding and other time-sensitive activities. Nursery operations rely on automation for planting, pruning, grafting, etc. Weeding and thinning operations are now more and more automated. Crop inspection, data collection and manipulation are controlled by centralized computers to increase the productivity of modern farms. Dairy and poultry farms rely on heavily automated controls to work with their flocks and herds. Unmanned drones are used to inspect crops, sending data back to a centralized hub to be sorted into data and real-time 3D maps
+the farmer can use to adjust his operations and produces previously unknown adaptability.
+
+Many of these processes are controlled by centralized servers which are subject to real world hardware failures which cost productivity and affect the bottom line.
+
+By placing these applications in a cryptographically secure and globally decentralized environment, this will remove another risk factor facing the agricultural business, and will, as the system evolves, exponentially increase the base value of **SOIL**, both as a speculative currency and as a platform for automated agricultural practices.
+
+By being the first cryptocurrency based application to tackle these problems, we will be at the forefront of a revolution in both the altcoin world but in a future for real world applications in a automatic ecological and agricultural industry.
+
+---
+
+## Specs
+
+- Mining Algorithm: dagger, Proof-of-Work
+- Target Block Time: democratic vote
+- Reserve Information (Current pool): 
+  - [Info](https://bitcointalk.org/index.php?topic=1176709.msg12455831#msg12455831)
+  - [Info](https://bitcointalk.org/index.php?topic=1176709.msg12456330#msg12456330)
+- Mining: Block reward established by democratic vote
+
+## Social
+
+- [Twitter](http://twitter.com/SOILcoin)
+- [slack](url=http://SOIL-team.slack.com)
+- [Facebook](http://facebook.com/groups/SOILcoin)
+
+---
+
+### Testnet setup for Ubuntu 14.04
+
+    apt-get update
+    apt-get dist-upgrade
+    apt-get install git binutils bison gcc make libgmp3-dev build-essential
+    bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+    echo "[[ -s \"$HOME/.gvm/scripts/gvm\" ]] && source \"$HOME/.gvm/scripts/gvm\"" >> ~/.bashrc
+    source ~/.bashrc
+    gvm install go1.4
+    gvm use go1.4 --default
+    git clone https://github.com/soilcurrency/go-ethereum.git
+    cd go-ethereum
+    make gsoil
+
+
+Create your account:
+
+    build/bin/gsoil account new
+
+
+Boostrap - load the genesis file:
+
+    build/bin/gsoil --genesis test-net-genesis.json
+
+(wait a few seconds - then use ctrc+c to interrupt)
+
+Start the client:
+
+    build/bin/gsoil --rpc console
+
+Start mining on our testnet:
+
+    miner.start()
+    miner.stop()
+
+To increase the number of threads used for mining: ``miner.start(amount of threads)`` i.e.
+
+    miner.start(4)
+
+### Testnet setup for Windows x64
+
+If you never have started gsoil before:
+
+1. Extract the package (e.g. to Desktop: ``C:\Users\username\Desktop\soil_win_x64_v5_alpha``)
+2. Doubleclick “new_account.bat” - Set a password. The window should be closing automatically.
+3. Doubleclick “genesis.bat”. Wait a few seconds and close the window.
+4. Doubleclick “soil.bat” - wait until sync.
+5. Doubleclick “SOILsafe.bat” for Gui Wallet
+
+Old hand:
+
+1. Doubleclick “soil.bat”
+2. Doubleclick “SOILsafe.bat”
+
+Hooray, we are connected to the testnet! Now you can start to mine on our testnet:
+
+    miner.start()
+    miner.stop()
+
+GPU mining:
+
+1. Doubleclick “gpu_mining_solo.bat”
+
+### Nodes:
+
+    admin.addPeer('enode://0c0ce5d1b95de13732faa98d0ea5d6acafabdf2ec56104a52ffb7f34ee2fa08bb09524cd6e9c28ba5a57a84ec0352fd52a3065ea6af51967afba78537412b3c4@45.63.84.6:39338')
+    admin.addPeer('enode://20b058d1e867b665f6e698100325f68e07ebface3ebef6aaacc5b00b7b77c10fc338e7863e933a497ae1b85d2f2a7b7b59d18d0eb48f05eb92d7d1a947399b31@113.161.82.243:39338')
+    admin.addPeer('enode://24e1e3b7bba2b0de7707dcc957faf541b87e99a665ff6cf93a1d6b60c2f65603dc69b14e97eb1e3219fa52bd26a27bb26957c0126da154a4895fc4ef873bac54@45.32.239.236:39338')
+    admin.addPeer('enode://a076e6e4f86f00074729a8473e3b3799208648f5952b1cd8df2c8b61816f44289b1cc6bb4d6116d0f48447f38540d5b2891aaea8062895c9867a0818bb6ec2f5@138.128.169.51:39338')
+    admin.addPeer('enode://2214963c7bb2fb98c0edefa09ebc46c5fbcb5055c7fdd884d90e6b8ed8acb6568f1f035b25e609346e09f681323be60b5998dc49f02582dd78f766e31679e2e5@45.32.232.65:39338')
+    admin.addPeer('enode://30bd5e679759792be064edef05d5195889337294af1788072e4ad8bed6ea8bb559f00e8a43f275e945aacc5aed8117d950f79057bc7675742eacbf937f68393e@52.25.0.225:39338')
+    admin.addPeer('enode://fb2bc8add1af21cb0f34710a3ded14a003da44a5e7cc80f963e46f417fc0a31d94bb5a25b62ff13b3e07df950028b85f0589e7eef3d46d5abeb2a32b0d051475@46.101.231.134:39338')
+    admin.addPeer('enode://d482c87d6085fe3f303d2a3a8d25937eda09f75713610dd68c475031c110e658da78fa207574c370e4f6121aed21d77a2e73a4ddab8af50aaeb6cf4672f5fe5c@178.62.133.174:39338')
+    admin.addPeer('enode://5daffbd838b3745d17b202505f3c5d89f4926e5b0642123c1fbd1f0ce655c83242514ce13dc9ab4d7a0fa612ab8934525eec6265eaf19c7b3c10a61f77869a1e@95.170.180.71:39338')
+
+### Cheat Sheet for Gsoil:
+
+- List all accounts: ``personal.listAccounts``
+- Unlock the account: ``personal.unlockAccount(addr, passwd, duration)``
+- BlockHeight: ``eth.blockNumber``
+- Node information: ``admin.nodeInfo``
+- Information about connected peers: ``admin.peers``
+- Adding a node: ``admin.addPeer("enode://nodekey:ipaddress@port")``
+- Balance: ``web3.fromWei(eth.getBalance("address"), "soil")``
+
+---

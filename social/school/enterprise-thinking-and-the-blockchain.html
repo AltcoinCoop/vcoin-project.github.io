@@ -1,0 +1,60 @@
+---
+layout: socpage
+title: Dr Lee Braine: Investment Bank CTO Office at Barclays
+excerpt: Enterprise thinking and the blockchain
+image:
+  feature:
+---
+
+
+        <h3>Barclays wants to help blockchain startups understand investment banking requirements</h3>
+        <p>There’s plenty of hype about blockchain technology these days, but only a handful of people who actually understand the challenge of engineering a distributed ledger system for say, an investment bank.</p>
+        <p>Dr Lee Braine of the Investment Bank CTO Office at Barclays is one such person. He said the current startup ecosystem and its fount of ideas is inspiring and banks are actively engaged in exploring the right opportunities.</p>
+        <p>For their part, startups should take a step back and consider the core kinds of non-functional requirements that products must meet if they pass through an architecture review.</p>
+        <p>Braine said developers should ask themselves, “If you are going to have an enterprise-scale solution, what type of things would you need to adjust?</p>
+        <p>“And if we are looking at rollback, recovery, scalability, timeliness of transaction processing and so on – then there’s a whole host of things that normally get baked in from the bottom up.</p>
+        <p>“Infrastructure services normally build on those fundamentals. It’s harder to build those on top. So, we’d like to, over the coming years, encourage the ecosystem to work around open standards and open protocols.”</p>
+        <p>Barclays was one of the nine big banks in the headlines recently, as part of the R3 initiative, to start collaborating on how to build shared ledger systems.</p>
+        <p>“If we look at architecture stacks at the moment, in summary you’ll have an operating system at the bottom, various middleware layers above that including messaging, you’ll have large data management component, you’ll have business applications on top, etc.”</p>
+
+        <h4 class="ui header">Future state</h4>
+
+        <p>“So, let’s now think ahead... What will be the future state stack for, for example, shared ledgers and smart contracts? How will they fit together? What are the layers? What will be the messaging? How can companies compete within those layers to provide best-of-breed technologies? Who will offer the data services?</p>
+        <p>“I think if we are able, over time, to help encourage the ecosystem to come up with open standards, open ways of interfacing across those layers, this will help move on the industry.”</p>
+        <p>Regarding the overarching philosophy of a shared ledger approach, Braine said it’s worth bearing in mind that over hundreds of years separate ledgers in banks have been a powerful tool when it comes to managing their books and records. But some of the fundamental ideas underlying blockchain are inspiring the industry to consider whether they may be more efficient ways this can be done.</p>
+        <p>“If there is potential from greater sharing of data, we then need to consider the range of architecture options. For example, what if you consider fully-replicated shared copies, so every bank has its own copy of the entire set?</p>
+        <p>“Well, there are challenges around that in terms of duplicate storage, duplicate processing, etc. And then there are alternatives, such as partitioning the data so participants have only the data that is relevant to them; that could have efficiencies in terms of storage and processing and it may also mitigate challenges around data sharing and privacy for example.</p>
+        <p>“There is a variety of views in the industry around the pros and cons in each of those design points. And the industry needs to take account of those as it comes up with open standards and open protocols – and heads towards the future state.</p>
+        <p>“And aspects of that future state may well be different from use case to use case, across different asset classes and different environments.”</p>
+        <p>Braine said he was aware of talking quite generically, and that this was deliberate: to pick a particular technology would be inappropriate at this stage.</p>
+        <p>“There could be benefit in going back to basics and looking at databases and messaging – some focus may be useful at that sort of level. If you look at the current state, banks have internal ledgers, they create messages; some of those contain instructions or confirmations.</p>
+        <p>“These messages are passed often to third parties that deconstruct them, build their own representations, handle the instruction processing, and throughout that process some inefficiencies inevitably occur.</p>
+        <p>“For example, differences in reference data within each bank can cause slight variations, resulting in one of the reasons for instruction matching and reconciliation.”</p>
+        <p>Braine has been looking at those sorts of architectures for years, involving work on clearing houses and securities financing, together with some of the core payments systems that we use every day.</p>
+        <p>“All of these take a design approach,” he said. “Look at what messaging is required, what are the candidate options, what are the best technologies, what are their performance; you also look at what is the most appropriate database technology.”</p>
+        <p>He can imagine the testing of blockchain systems happening in stages, starting with simulations that would not necessarily focus on performance or rollback or reliability. He said a next step might check non-functional requirements; for instance, is there something underlying it that prevents efficient synchronisation?</p>
+        <p>“Do we need more messaging to achieve synchronisation, or is it better to have a database solution for that?"</p>
+        <p>Performing simulations allows parallel experimentation of existing technologies. You can simulate systems to explore behaviours – and you can also test systems in controlled environments to discover their performance characteristics and compare with alternatives, he said.</p>
+        <p>A common element of existing distributed ledger designs is a high level of encryption. This may be inevitable for certain design routes but there may be alternatives and it will be interesting to see where the sweet spots are, noted Braine.</p>
+        <p>“Depending on where you are in the design space and the degree of data sharing, some of the potential solutions would inevitably require extra degrees of data encryption. But there may be other ways of skinning the cat that could involve partitioning the data in some way to lower the degree of data sharing – and possibly reduce the data encryption load.</p>
+        <p>“So we need to be aware that there are design options. If you are moving into an everything-encrypted model, which may be similar to migrating to the cloud, then it is likely that fast encryption/decryption methods would be needed on larger data volumes.”</p>
+
+        <h4 class="ui header">Security</h4>
+
+        <p>The Bitcoin blockchain’s highly distributed nature provides a virtuously secure environment; it would take 51% of the network to launch a so-called Sybil attack and rewrite blocks of transactions in the chain. Naturally, questions are being asked about the vulnerability of private blockchains.</p>
+        <p>“I think the security requirements are very similar to previous generations of technologies. If you look at the robustness, the reliability, the resistance to penetration that are in existing financial services networks that we rely on day in, day out, we would need to ensure a similar degree of security.</p>
+        <p>“It’s interesting that Nick Szabo’s ideas around smart contracts attempt to address that – and it’s great to have such ideas as part the design space and as options to be investigated.</p>
+        <p>“Whether you are looking at permissioned or permissionless ledgers, it’s obviously necessary to ensure security, reliability, performance, etc. I think experimentation will explore all those options.</p>
+        <p>“There are clearly tremendous opportunities for startups in the blockchain space. For investment banking, blockchain-inspired solutions such as shared ledgers and smart contracts should aim to meet the enterprise-scale architectural non-functional requirements.”</p>
+
+        <h4 class="ui header">Ethereum</h4>
+
+        <p>Braine correctly eschews making calls on particular technologies. That said, Ethereum offers a nice smart contract model and is interesting in that it’s Turing-complete.</p>
+        <p>“I would have an expectation that, over time, it will be interesting to explore specialising the idea of smart contracts in different ways, for example like a domain-specific language, such that smart contracts could be tailored to the use case more easily.”</p>
+        <p>Ethereum has brought the smart contract concept into a more modern context. However, Braine pointed out that this journey hasn’t been a blank field in between.</p>
+        <p>“Different banks implement executable business logic, often operating in a similar way, within their bank. The opportunity here is for executable business logic common across banks, and shared ledgers may provide one potential way of achieving that.</p>
+        <p>“So, rather than think of one particular technology, I would ask, what is the design pattern that we can take from it, then explore engineering solutions around that.”</p>
+        <p>Braine said leveraging smart contracts in an efficient way would involve a “huge design space", including everything from “existing messaging technologies to keep things in synch, through to shared databases, to architectures potentially based on various blockchain technologies which may be permissioned or permissionless”.</p>
+        <p>“So there are a number of scenarios – which one of these may be most appropriate in the future, well that’s the current journey of investigation and experimentation to discover. And it may include the reintroduction of some older ideas – in a similar way to NoSQL’s ‘reintroduction’ of key-value pairs challenging the relational status quo.</p>
+        <p>“This kind of opportunity could also be similar to the early web where permissioned layers were built in top of permissionless underlying layers, similar to the motivations behind the SSL protocol. Remember that some core payment systems use underlying TCP/IP.”</p>
+        <p>As if to underline the need to tread cautiously, Braine said: “What would be really interesting is, in a few years’ time, to do a retrospective; assess what people’s views were at different points and see, maybe with a light heart, where people were right and where they were wrong”.</p>

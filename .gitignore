@@ -2,3 +2,7 @@
 *.bak
 _site*
 /runjekyll
+/tmp/
+/assets/images/graphics/done/
+/assets/images/graphics/stock/
+*.py

@@ -9,6 +9,13 @@
 .masthead.segment { min-height: 200px; }
 .masthead h1.ui.header { margin-top: 0.3em; }
 .ui.text.container { max-width: none !important; }
+ p.pc {font-style:italic; font-size:80% !important; color:#aaa;}
+ span.pt {color: #444;}
+ span.lit {color: #000;}
+ span.se {font-style: italic; font-weight: bold; color: #65DC00;}
+ img.avatar {height:24px;}
+ .tweet-text {font-size: 100% !important; padding: 0 1rem 1rem 1rem;}
+ .ac {color: #888;}
 </style>
 </head>
 
@@ -50,7 +57,7 @@
       <h1 class="ui inverted header">
         Social section. 
       </h1>
-      <p><em>“A dying culture invariably exhibits personal rudeness.”</em> ― Robert A. Heinlein, <em>Friday</em></p>
+      <p><em>“The world we have created is a product of our thinking; it cannot be changed without changing our thinking.”</em> ― Albert Einstein.</p>
       <div class="ui huge primary button">What’s New <i class="right arrow icon"></i></div>
     </div>
 
@@ -59,20 +66,91 @@
 
     <div class="container">
       <div class="ui sub secondary pointing menu">
-        <a class="item" href="/social/">Social</a>
-        <a class="item" href="/social/school/">School</a>
-        <a class="item" href="/social/events/">Events</a>
+        <a id="index2" class="item" href="/social/">Social</a>
+        <a id="stories" class="item" href="/social/stories/">Stories</a>
+        <a id="school" class="item" href="/social/school/">School</a>
+        <a id="events" class="item" href="/social/events/">Events</a>
       </div>
     </div>
 
-    <div class="ui vertical stripe segment">
-      <div class="ui text container">
+    <!-- <div class="ui vertical stripe segment">
+      <div class="ui text container"> -->
         {{content}}
-      </div>
-    </div>
+      <!-- </div>
+    </div>-->
 
   {% include _footer.html %}
+  <!--
+  <script type="text/javascript" src="https://twitter.com/javascripts/blogger.js"></script>
+  <script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline/vcoinx.json?callback=twitterCallback2&amp;count=3"></script> -->
+  <!--
+  <script type="text/javascript" src="/assets/js/plugins/jquery.tweetable.js"></script>
+  <script type="text/javascript" src="/assets/js/plugins/jquery.timeago.js"></script>
+  -->
   {% include _scripts.html %}
+  <!--
+  <script type="text/javascript">
+    jQuery(function(){
+      jQuery('#tweets').tweetable({
+        username: 'vcoinx', 
+        time: true,
+        rotate: false,
+        speed: 4000, 
+        limit: 5,
+        replies: false,
+        position: 'append',
+        failed: "Sorry, twitter is currently unavailable for this user.",
+        loading: "Loading tweets...",
+        html5: true,
+        onComplete:function($ul){
+          $('time').timeago();
+        }
+      });
+    });
+  </script>
+  -->
+<script type="text/javascript">// <![CDATA[
+// Customize twitter feed
+var hideTwitterAttempts = 0;
+function hideTwitterBoxElements() {
+  setTimeout( function() {
+    if ( $('[id*=twitter]').length ) {
+      $('[id*=twitter]').each( function() {
+        if ( $(this).width() == 220 ) {
+          $(this).width( 198 ); //override min-width of 220px
+        }
+        //override min-width of 220px
+        var ibody = $(this).contents().find( 'body' );
+        // ibody.width( $(this).width() + 20 ); //remove scrollbar by adding width
+
+        if ( ibody.find( '.timeline .stream .h-feed li.tweet' ).length ) {     
+          ibody.find( '.u-url').hide();
+          // ibody.find( '.profile').hide();
+          ibody.find( '.footer').hide();
+          ibody.find( '.inline-media').hide();
+          ibody.find( 'li.tweet' ).css({ 'padding' : '10px' });
+          ibody.find( '.e-entry-title' ).css({
+            'font-family' : 'Georgia, "Times New Roman", Times, serif',
+            'font-size' : '24px',
+            'line-height' : '32px',
+            'text-align' : 'center',
+            'letter-spacing' : '-1px',
+            'font-weight' : 'normal'});
+          }
+          else {
+              $(this).hide();
+          }
+      });
+    }
+    hideTwitterAttempts++;
+    if ( hideTwitterAttempts < 3 ) {
+       hideTwitterBoxElements();
+    }
+  },
+  1500);
+} 
+$(window).load(function() { hideTwitterBoxElements(); });
+</script>
 
 </body>
 </html>

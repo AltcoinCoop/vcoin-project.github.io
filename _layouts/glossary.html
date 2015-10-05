@@ -1,0 +1,75 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+<style type="text/css">
+.masthead.segment { min-height: 200px; }
+.masthead h1.ui.header { margin-top: 0.3em; }
+.ui.text.container { max-width: none !important; }
+ p.pc {font-style:italic; font-size:80% !important; color:#aaa;}
+ span.pt {color: #444;}
+ span.lit {color: #000;}
+ span.se {font-style: italic; font-weight: bold; color: #65DC00;}
+ img.avatar {height:24px;}
+ .tweet-text {font-size: 100% !important; padding: 0 1rem 1rem 1rem;}
+ .ac {color: #888;}
+</style>
+</head>
+
+<body id="vcoin" class="index">
+
+  <noscript>
+    <div class="noscript">
+    Your browser settings show that JavaScript is disabled. (Good call, we too browse with javascript disabled). If you enable it for this site, you’ll get the full benefit of the user-oriented enhancements: nice fonts, drop-down menus, active tabs and the like. We recommend that you turn on Javascript and then refresh this page. <a href="http://www3.qwest.com/cgi-bin/qwest.cfg/php/enduser/std_adp.php?p_faqid=1095" target="_blank">How do I turn on Javascript?</a>
+    </div>
+  </noscript>
+
+
+{% include _browser-upgrade.html %}
+{% include _navigation.html %}
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <img src="/assets/images/vcoin.svg" class="navicon"/>
+        <a class="active item" href="/">Home</a>
+        <a class="item" href="/engineering/">Engineering</a>
+        <a class="item" href="/social/">Social</a>
+        <a class="item" href="/organisation/">Organisation</a>
+        <a class="item" href="/news/">News</a>
+        <div class="right item">
+          <a class="ui disabled inverted button">Log in</a>
+          <a class="ui disabled inverted button">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        Glossary 
+      </h1>
+      <p><em>“The world we have created is a product of our thinking; it cannot be changed without changing our thinking.”</em> ― Albert Einstein.</p>
+    </div>
+
+  </div>
+
+    <div class="ui vertical stripe segment">
+      <div class="ui text container">
+        {{content}}
+      </div>
+    </div>
+
+  {% include _footer.html %}
+  {% include _scripts.html %}
+
+</body>
+</html>

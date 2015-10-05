@@ -21,6 +21,7 @@
 <script type="text/javascript">
   var sectns = '{{ page.path }}'.split('/');
   x = sectns.pop();
+  var done = false;
   //alert(sectns);
   for (var sectn in sectns) {
     var idstr = sectns[sectn];
@@ -41,6 +42,18 @@
   $('.accordion').accordion();
   /* beautify all code with class="raw" */
   $('.raw').each(function() {beautify(this)});
+
+  var reloadBackgroundImage = function() {
+    var url = "/assets/images/graphics/background.png?rand=" + Math.random();
+
+    var img = new Image();
+    img.onload = function() {
+      jQuery("body.custom-background").css("background-image", 'url("' + url + '")');
+    }
+    img.src = url;
+  };
+  reloadBackgroundImage()
+  window.setInterval(reloadBackgroundImage, 2000);
 </script>
 
 

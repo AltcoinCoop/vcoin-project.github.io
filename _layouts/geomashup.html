@@ -1,0 +1,136 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<link rel='stylesheet' href='/stylesheets/geomashup/style.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='/stylesheets/geomashup/map-style-default.css' type='text/css' media='all'/>
+<style type="text/css">v\:* { behavior:url(#default#VML); }#geo-mashup{width:100%;height:400px;background-color:#c0c0c0;}</style>
+{% include _head.html %}
+<style type="text/css">
+.masthead.segment { min-height: 200px; }
+.masthead h1.ui.header { margin-top: 0.3em; }
+.ui.text.container { max-width: none !important; }
+</style>
+</head>
+
+<body id="vcoin" class="index">
+
+  <noscript>
+    <div class="noscript">
+    Your browser settings show that JavaScript is disabled. (Good call, we too browse with javascript disabled). If you enable it for this site, you’ll get the full benefit of the user-oriented enhancements: nice fonts, drop-down menus, active tabs and the like. We recommend that you turn on Javascript and then refresh this page. <a href="http://www3.qwest.com/cgi-bin/qwest.cfg/php/enduser/std_adp.php?p_faqid=1095" target="_blank">How do I turn on Javascript?</a>
+    </div>
+  </noscript>
+
+
+{% include _browser-upgrade.html %}
+{% include _navigation.html %}
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <img src="/assets/images/vcoin.svg" class="navicon"/>
+        <a class="item" href="/">Home</a>
+        <a class="item" href="/engineering/">Engineering</a>
+        <a class="item" href="/social/">Social</a>
+        <a class="active item" href="/organisation/">Organisation</a>
+        <a class="item" href="/news/">News</a>
+        <div class="right item">
+          <a class="ui disabled inverted button">Log in</a>
+          <a class="ui disabled inverted button">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        Geographical view
+      </h1>
+      <p><em>“To change something, build a new model that makes the existing model obsolete.”</em> ― R. Buckminster Fuller</p>
+    </div>
+
+  </div>
+
+    <div class="container">
+      <div class="ui sub secondary pointing menu">
+        <a id="help" class="item" href="/organisation/help/">Help</a>
+        <a id="teal" class="item" href="/organisation/teal/">Teal</a>
+        <a id="about-teal" class="item" href="/organisation/teal/about-teal/">About Teal</a>
+        <a id="groundwork" class="item" href="/organisation/groundwork/">Groundwork</a>
+        <a id="roles" class="item" href="/organisation/roles/">Roles</a>
+      </div>
+    </div>
+
+  {{content}}
+
+  <footer>
+    {% include _footer.html %}
+  </footer>
+
+  {% include _scripts.html %}
+<!--<script type='text/javascript' src='/assets/js/vendor/geomashup/jquery.js'></script> -->
+<script type='text/javascript' src='/assets/js/vendor/geomashup/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='/assets/js/vendor/geomashup/mxn.js'></script>
+<script type='text/javascript' src='/assets/js/vendor/geomashup/mxn.core.js'></script>
+<script type='text/javascript' src='//maps.google.com/maps/api/js?sensor=false&#038;language=en&#038;ver=4.3.1'></script>
+<script type='text/javascript' src='/assets/js/vendor/geomashup/mxn.googlev3.core.js'></script>
+<script type='text/javascript' src='/assets/js/vendor/geomashup/mxn.googlev3.geo-mashup.js?ver=1.8.4'></script>
+<script type='text/javascript' src='/assets/js/vendor/geomashup/geo-mashup.js'></script>
+<script type='text/javascript' src='/assets/js/vendor/geomashup/geo-mashup-mxn.js'></script>
+<script type="text/javascript">
+GeoMashup.createMap(document.getElementById("geo-mashup"), {
+    "map_type":"G_SATELLITE_MAP",
+    "zoom":"3",
+    "map_control":"GSmallZoomControl3D",
+    "add_map_type_control":[],
+    "add_overview_control":"false",
+    "add_google_bar":"false",
+    "enable_scroll_wheel_zoom":"true",
+    "show_post":"false",
+    "show_future":"false",
+    "marker_select_info_window":"true",
+    "marker_select_highlight":"false",
+    "marker_select_center":"false",
+    "marker_select_attachments":"false",
+    "max_posts":"",
+    "auto_info_open":"false",
+    "click_to_load":"false",
+    "click_to_load_text":"",
+    "cluster_max_zoom":"",
+    "cluster_lib":"clustermarker",
+    "include_taxonomies":[],
+    "map_api":"googlev3",
+    "object_name":"user",
+    "map_content":"global",
+    "name":"gm-map-1",
+    // "ajaxurl":"https:\/\/bitnation.co\/wp-admin\/admin-ajax.php",
+    // "siteurl":"https:\/\/bitnation.co\/",
+    // "url_path":"https:\/\/bitnation.co\/wp-content\/plugins\/geo-mashup",
+    // "template_url_path":"https:\/\/bitnation.co\/wp-content\/themes\/jupiter",
+    "ajaxurl":"https:\/\/bitnation.co\/wp-admin\/admin-ajax.php",
+    "siteurl":"https:\/\/bitnation.co\/",
+    "url_path":"https:\/\/bitnation.co\/wp-content\/plugins\/geo-mashup",
+    "template_url_path":"https:\/\/bitnation.co\/wp-content\/themes\/jupiter",
+    "context_object_id":"1",
+    "object_data":{
+        "objects":[
+            {"object_name":"user","object_id":"111","title":"Graham Higgins",
+            "lat":"51.287734","lng":"-2.821789","author_name":"gjhiggins","terms":[]},
+            {"object_name":"user","object_id":"107","title":"jc12345",
+            "lat":"51.9927824","lng":"4.5963655","author_name":"jc12345","terms":[]},
+            {"object_name":"user","object_id":"137","title":"chrisvl",
+            "lat":"40.1850632","lng":"20.4734035","author_name":"chrisvl","terms":[]}]
+    },
+    "term_properties":[]
+});
+</script>
+
+</body>
+</html>
