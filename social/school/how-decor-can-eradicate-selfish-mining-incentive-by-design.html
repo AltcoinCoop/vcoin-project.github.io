@@ -1,0 +1,49 @@
+---
+layout: socpage
+title: How DECOR++ can eradicate selfish mining incentive by design
+excerpt: In a nutshell, DECOR is a protocol that permits miners to share the block reward if both mine competing blocks.
+image:
+  feature:
+---
+
+<style type="text/css">p {font-family:serif; font-size:1.16rem !important;line-height:1.6rem;}</style>
+
+<p>In <a href="https://bitslog.wordpress.com/2015/08/16/how-decor-can-eradicate-selfish-mining-incentive-by-design/">this post</a>, SDLerner observed that a year ago he proposed the<a href="https://bitslog.wordpress.com/2014/05/02/decor/"> DECOR protocol</a>, a new rule for cryptocurrencies to reduce significantly the amount of orphan blocks<a href="https://bitslog.files.wordpress.com/2015/08/miningtool.jpg"><img class="size-full wp-image-993 alignright" src="https://bitslog.files.wordpress.com/2015/08/miningtool.jpg?w=620" alt="MiningTool"></a> and then allow block rate to be as high as one every 5 seconds, and at the same time it promised to address the problem of <a href="http://hackingdistributed.com/2013/11/04/bitcoin-is-broken/" rel="noreferrer">selfish mining</a>.</p>
+
+<p>After one year, I’ve received very little feedback about it. Yet the <a href="http://hackingdistributed.com/2013/11/04/bitcoin-is-broken/" rel="noreferrer">selfish mining</a> problem has been argued over and over against certain changes in Bitcoin, as if selfish mining were something inevitable to all POW-based cryptocurrencies. But it is not.</p>
+
+<p>In a nutshell, DECOR is a protocol that permits miners to share the block reward if both mine competing blocks. This is done by publishing block header siblings (sometime called uncles) into child blocks, and modifying the cryptocurrency protocol to pay some amount to the miners of uncles. If all miners are honest, this strategy increases slightly the probability of 1-block reversals, but reduces considerably the probability of longer reversals, as all miners choose the same parent. A few months after my post, <a href="https://www.ethereum.org/" rel="noreferrer">Ethereum </a>adopted a similar strategy of paying a certain amount of ether to uncles, but the amount paid was created out of thin ear, and at that time there could be any amount of uncles, so basically it distorted the money supply function into a uncapped inflationary one, if all miners decided to collude. After I reported this issue, they restricted the number of uncles that can be included, but still it leaves an incentive for all miners to collude to increase miner revenue. DECOR does reward sharing, so the supply function cap is maintained. But it does not solve the Selfish mining problem: miners withholding a block get paid a full reward but the remaining miners are working (without knowing it) for a half of the block reward. So my original strategy does not work for rational (but not necessarily honest) miners. A few posts later I presented <a href="https://bitslog.wordpress.com/2014/05/07/decor-2/">DECOR+</a> to try to address the problem of unbalanced rewards: what happens if there are two competing blocks, but one has a 12.5 BTC reward, but the other has a 20 BTC reward due to additional fees? But again, if miners are dishonest, the proposed scheme does not solve the underlying problem, as miners can artificially increase their fees to win the conflict resolving rule, at least in all cryptocurrencies that do not burn transaction fees. How can we fix it?</p>
+
+<h4 class="ui header">DECOR++</h4>
+<p>We’ll fix DECOR by doing three changes.</p>
+<ol>
+<li>
+<p>The first is by paying full rewards to all competing blocks, either the parent or the uncles. To prevent increasing the money supply, first we set a maximum number of uncles U than can be included over a period of N blocks. For example we can set U=100 and N=1000 (a maximum orphan rate of 10%). Then we create rule to decrease the money supply per time interval in case it previously was increased. So to prevent miners colluding to increase the money supply in U/N, we either decrease the subsidies of the following N blocks by the excess amount in the previous period or we make N coincident with block difficulty re-target interval and we consider uncles in the rate computation, so mining afterward simply gets more difficult. If all miners collude to try to increase their revenue by U/N, they will see their revenue decrease by the same amount in the following re-target interval. </p>
+
+<p>Miners could start switching between two cryptocurrencies to mine only during the low difficulty interval and avoid the high difficulty interval. But here are no competing valuable non-merged mined cryptocurrency using SHA256D, so this is no problem for Bitcoin. Also the cryptocurrency left without mining power would become insecure and its price will fall to near zero. So increasing the immaturity lock time for coinbases to at least N blocks destroys any miner earnings if all decide to switch all at once.</p>
+</li>
+<li>
+<p>The second change is to choose the parent block in case of conflict based on a deterministic random selection in case of deciding between several chains with the same accumulated difficulty but different tip: we order the competing tip blocks by their hash digest values, we hash the hashes and we use the resulting hash digest as seed to a PRNG to choose an index in the sorted list of the block to choose as parent.</p>
+</li>
+<li>
+<p>The third change is to process the transactions of all competing blocks (the actual block and its siblings) in case of a conflict. The transactions on the parent block will be processed first as normal. The others will be processed in the order they are referenced in following child blocks. Conflicting transactions (double-spends) present in uncle blocks with respect to the main block are skipped, while obviously internal conflicts in the uncle blocks make them invalid, as usual. Now, as long as the subsidy dominates the fees, miners have no incentive to withhold blocks.</p>
+
+<p>Let’s analyze what can happen in the long term, when fees dominate the block reward. In the future there may be two kinds of transactions: public transactions and private transactions. Public transactions are the current standard transactions: they pay a fee in the standard way and are broadcast over the public network. Private transactions may appear if miners decide to negotiate inclusion in blocks directly with web wallets or gateways: private transactions will pay fees as an output to the miner’s public key. Blocks with high rewards due to public transactions, competing with blocks with low rewards, will be rare, since for the benefit of the miner most transactions included in blocks should be present in all other miners memory pools to accelerate propagation, so all miners are exposed to the same reward pool. If it happens (by the mistake of a user) that a public transaction pays an extremely high fee, the withholding incentive may reappear. But in a far future, when subsidy disappears and miners receive the payment mainly because of fees, they may adopt the more competitive commercial strategy of rely mainly in private transactions (or maybe using <a href="https://en.bitcoin.it/wiki/Funding_network_security" rel="noreferrer">Mike Hearn’s assurance contracts</a>). As fees from private transactions are not shared between competing blocks, they won’t affect selfish mining. I conclude that DECOR++ is currently incentive compatible and it is highly probable that remains incentive compatible in the future.</p>
+</li>
+<ol>
+
+<p>One last issue is how to prevent miners having a high percentage of the hashing power from exhausting the uncle block capacity on purpose in order to perform selfish mining afterwards. One solution would be to remove the uncle cap, but make difficulty re-targeting per block, so including uncles reduce the subsequent rewards per time period.</p>
+
+<p>To summarize, DECOR++ main protocol properties are:</p>
+<ul>
+<li>Choose a parent by a deterministic pseudo-random coin toss based on competing block headers</li>
+<li>Give standard subsidy to all competing blocks by including uncles in following blocks</li>
+<li>Give small monetary incentive to include uncle blocks in blocks (miners including blocks can get a small share of included blocks rewards).</li>
+<li>Give small monetary incentive to choose deterministically one of the competing blocks as the main block (this can be done by burning some reward share if other parent is chosen).</li>
+<li>Process all transactions in uncle blocks, quietly skipping the ones that conflict with existing ones.</li>
+<li>Pay fees to original miners for all non-conflicting transactions in uncle blocks</li>
+<li>Decrease the money supply in blocks following blocks including uncles to compensate for the increase in money supply.</li>
+<li>Limit the amount of uncles that can be included over an interval of blocks, and make that interval long enough to capture normal variances in orphan rates, or do not apply a limit, but reduce re-target difficulty as per block basis.</li>
+<li>Increase the coinbase immaturity period to at least the period of money supply compensation.</li>
+<li>Uncles can only be included in a certain number of following blocks (e.g. 6 blocks), and the inclusion interval should not cross a difficulty re-targeting point where the difficulty has been increased significantly, to prevent back-mining.</li>
+</ul>

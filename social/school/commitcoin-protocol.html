@@ -1,0 +1,82 @@
+---
+layout: socpage
+title: Cross my heart and hope to die, the Commitcoin protocol
+excerpt: Consider the scenario where Alice makes an important discovery.
+image:
+  feature:
+---
+
+<p>Consider the scenario where Alice makes an important discovery.</p>
+
+<p>It is important to her that she receives recognition for her breakthrough, however she would also like to keep it a secret until she can establish a suitable infrastructure for monetizing it. By forgoing publication of her discovery, she risks Bob independently making the same discovery and publicizing it as his own.</p>
+
+<p>Folklore suggests that Alice might mail herself a copy of her discovery and leave the letter sealed, with the postal service’s timestamp intact, for a later resolution time. If Bob later claims the same discovery, the envelope can be produced and opened.</p>
+
+<p>In reality, this approach does not work as (among other shortcomings) most postal services are pleased to timestamp and deliver unsealed empty envelopes that can be retroactively stuffed with “discoveries.”</p>
+
+<h3>CommitCoin protocol</h3>
+
+<p>If Alice can put her commitment value into a Bitcoin transaction, it will be included in the chain of puzzles and the network will provide carbon dating without Alice having to perform the computation herself.</p>
+
+<p>Bob only has to trust that Alice cannot produce a fraudulent block chain, longer than the canonical one and in less time (which would, incidentally, allow Alice to claim all the rewards for the fraudulent portion).</p>
+
+<p>This idea has been considered on the Bitcointalk message board [10] in the context of the distributed network vouching for the timestamp. Our observation is that even if you do not trust the timestamp or any node in the network, the proof of work itself can be used to carbon date the transaction (and thus commitment value).</p>
+
+<p>Alice has control over three parameters in a Bitcoin transaction: her private key(s), her public key(s), and the randomness used in the signature algorithm which, importantly, is ECDSA.</p>
+
+<p>If she sets the receiver’s public key *(technically, the fingerprint of the public key)* to be her commitment value <tt>c</tt> and sends 1 BTC to it, the 1 BTC will be unrecoverable.</p>
+
+<p>We consider this undesirable for two reasons: (a) it is financially wasteful for Alice and (b) it is not being a good citizen of the Bitcoin community.</p>
+
+<p>By setting <tt>c</tt> equal to a private key or the signature randomness and following the protocol, <tt>c</tt> itself will never directly appear in the transcript.</p>
+
+<p>To get around this, Alice sets <tt>c</tt> to the private key of a new account and then purposely leaks the value of the private key by signing two different transactions with the same randomness.</p>
+
+<p>*(The CommitCoin protocol is given in Protocol 2.)*</p>
+
+<p>Since <tt>c</tt> is randomized, it has sufficient entropy to function (temporarily) as a secret key. A few bits of the secret key could be used as a pointer (e.g., URL) to a place to post the opening of the commitment.</p>
+
+<p>- 9 http://deepbit.net; http://blockexplorer.com/q/interval</p>
+<p>- 10 http://goo.gl/fBNnA</p>
+
+<h3>CommitCoin proof of concept</h3>
+
+<p>We committed to the title and abstract of this paper and, as proof of concept, inserted it into the Bitcoin block chain on September 15, 2011 (the submission deadline for FC 2012). We used a simplified version of CommitCoin, with <tt>c</tt> set to be the public key fingerprint. As noted, this effectively burns the money. A proper implementation using <tt>c</tt> as the private key is forthcoming.</p>
+
+<p>First we ran,</p>
+
+<p><pre>openssl rand -out random.dat 20</pre></p>
+
+<p>creating a file containing a 20 byte random factor. [12] Then we concatenated the randomness to the end of the abstract PDF [13] and hashed it using RIPEMD-160,</p>
+<pre>
+cat abstract.pdf random.dat > preimage.dat
+openssl dgst -ripemd160 preimage.dat
+</pre>
+<p>giving us the result:</p>
+
+<p><tt>135e3712334428d4061efe4e5ffd5ff817aeb817</tt></p>
+
+<p>This serves as a basic commitment scheme. We called an online tool [14] to convert this hash into a valid Bitcoin address giving us:</p>
+
+<p><tt>12mQhpvGYdBrvDJq6sFGwEe3GETaqEM4Jk</tt></p>
+
+<p>Finally, we used the Bitcoin Faucet[15] to send BTC0.005 to this address. This transaction ostensibly appeared in the Bitcoin blockchain on 2011-09-16 00:24:32 which can be seen in blockexplorer. [16]</p>
+
+<p>However it may be the case that we actually committed to our abstract long after 2011-09-16 00:24:32 and colluded with blockexplorer or the Bitcoin network to display the wrong timestamp. How can you really be sure?</p>
+
+<p>By the time you are reading this, many more blocks will have been added to the blockchain. Each block that is added is a solution to a moderately hard problem.</p>
+
+<p>Suppose we actually committed to the abstract yesterday. That means we would have had to forge the entire chain from Block 145535 [17] to the current block. [18]</p>
+
+<p>Given each block takes on average 10 minutes for the entire Bitcoin network to solve, we could not have solved that many blocks in a single day even if we controlled the whole network.</p>
+
+<p>- 13 <a href="http://people.scs.carleton.ca/~clark/commitcoin/abstract.pdf">http://people.scs.carleton.ca/~clark/commitcoin/abstract.pdf</a></p>
+<p>- 14 <a href="http://blockexplorer.com/q/hashtoaddress/135e3712334428d4061efe4e5ffd5ff817aeb817">http://blockexplorer.com/q/hashtoaddress/135e3712334428d4061efe4e5ffd5ff817aeb817</a></p>
+<p>- 15 <a href="https://freebitcoins.appspot.com/">https://freebitcoins.appspot.com/</a></p>
+<p>- 16 <a href="http://blockexplorer.com/tx/2993c284f0b6838386ddd286af415384560d93cc4e27d25087fd6534f8e0d276">http://blockexplorer.com/tx/2993c284f0b6838386ddd286af415384560d93cc4e27d25087fd6534f8e0d276</a></p>
+<p>- 17 <a href="http://blockexplorer.com/b/145535">http://blockexplorer.com/b/145535</a></p>
+<p>- 18 <a href="http://blockexplorer.com/q/getblockcount">http://blockexplorer.com/q/getblockcount</a></p>
+
+<h4>References</h4>
+<p>1. <a href="http://eprint.iacr.org/2011/677.pdf">CommitCoin: Carbon Dating Commitments with Bitcoin</a></p>
+

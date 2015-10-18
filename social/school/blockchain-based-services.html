@@ -1,0 +1,498 @@
+---
+layout: socpage
+title: Blockchain-based services, a tour d’horizon
+excerpt: Summary information about other currently-available blockchain-based services
+image:
+  feature:
+---
+
+<h3><a href="http://appliedblockchain.com/">Applied Blockchain</a></h3>
+
+<h4>TRUST</h4>
+<p>If two or more organizations exchange information that requires a level of trust between them (e.g. transactions, legal contracts), then a distributed blockchain solution allows this to be achieved without the need for a trusted intermediary.</p>
+
+<h4>DATABASE</h4>
+<p>Store data in the blockchain using smart contracts. Once stored and confirmed by the blockchain, the data is distributed across the participating nodes, and the fact that the data was stored cannot be refuted. Add permissions to the smart contract, and only specified parties can see, modify or transact with the data.</p>
+
+<h4>WORKFLOW</h4>
+<p>Design workflow to run in the blockchain using smart contracts. Allow specific participants to perform tasks in a predetermined sequence. Each activity is distributed to participating blockchain nodes, and recorded in the immutable history of the blockchain.</p>
+
+<h4>END TO END</h4>
+<p>We design and build end-to-end smart contract applications that run on private / consortium blockchains. These include using smart contracts to store and share data, as well as running complex workflow. Blockchain applications can be integrated with enterprise applications using standard REST, SOAP, or files. Our solutions integrate web and mobile applications directly with the blockchain.</p>
+
+<h4>AGNOSTIC</h4>
+<p>Although we love Ethereum-style smart contracts, we are blockchain agnostic, and develop solutions using a number of different blockchain implementations. We also compare the different platforms' performance and attributes in our lab, and provide impartial advice on the best fit for a project.</p>
+
+<h4>TALLYSTICKS</h4>
+<p>Our very own Tallysticks framework enables fast delivery of smart contract applications that can be managed and scaled in an enterprise environment.</p>
+
+<hr/>
+
+<h3><a href="http://www.augur.net/">Augur</a></h3>
+
+<h4>Prediction Markets</h4>
+<p>Prediction markets allow their users to buy and sell shares in the outcome of an event. The current market price of a share is an estimate of the probability of an event occurring.</p>
+<p>If there's a prediction market on whether Hillary Clinton will win the 2016 election, a share of yes that costs 60 cents means she has a 60% chance of winning according to the market.</p>
+<p>The Iowa Electronic Market allows its users to wager on the outcomes of U.S. political events. It typically predicts elections within one percent, more accurate than polls or expert opinions. Since 1988 it has correctly predicted the outcome of every U.S. presidential election.</p>
+
+
+<h4>Why decentralize?</h4>
+<p>Historically, prediction markets have fallen short due to dated jurisdictional regulation, lack of volume due to limited payment options, a paltry number of markets, and sometimes even paying out the wrong people!</p>
+<p>The root of these problems stems from centralization — an issue solved by blockchain technology. Our prediction markets eliminate counterparty risks, centralized servers, and create a global market by employing cryptocurrencies including bitcoin, ether, and stable cryptocurrencies. All funds are stored in smart contracts, and no one can steal the money. </p>
+<p>Augur's interface is currently in English, but we have plans to make it available in other common languages, starting with Chinese and Spanish.</p>
+
+<h4>Demonstration runthrough</h4>
+<p>When you load the alpha in your browser you'll see a few things.  </p>
+<p>- On the top right is your play money “Cash” in Augur right now, it should say 0.  </p>
+<p>- On the left hand side there is a menu along with some information about the Ethereum network.</p>
+
+<h4>Let's get you some money!  </h4>
+<p>1. Click on “Account” on the left hand side, then you'll see a few buttons.  </p>
+<p>2. Click on “Faucet”, which is next to cash.  </p>
+<p>    - Here you can send cash, reputation, and ether.  </p>
+<p>    - You'll also notice your “Reputation” and “Ether” balance.  </p>
+<p>3. If you want some reputation, click on that faucet button as well.</p>
+<p>Now you're ready to create a market or participate in one!  </p>
+
+<h4>Let's participate first:</h4>
+
+<p>1. Click on “Markets” on the left hand side.</p>
+<p>2. A bunch of events should load.  </p>
+<p>3. Click on one that seems appealing.  </p>
+<p>4. Now you can buy shares in an event.  </p>
+<p>5. If you think the event is going to happen, buy “yes” shares, otherwise buy “no.”  </p>
+<p>6. Input the number of shares you want to buy.  </p>
+<p>    - You'll see the current price per share of each outcome; if you buy at, say, 40¢, and you are correct, later on each share you buy will be worth $1.00.  </p>
+<p>7. Depending on how many shares you buy, you will be told how much you're moving the odds by purchasing, as well as how much you're purchasing.  </p>
+<p>    - If you buy 5 shares, and it costs something like $3, if you're, right you'll get $5 once the market closes, for a profit of $2!</p>
+<p>8. Now that you own shares you can sell them if you like.  </p>
+
+<h4>Now, let's make a market!:</h4>
+
+<p>1. Choose “Submit a Market” on the top right</p>
+<p>2. Input a description/question you want that market to be on.</p>
+<p>    - It should be a yes or no question.  </p>
+<p>3. Input how much initial liquidity you want to provide and set a trading fee.  </p>
+<p>    - If you provide a lot of liquidity but few people use your market, you'll probably lose some money.  </p>
+<p>    - If you provide liquidity and a lot of people use your market, you'll make money off trading fees.  </p>
+<p>    - Too little liquidity and people won't trade (due to buying a few shares moving the price a lot). </p>
+<p>    - Too much liquidity and you won't make enough money on trading fees to earn a profit.  It's a delicate balance.  </p>
+<p>4. Choose an expiration date for your market.  </p>
+<p>    - This should be sometime after your event occurs.  </p>
+<p>5. Submit it!  </p>
+<p>6. After a couple of blocks, your market will be ready for trading.</p>
+
+<h4>Reporting (Ballot in UI):</h4>
+
+<p>To initiate payouts for markets on Augur, we need a way to distribute funds from losers to winners and to determine what the correct outcome is.  To determine the outcome we use reporting.  Holders of our token, “Reputation”, or “REP”, report on the outcomes of events.  </p>
+<p>1. To try this out, click on “Reporting” on the left hand side. If there are events that have expired which haven't been reported on yet they'll show up here.</p>
+<p>2. For each question, choose either "Yes" (meaning it happened), "No" (meaning it didn't), or "Indeterminate" (meaning you're not sure if it happened or it's impossible to determine if it happened, or the market is unethical.)</p>
+<p>3. When you're done, click “Submit Ballot” on the bottom right.  </p>
+<p>    - Note that your client has to be on during the ballot reveal period (when the bar at the top is in the second half) for your report to be submitted and counted.  </p>
+<p>4. Consensus will be done and we're ready to close the markets whose outcomes have been decided.</p>
+
+<h4>Market Closing:</h4>
+
+<p>1. To close a market (if you created it or wagered in it) go to the “Markets” page.</p>
+<p>2. Find the respective market.</p>
+<p>3. Click “close.”</p>
+<p>     - You will also be able to close markets from the “Accounts” page where it shows your holdings.  </p>
+<p>4. Then the market will be closed and payouts will be done.  Congratulations if you participated and won, and better odds next time if you didn't!</p>
+
+<hr/>
+
+<h3><a href="http://bitnation.co/">Bitnation</a></h3>
+
+<p>BITNATION is a decentralized, open-source movement, powered by the Bitcoin blockchain 2.0 technology, in an attempt to foster a peer-to-peer voluntary governance system, rather than the current ‘top-down’, ‘one-size-fits-all’ model, restrained by the current nation-state-engineered geographical apartheid, where your quality of life is defined by where you were arbitrarily born.</p>
+<p>We’re a holacratic organization and we strive to become a fully functional Decentralized Autonomous Organization (DAO). In non-geek terms, this means that there are no formal management structures, there are no barriers to entry, and everyone can join and create their own operational centers (“holons”) whether for-profit or nonprofit, or join an existing one, all while benefiting from the greater support and technology from the BITNATION community.</p>
+
+<hr/>
+
+<h3><a href="https://bitproof.io/">Bitproof.io</a></h3>
+
+<h4>Prove, protect.</h4>
+<p>We live in a broken world. From finance to private property, major parts of our lives rely on easy-to-forge pieces of paper called contracts.</p>
+<p>Bitproof created SealX, a tool that lets you create frosted contracts. They're sealed forever and valid worldwide.</p>
+
+<h4>Be a genius, be safe.</h4>
+<p>Entrepreneurs create ideas. Engineers create products. Artists create dreams. All of this can be protected.</p>
+<p>Bitproof created GeniusX, a tool that lets you protect your Intellectual Property. Drag and drop, boom, you're done.</p>
+
+<h4>Valid in court worldwide.</h4>
+<p>Your certificates are stored in a super secure database replicated all around the world. As a result, they are valid everywhere.</p>
+<p>With Bitproof, International Business becomes easier.</p>
+
+<hr/>
+
+<h3><a href="http://www.blockverify.io/">BlockVerify</a></h3>
+
+<h4>We Can Verify The Following</h4>
+<p>- **Counterfeit Products** A product that is already in possession and is determined to be counterfeit</p>
+<p>- **Diverted Goods** The system is able to identify if a product was diverted from its original destination</p>
+<p>- **Stolen Merchandise** The system can easily trace and locate stolen merchandise</p>
+<p>- **Fraudulent Transactions** Block Verify can track fraudulent transactions of any type throughout the system</p>
+
+<h4>Use Cases</h4>
+<p>- **Pharmaceuticals** Solution to track pharmaceuticals throughout the supply chain and to ensure the consumers receive an authentic product</p>
+<p>- **Luxury Items** We work directly with luxury manufacturers to build a system of verifying luxury goods. This will provide quality assurance for all parties</p>
+<p>- **Diamonds** We created a system that can enhance trust in diamonds certificates and prevent fraud</p>
+<p>- **Electronics** We work directly with manufacturers to make sure that customers are getting original equipment</p>
+
+<h4>How Blockverify Works</h4>
+<p>The process a product goes through to ensure authenticity:</p>
+<p>- **Product Labelling**: Each product is labelled with Block Verify tag</p>
+<p>- **Verified Supply** Each product is verified along the supply line. Supply chain becomes transparent to the extent we want it to be</p>
+<p>- **Consumer Verified**</p>
+<p>When the consumer purchases a product he/she is able to verify that the product is genuine and activate it</p>
+<p>- **Anti-corruptible**</p>
+<p>We ensure that each product is validated and recorded prevent even companies from counterfeiting their own goods</p>
+<p>- **Retail Verification**</p>
+<p>Retail locations can use mobile devices for verification. They can be assured that the goods they receive are genuine</p>
+<p>- **Block Verified**</p>
+<p>Each product has a recorded history permanently recorded in the blockchain. We can provide verified history for each product</p>
+
+<hr/>
+
+<h3><a href="http://www.chimera-inc.io/">Chimera</a></h3>
+
+<p>We are the missing puzzle in connecting your home, office, garden, car and appliances to the Internet of Things. We built our infrastructure robustly, from the ground up, using secure cryptography networks, enabling you to connect with your devices from wherever you are, while enjoying higher reliability, lower latency, and world-class security.</p>
+
+
+<h4>SMART REMOTE</h4>
+
+<p>Use your smartphone like a regular remote control. No more hide and seek with all your remotes. Control all appliances in style, and impress your friends!!</p>
+<p>- JANUARY: Development of the Operating System. Linux KVM with custom packages.</p>
+<p>- FEBRUARY: Native mobile apps. Android and Windows. And Web App.</p>
+<p>- MARCH: System Security, Node JS with bitcoin Crypto-Currency. Web backend and Backend.</p>
+<p>- APRIL: IOS App. Hybrid. Frontend Web. Artificial Intelligence</p>
+
+<hr/>
+
+<h3><a href="http://colu.co/">Colu</a></h3>
+
+<p>- **Colu Engine**: Create your digital assets, attach a value and integrate them with your project.</p>
+<p>- **Reducing Bitcoin Complexity**:</p>
+<p>    - Quick issuance on top of Bitcoin's Blockchain using the Colored Coins protocol. </p>
+<p>    - The Engine funds the transaction for you - your users don't need to hold bitcoins!</p>
+<p>- **Easy Integration**: Powerful RESTful API and SDK for easy integration with the Colu platform.</p>
+<p>- **Enterprise Oriented**: Reliable, fast and secure infrastructure ready for high volume usage.</p>
+
+<hr/>
+
+<h3><a href="http://etherparty.io/">Etherparty</a></h3>
+
+<p>We are a Platform as a Service managing and executing Smart Contracts.</p>
+<p>Etherparty is a platform that removes the complexity and management of creating and executing smart contracts</p>
+<p>Etherparty is a PaaS with a process model designed to fit a wide range of distributed applications allowing for quick deployments.</p>
+<p>- Visual Editor: No programming required.</p>
+<p>- Contract Library: A community curated Library.</p>
+<p>- Dashboard: Monitor everything in one place.</p>
+<h5>INFINITELY SCALABLE</h5>
+<p>Etherparty framework allows for infinite scalability to match the needs of the Smart Contract as necessary. For distributed computation this is extremely useful for resource allocation.</p>
+<h5>PROCESS AUTOMATION</h5>
+<p>Deploying Smart Contracts relies on a back end of packages, modules, and libraries. Etherparty automates this process by preconfiguring these dependencies to just a few clicks of a button.</p>
+<h5>CONNECT YOUR DATA</h5>
+<p>Our focus is workflow management regardless of the data source being used for the Smart Contract - connect your CRM or Accounting API. We bring the power of Smart Contracts to the Web.</p>
+<h5>CLICK TO DEPLOY</h5>
+<p>Execute Smart Contracts in less time without the hassle and complexity of setting up and maintaining the source code and infrastructure beneath it. We bundled and tested it so you don't have to.</p>
+
+<hr/>
+
+<h3><a href="http://www.everledger.io/">everledger</a></h3>
+
+<p>We are a fraud detection system overlaying big data from closed sources like insurers and law enforcement.</p>
+<p>Everledger is a permanent ledger for diamond certification &amp; related transaction history. Verification for insurance companies, owners, claimants and law enforcement.</p>
+<p>Our technology can be extended to track any asset that carries a unique identifier which is difficult to destroy or replicate.</p>
+
+
+<h4>What is a smart contract?</h4>
+
+<p>Smart contracts are computer protocols that facilitate, verify and enforce the performance or negotiation of a contract.</p>
+<p>Think of a traditional legal contract where there is no need for a third party to enforce the clauses within it. It sounds easy, but this is in fact what makes it 'smart’.</p>
+<p>For example, if Alice and Bob sign an agreement stating that the ownership of a digital asset, like a song, is transferred only if a certain amount of money is sent from Alice to Bob within day, and Bob pays in time, a smart contract transfers that ownership automatically without the need for any third party.</p>
+<p>A smart contract would also decline the transfer of ownership if Bob does not pay in time.</p>
+
+<h4>What kind of technology do we use?</h4>
+
+<p>For our smart contracts, we combine our private blockchain based on the Eris stack with a public blockchain(Bitcoin) in order to achieve a hybrid model; neither fully public, nor fully private.</p>
+<p>We do this in order to get the best of both worlds; high security of a public blockchain, and the complexity and amiability of a smart contract enabled private one. Our smart contracts are also Ethereum ready and will be deployed to it when the Ethereum blockchain moves out of test phase.</p>
+
+<hr/>
+
+<h3><a href="http://filament.com/">Filament</a></h3>
+
+<p>Drop-in wireless infrastructure that's flexible and secure.</p>
+<p>**The Filament Tap** lets you deploy a secure, all-range wireless network in seconds.</p>
+<p>Taps can talk directly to each other at distances of up to 10 miles, and since each Tap has BLE, you can connect to them directly with your phone, tablet, or computer.</p>
+<p>With built-in environmental monitoring, a USB port for your own sensor or device, and a battery life of up to 20 years, it's the perfect grab-and-go connectivity solution.</p>
+
+
+<p>**The Filament Patch** adds all-range wireless to your own hardware project.</p>
+<p>It's a certified, surface-mount module with everything you need to build your own Filament network, including dedicated crypto hardware, sub-GHz and BLE radios, and compact chip antennas.</p>
+<p>We've optimized every component for low-power and high-performance, so it's ready for projects at any scale, and in any environment.</p>
+<p>Filament gives you standalone wireless networks that don't require any central routing service or "cloud". This lets you deploy secure, decentralized systems in any environment, without depending on WiFi or Cellular coverage.</p>
+<p>Our hybrid radio hardware combines a long-range, high-performance sub-GHz radio, with ubiquitous device-range BLE. This let's our products achieve a remarkable wireless range of 10 miles, while remaining accessible from your mobile device.</p>
+<p>Combining these radios lets Filament devices perform well in even the most challenging environments. We can cover miles of open air, or cut through multiple city blocks.</p>
+
+
+<p>- **Remote Monitoring:** Bring your existing equipment online, and monitor your operations remotely. Taps can stay in a low-power mode for years until they detect an alert condition.</p>
+<p>- **Data Collection:** Wireless data collection has never been easier. Monitor environmental conditions with the Tap's built-in sensors, or plug in your own.</p>
+<p>- **Smart Cities:** Our long-range radios are perfect for city-wide infrastructure projects, where you need to deploy thousands of devices in a dense urban area.</p>
+
+
+<h3><a href="http://filecoin.io/">Filecoin</a></h3>
+
+<p>- Earn Filecoin by renting disk space </p>
+<p>- Use Filecoin to store files in the network or to transact </p>
+<p>- Exchange Filecoin for other currencies, like Bitcoin</p>
+
+<hr/>
+
+<h3><a href="https://followmyvote.com/">FollowMyVote</a></h3>
+
+<p>Follow My Vote has designed the software for an online voting platform, which is both intuitive and easy to use. Users download the voting booth and get their identity verified by a third party for authorization to cast a ballot. The voter submits their vote to the ballot box which is stored securely on a blockchain. In addition, voters can audit their vote to ensure that their voice has been heard.</p>
+<p>Follow My Vote began originally as a polling system designed to ensure that elected representatives were truly voting in the interests of their constituents.</p>
+<p>However, Follow My Vote soon entered into a joint venture with BitShares; effectively shifting its focus to the development of a verifiable online voting platform secured with the BitShares blockchain technology.</p>
+<p>In order to ensure the success of the venture, Follow My Vote moved from their previous location with NuSpark into a shared space in Virginia Tech's Corporate Research Center.</p>
+<p>The blockchain is the PKI in our designs. Using a blockchain as a PKI is a practical scenario, and the BitShares blockchain already does just this by mapping usernames to public keys. What this looks like in the voting context is that a user creates a key pair, and publishes the public key on the blockchain as an identity, then uses that key to sign a request for an ID verifier to certify that on-chain identity as being unique and authorized to vote. The exact procedure by which the verifier determines the identity of the person making the request is out of scope for the voting system, but we have a general procedure outlined which closely mirrors that of getting your identity verified for an SSL certificate today.</p>
+<p>In order for votes to be considered official votes within our voting system, voters must have their identities verified prior to casting their ballots. Voters can only request official ballots for elections that meet their account credentials (i.e. country of citizenship, age, etc.) and can only request one ballot per election. During the ballot casting process, voters can rest assured knowing that their ballots will not be tampered with, as cryptography technology prevents voters’ ballots from being intercepted and modified prior to being stored in the blockchain-based ballot box. Once a voter’s vote has been stored in the blockchain-based ballot box, it cannot be changed by any other voter within the system. Finally, all voter’s that participate in an election will have an opportunity to audit the ballot box themselves to ensure that the vote count of the ballots stored in the ballot box match the election results being reported.</p>
+
+<hr/>
+
+<h3><a href="http://getgems.org/">Gems</a></h3>
+
+<p>GetGems is a free mobile app available for iOS and Android. It makes instant messaging with friends fun, simple, secure and profitable.</p>
+<p>- **Fun.** Keep in touch with friends. Free unlimited instant messaging.</p>
+<p>- **Simple.** Your passphrase is your wallet. Fully functional in under 30 seconds.</p>
+<p>- **Secure.** Be as anonymous as you desire. Communications are always encrypted.</p>
+<p>- **Profitable.** Be rewarded for introducing new users to the network.</p>
+<p>Daily airdrop of Gems - Every day, ~27,500 Gems are air dropped from the Exodus Address. The ecosystem automatically distributes these Gems between users according to their relative network contribution. Contribution is measured by the number of active daily users which were introduced by you to the network so far.</p>
+<p>Since daily airdrop rewards users who introduce other users, who is rewarded for those who come without a special invitation? Uninvited users will be attributed to random Presale buyers. In addition, air drop share is multiplied by total gems owned. The more Gems you own, the more Gems you make - an advantage to those who accumulate Gems first.</p>
+<p>100 million Gems is the total currency supply in the GENESIS BLOCK. Eventual supply is achieved as follows: 50 million Gems distributed to stakeholders; 30 million Gems distributed as daily Airdrop rewards during ~3 years after launch; 12 million Gems reserved for bonus block rewards, promotion, marketing, bounties; 8 million Gems + Presale BTC will fund the network R&D and operation costs.</p>
+<p>The Gems currency is powered by Counterparty. Every GetGems user automatically gets his own wallet, protected by the passphrase chosen on registration. The social network username is an alias to the GetGems address, making sending &amp; receiving Gems and bitcoins between users as easy as possible.</p>
+
+<hr/>
+
+<h3><a href="https://monegraph.com/">Monegraph</a></h3>
+
+<h4>What is Monegraph?</h4>
+<p>Monegraph is a technology that lets you, in a permanent and public way, claim your work as your own and set its rules for use. Anywhere that work goes, when it is used, you get paid. Built on the oldest and most secure public ledger, Monegraph uses blockchain architecture to establish and link the author of a work to its title of ownership, its constellation of usage rights, and payment terms for handling those rights.</p>
+
+<h4>What types of digital work can be Monegraphed?</h4>
+<p>Monegraph was conceptualized by Artist/CEO Kevin McCoy at Rhizome’s Seven on Seven conference in 2014. The initial version supports digital images, photos and animating GIFs. We are working to support many other media types and source file formats in the near future.</p>
+
+<h4>When can I start using Monegraph?</h4>
+<p>Beginning July 14, Monegraph is inviting its inaugural group of creators to the platform. Drawn from a range of creative industries spanning art, fashion, photography and design, these pioneers will frame the opportunities that Monegraph brings to their fields. We will be expanding the private beta to a larger user base in August and plans to officially launch to the public in September 2015.</p>
+<p>Kevin McCoy: I’m an artist. My artwork is produced in collaboration with my wife Jennifer. For a long time we’ve been doing work that intersects with technology, broadly speaking. I’m also a professor in the art department at NYU. I oversee the digital practices in the art department. In May of last year I presented a concept called Monegraph at Rhizome Seven on Seven at the New Museum and since that time, I have slowly been working to develop it as a platform.</p>
+<p>Artist and professor Kevin McCoy's platform Monegraph launches in September. The service offers an online marketplace as well as a licensing system based on similar encryption technology used by Bitcoin and other so-called "cryptocurrencies."</p>
+
+<hr/>
+
+<h3><a href="https://onename.com/">Onename</a></h3>
+
+<p>Register your blockchain ID with Onename</p>
+<p>- **Choose a unique name** This is the name you share so others can find your blockchain ID. If you keep your password safe, no one can take this name from you.</p>
+<p>- **Create and verify your profile** Link your blockchain ID and social media profiles together to prove ownership of your blockchain ID and verify it's really you.</p>
+<p>- **Start using your blockchain ID** Share your blockchain ID on your website, social media profiles, and business cards so people can easily find you online.</p>
+
+
+<p>Help others send you Bitcoin:</p>
+<p>- Link to your blockchain ID in your email signature</p>
+<p>- Embed your blockchain ID on your blog</p>
+<p>- Display your blockchain ID on your twitter page</p>
+
+
+<p>Share your details while maintaining privacy:</p>
+<p>- Share your contact info privately with select individuals</p>
+<p>- Use stealth addresses for private payments</p>
+<p>- Share your PGP Key, OTR Key and BitMessage address for private chat</p>
+
+<hr/>
+
+<h3><a href="http://www.otonomos.com/">Otonomos</a></h3>
+
+
+<p>We put your company on digital rails</p>
+<p>Open a share wallet to write real-world company shares on the blockchain, transfer equity peer-to-peer, and govern your company using smart contracts.</p>
+
+
+<p>- **Online Formation** Incorporate in a leading real-world jurisdiction by simply creating an online share wallet, or have us dematerlialize your existing private limited company shares.</p>
+<p>- **Peer-to-Peer Funding** Transfer equity peer-to-peer to attract co-founders, remunerate collaborators, invite new investors or the crowd at large. Know you captable at all times.</p>
+<p>- **Automated Governance** No matter how dispersed your share ownership, our technology helps you automate governance of your company using self-enforceable, smart contracts.</p>
+
+<h4>We make this work in leading real-world jurisdictions</h4>
+
+<p>Whether you already own a private limited company or need us to help incorporate a new one, Otonomos can help dematerializing your share certificates and write them on the blockchain.</p>
+
+
+<p>See who your shareholders are at all times. Transfer equity peer-to-peer.</p>
+<p>Manage your Boardroom and shareholder voting online. Update your company's constitution in one click</p>
+<p>Click here to read more about blockchain, and the Ethereum protocol on which Otonomos is built.</p>
+
+
+<p>- **No Server Silos:** Blockchain is a distributed ledger that sits on the computers of each participant in the network, who each contribute in the running of the network, without central servers.</p>
+<p>- **Cryptography at Work:** By opening a share wallet or making a share transfer, you are writing transactions to the blockchain. Cryptography makes sure these are verified as unique and tamperproof.</p>
+<p>- **Smart Shares:** Smart shares emulate a computer executing a program: They have your company's governance protocols embedded and can help execute events on which your Board or your shareholders voted.</p>
+
+<hr/>
+
+<h3><a href="http://www.shocard.com/">ShoCard</a></h3>
+
+<p>ShoCard is a digital identity that protects consumer privacy and is as easy to understand and use as showing a driver’s license. It’s optimized for mobile and so secure that a bank can rely on it.</p>
+
+
+<p>- **Consumer-friendly:** No hard-to-remember passwords, no complicated code generators, no obscure challenge questions. ShoCard works on your phone, so it’s always at hand.</p>
+<p>- **Secure:** ShoCard protects and verifies identity using strong public/private key encryption with multiple keys, data hashing, out-of-band communication, data matching, and two-factor authentication.</p>
+<p>- **Always-on:** ShoCard’s game-changing pricing means almost no marginal cost to our customers for verifying identity. Banks and others can check identity on every transaction, virtually eliminating fraud.</p>
+
+<hr/>
+
+<h3><a href="http://storj.io/">Storj</a></h3>
+
+<p>Decentralized Cloud Storage</p>
+<p>Storj is based on blockchain technology and peer-to-peer protocols to provide the most secure, private, and encrypted cloud storage.</p>
+
+
+<p>**DriveShare**</p>
+<p>Do you have unused internet bandwidth and hard disk space on your computer?</p>
+<p>Put your computer to work for you with our desktop application, DriveShare, and earn money for being a part of the Storj network.</p>
+<p>Just run our app, DriveShare, and choose the amount of free hard disk space you want to provide.</p>
+
+
+<p>**MetaDisk**</p>
+<p>Using our web application, MetaDisk, you can upload your data to the Storj network with a simple drag and drop.</p>
+<p>Your files are protected and encrypted on your computer before they go into the network and only you, with your private key, have access to your data.</p>
+<p>You can even earn cloud storage on MetaDisk by sharing your hard drive space with DriveShare.</p>
+
+<hr/>
+
+<h3><a href="https://swarm.fund/">Swarm</a></h3>
+
+<p>**What is Swarm basic income?**</p>
+<p>Every time a project is created through Swarm, a part of that project is automatically given to all Swarm members. This allows all Swarm members to participate in the distributed abundance made possible by the Swarm.</p>
+
+
+<p>**How can I create my own DCO?**</p>
+<p>Check out this [this guide](https://medium.com/@rubenalexander/f443bc686335) to see how you can create your own DCO.</p>
+<p>**Why would I want a DCO?**</p>
+<p>Setting up a corporation or non-profit is expensive. DCOs cost nothing to set up. Creating or distributing shares is expensive. With DCOs it is practically free. DCOs allow you to organize bottom up instead of top down and distribute abundance to every member who contributes.</p>
+<p>**What is Swarm?**</p>
+<p>A collaboratively owned membership network decidated to facilitating abundance. You can read about the history of the Swarm [here](https://medium.com/@Swarm/history-of-the-swarm-83ff0fc80a8).</p>
+
+<hr/>
+
+<h3><a href="http://www.synereo.com/">Synereo</a></h3>
+
+<p>Attention economy</p>
+
+<hr/>
+
+<h3><a href="https://thingchain.com/">thingchain</a></h3>
+
+<p>Provenance tracking for products from a diverse array of industries.</p>
+<p>Popcodes are unique cryptographic QR codes that can be tracked, possessed and transferred with the thingchain API</p>
+
+
+<p>The Thingchain API makes it easy for developers to build applications to securely track goods as they change ownership.</p>
+<p>The underlying architecture that the API exposes is:</p>
+<p>- a customized fork of the Bitcoin Blockchain that has been modified to accommodate the specific needs for the tracking of goods</p>
+<p>- a searchable index of the blockchain</p>
+<p>View the full API reference [here](https://thingchain.com/api).</p>
+
+<h4>Concepts</h4>
+
+<h5>Identity</h5>
+<p>Real world identities are represented by a cryptographic key-pair. This key-pair is typically generated by the application on the client device, ensuring that only the client device has possession of the private key. Thingchain offers an in-browser javascript file and a server side nodejs npm package for key generation.</p>
+<p>Transactions that transfer ownership on the Thingchain must be signed by the identity key of the individual creating the transaction.</p>
+<p>Thingchain maintains a relationship between registered public keys and real world identities.</p>
+<h5>Popcode</h5>
+<p>A Popcode (Pop == Proof-of-Provenance) is a thing’s unique digital identifier (consisting of a Bitcoin-style private/public key-pair &amp; address) and its associated value, metadata and provenance on the blockchain. For instance, a Popcode may contain 24 bottles or 1 widget or 300 Kgs. The term popcode typically refers to the address.</p>
+<p>Popcodes are generated through a secure key derivation function on the thingchain server.</p>
+<h5>Tracking</h5>
+<p>A thing’s popcode is created, or minted, when user Alice’s identity sends value into the popcode’s public address.</p>
+<p>To obtain this value, Alice’s identity address must withdraw it from the thingchain “faucet”, or master address.</p>
+<p>When Alice ships the thing to Bob, Bob receives the private key and takes possession of the popcode by sending the value in the popcode address to her identity address. At this stage, the popcode cannot be duplicated and possessed by another user because the address contains no value.</p>
+<p>When Bob is ready to ship the thing to Charlie, he releases the popcode by sending the value from his identity address back to the popcode. Charlie is now able to take possession of the popcode and continue the chain of custody.</p>
+
+
+<hr/>
+
+<h3><a href="https://tierion.com/">Tierion</a></h3>
+
+
+<p>Tierion is an engine for collecting data and recording it in the blockchain</p>
+<p>Tierion is a simple and powerful way to collect data, record it in the blockchain, and slingshot it to the applications that drive your business. Protect the integrity of your data with the world's most secure and resilient database — the Bitcoin blockchain.</p>
+<p>- **Collect Data From Web &amp; Mobile Apps** Submit data to our REST API or via HTML forms.</p>
+<p>- **Record Your Data In The Blockchain** Tierion automatically records each record in the blockchain and generates a blockchain receipt.</p>
+<p>- **Slingshot Your Data To Other Systems** Automatically send your data to the applications you use to run your business.</p>
+
+<h4>What is a blockchain receipt?</h4>
+<p>We’ve developed an open standard called Chainpoint for recording data in the blockchain and generating blockchain receipts. Each receipt contains all the information needed to verify the data without relying on a trusted third party.</p>
+<p>Tier 4 - High Volume 150,000 records per month • Unlimited Datastores $199 per month</p>
+
+<hr/>
+
+<h3><a href="http://tradle.io/">Tradle</a></h3>
+
+<p>We help externalize transactions to scale world commerce</p>
+<p>- **Why Bitcoin?** blockchain automatically and irreversibly serializes transactions: Human activities will be more transparent, yet more secure, more automatic, yet touching more people, more coordinated, yet more diverse</p>
+<p>- **Non-financial transaction** Bitcoin only carries financial transactions: Tradle extends it to securely externalize ANY transactions, like travel, dating or CRM, ERP, B2B. This creates a new extremely simple way to do commerce globally</p>
+<p>- **Network Effect** Transactions often have 2 or more participants: When you send transactions to friends and businesses, it gives them more value if they join in, always widening the circle</p>
+
+
+<p>HOW DOES TRADLE DO IT?</p>
+<p>with an inclusive open source project and proprietary business tools</p>
+<p>- **Community effort** Tradle community develops crypto log on blockchain:</p>
+<p> Open source project with highly compartmentalized data encryption, audited dynamic access allocation, irreversibility, with a choice to be more or less transparent</p>
+<p>- **Advantage of existing tools** Not just a REST API, full stack tools: Open source mobile framework combined with the business app dev and integration platform allow Tradle build full-stack sophisticated blockchain apps today</p>
+<p>- **Unique app concepts** We invite partners to use our ideas for new types of apps: For the first time in history we are able to connect apps, people and businesses without a trusted company in between. Let's build those apps together.</p>
+
+<hr/>
+
+<h3><a href="https://trustatom.com/">Trustatom</a></h3>
+
+<p>Privacy-respecting identity &amp; smart contract solutions for enabling credibility, trust and safety</p>
+
+<h4>Next generation multifactor authorization</h4>
+
+<p>Trustatom ID mobile workflow relies on strong cryptography for criticial action authorization.</p>
+<p>Unlike in traditional "type this number sequence" schemes (TOTP), user's authorization signature can't be forged, enabling higher level of protection and better audit trail. And yes, no need re-type the numbers in the next 5 seconds!</p>
+<p>Trustatom ID authentication is a public service, delivered free of charge. Majority of the workflow happens outside of Trustatom servers and Trustatom has no access to private information.</p>
+
+
+<h4>Trustworthy identity &amp; credentials</h4>
+<p>Knowing who is on the other side of the connection has always been a challenge.</p>
+<p>What's even more complicated is knowing sufficiently enough about that person to conduct business with her. With Trustatom ID users can easily share isolated pieces of their information (residency, age, banking information, contacts etc.) signed by trusted third parties upon request.</p>
+
+
+<h4>Smart Contracts</h4>
+<p>Our Contract API are designed to help third party applications to use robust, pre-designed building blocks for different kinds of contracts: document certificates, joint escrows, etc. This API is also seamlessly integrated with Trustatom ID, removing the need to reinvent anything.</p>
+
+
+<h4>Niche solutions</h4>
+<p>Trustatom powers highly tailored solutions for specific industries and niches to maximize the potential of the technology.</p>
+<p>The first solution is Streamline.VC, an application that helps investors and companies to establish continuous credibility during the due diligence and post investment.</p>
+
+<h4>Better UX</h4>
+<p>Nothing replaces a better, smoother user experience. Trustatom ID technology does not use the traditional approach that requires users to enter a number they see on their phone within a very limited period of time (for example, 30 seconds).</p>
+<p>Instead of that, user's phone securely stores a master keypair that is used to sign each and every third party authorization request. The workflow the user is exposed to is very simple. It involves scanning a QR code, and authorizing the app to sign an action-specific, clearly rendered request.</p>
+
+<h4>Secure</h4>
+
+<p>We designed our security scheme to have the right balance of usability and security guarantees. It's a combination of such techniques as: "limited gain" first factor authentication, highly guarded privacy, true off-band communication, use of trusted secure hardware open sourcing our mobile app.</p>
+<p>Our scheme allows users to clearly see what kind of authorization they are giving to a third party application and these signatures can't be forged by anybody.</p>
+<p>Lastly, but not least importantly, Trustatom ID uses state of art cryptography primitives, such as ECDSA, BIP32, ECIES and SHA256. Our scheme is being reviewed by various experts in the field. Our paper will be soon released to the public.</p>
+
+<h4>Audit Trail</h4>
+<p>The very nature of authorizations signed by users allows for granular permission grants that can be irrefutably pinpointed in time, when used in conjunction with Trustatom Smart Contracts API. This allows third party application providers to keep a perfect audit trail of all authorizations forever, ensuring their conformance to their processes and compliance level they are regulated by.</p>
+
+<h4>Trusted credentials</h4>
+<p>One of the very important features of Trustatom ID is that it allows third party applications to request relevant pieces of information about the user, without being exposed to all of it (thus violating user's privacy). These chunks of information are provably signed by trusted third parties that Trustatom has partnered with.</p>
+
+
+<hr/>
+
+<h3><a href="http://www.verisart.com/">Verisart</a></h3>
+<p>Verisart is launching soon. Sign up to learn more about a new way to track and verify works of art.</p>
+
+<hr/>

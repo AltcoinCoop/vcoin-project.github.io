@@ -1,0 +1,118 @@
+---
+layout: socpage
+title: Proof of unique blockchain storage revised
+excerpt: a new way to for a node in the Bitcoin blockchain to prove its peers store a copy of the blockchain
+image:
+  feature:
+---
+
+<style type="text/css">p {font-family:serif; font-size:1.16rem !important;line-height:1.6rem;}</style>
+
+<p>In <a href="https://bitslog.wordpress.com/2015/09/16/proof-of-unique-blockchain-storage-revised/">this post</a>, SDLerner describes a new way to for a node in the Bitcoin blockchain to prove that its peers store a copy of the blockchain.</p>
+<p>The core primitive that enables this protocol this is the Asymmetric-Time Function (ATF). You won’t get much info by googling ATF since I coined that term myself some time ago. In <a href="https://bitslog.wordpress.com/2014/11/03/proof-of-local-blockchain-storage/">a past post</a>, I proposed exponentiation to the 3rd power in Zp for a big prime p (3pow from now on) as an ATF. It is fast to compute in one direction (retrieval or decoding) and slow to compute in the reverse direction (archival or encoding). Nodes on the network that want to be able to prove storage of the full blockchain must store the blockchain in an encoded format. But before encoding it, the blockchain data is masked by the prover’s IP (for example, by xor-ing the IP to every data block). The prover node also dynamically decodes the data and unmask it for retrieval when it is required for its normal use (not for the challence-response protocol, where the data is provided in encoded form). Generally the prover will make frequent use of the blockchain data: for example, it may serve the data to other peers so they can download the blokchain. The prover would want that decoding does not slow down block retrieval more than, for example, 25%. If normal disk access time for a 1 Mb block is about 20 msec, it may not want the decoding overhead to take more than 5 additional milliseconds. This sets our first practical limit.</p>
+
+<h4>Single Challenge-Response</h4>
+
+<p>Let’s say the challenger wants to know if the prover has a copy of the blockchain such as the cheating probability is less than 1/1000. Let’s assume that a network round-trip time between challenger and prover is 100 msec with some variance such that the probability that a round-trip takes more than 200 msec is below 1/1000. The challenger will choose 200 msec as the threshold to wait to receive a response. If it arrives before the deadline, and the response is correct, the challenger will conclude that the prover has a copy of the blockchain. With a 200 msec threshold, all the on-the-fly encoding operations that a cheater must do should total more than 200 msec. If the challenger asks for a single word of data (e.g. 32 bits), then encoding such small data should take more than 200 msec. For this to be the case of a single 3pow operation, the number of bits in the modulus would need to be about 100K bits (12 Kbytes) and the decoding would take about 4 msec, so decoding a 1 Mb block would take about 300 msec. That’s clearly much more than the maximum 5 msec overhead desired.</p>
+
+<h4>Block Asymmetric-time functions and SeqMemoCodec</h4>
+
+<p>I will introduce Block Asymmetric-time functions as asymmetric-time functions that operate in large chunks of data such that decoding a subset of the data takes roughly the same time as decoding all the data chunk. In other words, they are asymmetric when comparing sub-block decoding and sub-block amortized encoding. Clearly, this implies that each sub-block of the encoded data in the chunk should be a function of all the chunk data. In this regard, Block Asymmetric-time functions share some properties with memory-hard functions: they operate over a large state over and over.</p>
+
+<p>We present SeqMemoCodec, a Block Asymmetric-time function based on <a href="https://bitslog.files.wordpress.com/2013/12/memohash-v0-3.pdf">SeqMemoHash </a>and CBC encryption, but replacing the one-way primitive by a lightweight encryption primitive. In theory, the encryption key is unimportant and only a non-commutative permutation with diffusion properties is required, so we’ll use E(x) for encoding and D(x) for decoding, without referring to any key. A slight difference from SeqMemoCodec to the original SeqMemoHash is that I also added a more randomized references to the previous state, to be able to prove exponential growth on the number of lookups required to obtain the original data, if some blocks are missing.</p>
+
+<p>Here is the definition of SeqMemoCodec. In a nutshell, it makes several passes through the data, and each block is transformed by using information in the previous block, and K blocks taken pseudo-randomly using the K previous blocks as K integer indexes. A similar function can be obtained by splitting the previous block and using one part as the first index, other as the second index and so on, if the encoder block size is long enough. My definition requires <tt>N&gt;K</tt>, and I suggest <tt>K=3</tt>.</p>
+
+<h4>SeqMemoCodec encoding</h4>
+
+<ol>
+<li>For r :=1 to R do
+<ol>
+<li>For b :=0 to N-1 do
+<ol>
+<li>p:= (b-1+N) mod N</li>
+<li>M[b] :=E(M[b] xor M[p1])</li>
+<li>For k :=0 to K-1do
+<ol>
+<li>p:= (b-1-k+N) mod N</li>
+<li>q:= AsInteger(M[p]) mod (N-1)</li>
+<li>j := (b+q) mod N</li>
+<li>M[b] :=E(M[b] xor M[j])</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+
+<h4>SeqMemoCodec decoding</h4>
+
+<ol>
+<li>For r :=1 to R do
+<ol>
+<li>For b := N-1 downto 0 do
+<ol>
+<li>For k :=K-1 downto 0 do
+<ol>
+<li>p:= (b-1-k+N) mod N</li>
+<li>q:= AsInteger(M[p]) mod (N-1)</li>
+<li>j := (b+q) mod N</li>
+<li>M[b] :=D(M[b]) xor M[j]</li>
+</ol>
+</li>
+<li>p := (b-1+N) mod N</li>
+<li>M[b] :=D(M[b]) xor M[p]</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+
+<p>The lightweight encoding function is based on <a href="https://en.wikipedia.org/wiki/XTEA">XTEA</a>, but removing the key argument, and reducing the number of rounds to 8. The reduction of rounds is justified since we’re not trying to protect the encoded data from decryption (there is no key to protect) but providing diffusion and non-commutativity while preserving entropy. Even 2 XTEA rounds may suffice, if the number of rounds of SeqMemoCodec (R) is 32 or more.</p>
+
+<h4>Encode/Decode functions based on XTEA</h4>
+
+<pre>
+#include &lt;stdint.h&gt;
+/* take 64 bits of data in v[0] and v[1] */
+void encode(uint32_t v[2]) {
+   unsigned int i;
+   uint32_t v0=v[0], v1=v[1], sum=0, delta=0x9E3779B9;
+   for (i=0; i &lt; 8; i++) {
+       v0 += (((v1 &lt;&lt; 4) ^ (v1 &gt;&gt; 5)) + v1) ^ sum;
+       sum += delta;
+     v1 += (((v0 &lt;&lt; 4) ^ (v0 &gt;&gt; 5)) + v0) ^ sum);
+   }
+   v[0]=v0; v[1]=v1;
+}
+void decode(uint32_t v[2]) {
+   unsigned int i;
+   uint32_t v0=v[0], v1=v[1], delta=0x9E3779B9, sum=delta*8;
+   for (i=0; i &lt; 8; i++) {
+       v1 -= (((v0 &lt;&lt; 4) ^ (v0 &gt;&gt; 5)) + v0) ^ sum);
+       sum -= delta;
+       v0 -= (((v1 &lt;&lt; 4) ^ (v1 &gt;&gt; 5)) + v1) ^ sum);
+   }
+   v[0]=v0; v[1]=v1;
+}
+</pre>
+
+<p>Since XTEA data block is 8 bytes in length, for a 1 Mbyte blockchain block, the asymmetry ratio is 131K!</p>
+
+<p>Suppose that we take R=10 and K=3 (the reason these are good choices will be explained later). Then E is applied 40 times per block, and encoding a 1 Mb block in a standard PC would take approximately <a href="http://www.cryptopp.com/benchmarks.html" rel="noreferrer">7 msec</a>. We create a challenge that consist of an unpredictable seed from which 100 random 32-bit word indexes are derived. The prover must return a hash of the encoded values.</p>
+<p>Assuming random disk access costs 10 msec, and there is no overlapping I/O, a node having an encoded copy of the blockchain is able to respond with a hash of the 32-bit words in 1.1 sec (considering the 100 msec network latency). A cheater that holds a factor of k of the blockchain and must encode on-the-fly will only be able to respond in <tt>100+1000+(1-k)*700</tt> msec on average. For k=0.5, this is 1450 msec. Then it is easy for the challenger to distinguish between the two cases.</p>
+
+<p>Bitcoin Core does not by default offer the service of transaction-level retrieval for transactions not in the memory pool. If it did, then having a full block decoding requirement would have an impact on transaction level access performance. However, as hard disk block size is 4 Kb or more, and disk access is dominated by seek time, so I don’t expect a noticeable detriment in performance.</p>
+
+<p>As the blockchain can be compressed and does not have maximal entropy, we would like to prove that even if the blockchain data is all zeros (no entropy) storing the full data encoded is the fastest way to retrieve the encoded data. I will not attempt to prove it here, but I have a sketch proof that suggest that a cheater storing only 50% of the blockchain (either in encoded or decoded form) incurs in a penalty of about 2^R additional encode/decode operations. So if the challenger expected cheating rate is 0.1%, R=10 is an acceptable choice. Note that the blockchain can be compressed by loosless data compressors, but not much, as it contains non-repeating high entropy hashes, signatures and public-keys. Is not the intent of this protocol to prevent storing the data in compressed form, but compressing data before encoding does not help much for a cheater. If a cheater is able to compress the blockchain to 50% of its size, he will need to perform 2^R on-the-fly decompressions for each original 32-bit query, apart from the 2^R decodings. As an example, setting R=20, and assuming a compression block size of 1024 bytes, then the cheater needs to decompress on-the-fly 1 GB of information. It is much better for the cheater to just decompress the whole block in a single pass, and then re-encode it with SeqMemoCodec on-the-fly.</p>
+
+<h4>Even better results</h4>
+
+<p>Finally, one can combine a high-level Block ATF with a low-level (e.g. SeqMemoCodec) ATF by using the low-level ATF as the encoding/decoding function (e.g. 3pow). For 3pow, a prime very close to a high power of two, such as 2^128, should be chosen to reduce the probability of generating an element which is not invertible under 3pow (but you can use another ATF if that is a concern). If the 3pow modulus has 128 bits, then we can achieve an additional 64x asymmetry at a very low cost. But 128-bit modular exponentiation takes more time than our proposed encoding function. I estimate that initially encoding 1 MB block will take about 2 seconds of processing, which is completely tolerable for blockchain with a 10 minute block interval. Now the challenger can ask for only 10 32-bit samples derived from the seed. The non-cheating responder will respond in about 200 msec, while a cheater having 50% of the blockchain will respond on average in&nbsp; 2.3 seconds.</p>
+
+<p>Note that all performance numbers cited in this blog are only estimations based on different hardware architectures. Perform your own tests in order to choose the appropriate protocol parameters.</p>
+
+<h4> Conclusion</h4>
+
+<p>My <a href="https://bitslog.wordpress.com/2014/11/03/proof-of-local-blockchain-storage/">previous proposal</a> of a proof of unique blockchain storage did not correctly take into account disk access time, and so was only practical for SDD hard drives, of for in-memory data. In this post I presented a new simpler and practical alternative based on Block asymmetric-time functions that works even if block access time is high.</p>
