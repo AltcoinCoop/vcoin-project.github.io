@@ -26,3 +26,15 @@ Subsequent support and development has been in the form of *ad hoc* contribution
 The original Github repository has since been forked and development now proceeds in several different forks on Github, [including this one](https://github.com/vcoin-project).
 
 
+---
+
+#the V construct, an emergent collective intelligence
+
+V is an emergent collective intelligence. At first glance that might seem a bit far-fetched but we are talking about *a cryptocurrency*.
+
+The emergence of a collective intelligence is almost unique in altcoins because the vital sense of collective identity is usually prevented from blossoming by the distorting undue influence of the developer.
+
+All I am doing is pointing to a strong correspondence between the description of a Teal organisation and the description of a peer-to-peer networked cryptocurrency. I provide full sources. Same goes for the argument that V is a “collective intelligence”.
+
+You can make up your own mind how plausible you find the argument --- you can even do your own further research on the nuts and bolts. If you do gain some insights, then please share them.
+

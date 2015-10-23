@@ -129,3 +129,102 @@ Factors to consider when choosing amongst cryptocurrency exchanges.
 “The local cryptocurrency exchange that is associated with local exchange server may be associated with the same jurisdiction (e.g., country, economic union, political union, etc.) with which a particular customer account may be associated or conducts transactions in a currency associated with the jurisdiction associated with a particular customer account”
 
 ---
+## Glass Frog decentralised work support
+
+Glass Frog, despite the twee name, is a decent mechanism for capturing the work that people actually do and helps in a meeting to memorialize what happened and who was supposed to do what as a result of the decisions made by the group. But it's basically just a well-designed database and to-do list that teams use to define the work they're supposed to be doing and to hold themselves accountable for those tasks. Of course, everyone also complains about its limitations.
+
+---
+
+## Laloux - full-fledged Teal organisations yet to fully emerge 
+
+Full-fledged Teal organizations, very much like true Communist societies, have yet to fully emerge, Laloux writes
+
+http://www.newrepublic.com/article/122965/can-billion-dollar-corporation-zappos-be-self-organized
+
+https://news.ycombinator.com/item?id=10329831
+
+“If you read the book mentioned in the article it is not quite so brainwashy. I expect it doesn't make sense for a majority of workplaces as is, but it didn't sound like teal workplaces where bad places to work. In fact, it sounded like the sort of place I would love to work, but at the same time I knew that the majority of my coworkers would not fit in. The basic tenet as I understood it is that you can replace the structure of management with a structure of decision-making processes where decisions are taken at the lowest possible rung (where lowest means as close as possible to the work the decision impacts). It's not democracy, but it is self organized. It's a book worth reading if you want to reset your expectations on what corporate hierarchy must look like.”
+
+“I have read "the book" mentioned (Reinventing Organizations) and it's amazing. Another book to read would be Maverick by Ricardo Semler. The companies covered, from a wide range of different sectors, industries and countries genuinely seems to provide a nurturing, egalitarian environment for their employees. I think that operating from a teal perspective would make the world a better place.”
+
+
+---
+
+## Can society go backwards or not?
+
+Yes, for the underprivileged it would seem, from this comment to ...
+http://www.theguardian.com/technology/2015/oct/05/why-the-term-sharing-economy-needs-to-die
+
+
+You might try the 'call-on' economy - a re-emergence of the kind of casual labour the existed in the London docks before unionisation ...
+
+https://www.ideastore.co.uk/local-history-online-exhibitions-dock-strike
+
+Most dock workers were employed on a casual, day-to-day basis, with few securing regular employment. The dock companies received very little advance notice of a ship’s arrival and, as such, they were keen to ensure that there was a large workforce readily available without having to endure the expense of paying for surplus workers during quieter periods. As a result, a ‘call-on’ system was adopted, whereby a number of times a day, workers would congregate at each of the docks and a foreman would select which ones to hire, often for less than a few hours at a time, based on the availability of work. The system was degrading and encouraged both favouritism and petty corruption, as trade union leader Ben Tillett describes: “We are driven into a shed, iron-barred from end to end, outside of which a foreman or contractor walks up and down with the air of a dealer in a cattle market, picking and choosing from a crowd of men, who, their eagerness to obtain employment, trample each other under foot, and where like beasts they fight for the chances of a day's work”
+
+These days it's also the “esquina” (corner) economy, where labourers congregate on corners or in car parks near Home Depot (B&Q) looking for casual work.
+
+(The term 'sharing economy' has been extensively challenged by academics and replaced by the more accurate, though less catchy, 'access economy' - see https://hbr.org/2015/01/the-sharing-economy-isnt-about-sharing-at-all)
+
+Also:
+
+I think many people are generous, but get a bit miffed when people, who could easily afford to be, aren't generous in return. If only there was a mechanism whereby we could easily track the value of goods and services that we give to each other... :-)
+
+
+
+If I give you something of mine not expecting anything in return, that's giving, not sharing.
+If I give you something of mine in the expectation that you will give me something back, that's barter, not sharing.
+If I allow you to use something of mine not expecting anything in return, that's sharing.
+If I give you something of mine (temporarily) in exchange for money, that's renting, not sharing.
+If I give you something of mine (permanently) in exchange for money, that's selling, not sharing.
+
+---
+
+## Altcoin Market manipulation
+
+++ Just out of curiosity, I dont own any Bitshares, but could someone
+++ please give a reason why the price has been dropping so fast?
+++ 
+++ Is it just the hype of the release then everone sold or is there
+++ something more sinister at play?
+
+Just the typical highly manipulated altcoin market multiplied by a factor of 10 because Bologniex allows leverage longs and shorts.  There's a group of Asians with around 500 btc who are always constantly pumping or shorting it and when they do, they remove or add 200+ btc buy support to the walls at the same time.  When they remove 200btc buy support, market usually just instantly crashes.  Pretty much any coin on Poloniex is a complete fugazi due to stuff like this.  They never should have added leveraged trading because none of these coins have liquidity to support it.
+
+You can toss in a short then immediately remove 200btc buy support and just automatically get paid.  Other people are doing the same thing with even more float, up to 1000btc (cagara) which makes the alt market a complete joke now.  Poloniex thinks it's a great idea because they increase liquidity, but it will probably just kill off their entire user base.  If the risk is always way higher than the reward, people will just stop trading at all.
+
+??? c.f. Bittrex’ request to SLG for coverage of losses incurred when on wrong fork.
+
+---
+
+## Not OP’s fault at all, then
+
+https://bitcointalk.org/index.php?topic=1170315.msg12334277#msg12334277
+
+‘I just forgot to change the pszTimestamp in the source  Huh (cloned from GiveCoin) A little disappointing you did not notice that ocminer.’
+
+---
+
+## Externalities
+
+https://bitcointalk.org/index.php?topic=623147.msg12717594#msg12717594
+
+In Economics, there is the concept of what is called an "externality".
+
+The basic implication is that a market can't operate efficiently when there are costs or benefits which are related to, but not reflected in the market.
+
+For instance: Air pollution causes a cost on society.  Air pollution clean-up should be paid for by those who create it.  When it is not, the cost of creating air pollution is arbitrarily held down and the market demand for air pollution creating devices is arbitrarily higher than it should be if it accurately reflected it's "true" cost.  Everything we do/create has costs and benefits.  When all of those costs and benefits are illustrated in price/value of those actions; the market will, theoretically, provide exactly the appropriate level of supply/demand.
+
+---
+
+## Not just HODL
+
+https://bitcointalk.org/index.php?topic=1197359.msg12568875#msg12568875
+
+Adam back talked recently about how the number of nodes as a measure of security / decentralization:
+
+> “If you boil it down going down from the requirements about what Bitcoin is and why decentralization and permissionless innovation [are important], you can translate that into what are the mechanisms that make bitcoin secure, and the full node auditors — it’s not just running a full-node, you have to actually use it for transactions. It’s the amount of economic interest that is relying on full-nodes and has direct trust and control of those full-nodes. This is what holds the system to a higher level.”
+>...and how nodes are key in the blocksize debate: [http://coinjournal.net/adam-back-on-the-overlooked-importance-of-full-nodes-in-bitcoin/](http://coinjournal.net/adam-back-on-the-overlooked-importance-of-full-nodes-in-bitcoin/) 
+
+---
+
+> 
