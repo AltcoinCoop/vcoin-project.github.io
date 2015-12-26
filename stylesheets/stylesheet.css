@@ -16,6 +16,11 @@ a {
   a:hover {
     text-decoration: underline; }
 */
+
+.ui.tab.active p.org, .ui.tab p.org  {
+  font-size: 98%!important;
+  padding: 2rem;
+}
 img.navicon {height:48px; width:48px;}
 .ui.text.container blockquote {font-style: italic; padding:1em; background-color: rgba(127, 127, 127, 0.08);}
 
@@ -37,6 +42,14 @@ img.navicon {height:48px; width:48px;}
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
+
+/* Color organisation */
+p.teal {background-color: rgba(0, 181, 123, 0.05);}
+p.green {background-color: rgba(33, 186, 69, 0.05);}
+p.orange {background-color: rgba(242, 113, 28, 0.05);}
+p.amber {background-color: rgba(251, 189, 8, 0.05);}
+p.red {background-color: rgba(219, 40, 40, 0.05);}
+
 
 @media screen and (min-width: 64em) {
   .btn {
