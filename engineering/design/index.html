@@ -13,7 +13,7 @@ image:
           <div class="column">
             <h3 class="ui header">VCoin design notes, collated from prior postings.</h3>
             <p><img src="/assets/images/coins/bitcoin_btc.png"/> <img src="/assets/images/coins/zetacoin_zet.png"/> <img src="/assets/images/coins/fireflycoin_ffc.png"/> <img src="/assets/images/coins/vcoin_vcn.png"/></p>
-            <p>Originally, VCoin’s clone heritage was: FireflyCoin -&gt; ZetaCoin -&gt; Bitcoin</p>
+            <p>Originally, VCoin’s clone heritage was: Bitcoin -&gt; ZetaCoin  -&gt; FireflyCoin -&gt; VCoin</p>
             <p>Studying the code tells us that VCoin as originally published on cryptocointalk is a minimal-change clone of Fireflycoin, demonstrated by the <a href="https://github.com/vcoindev/vcoin/blob/master/src/qt/bitcoingui.cpp#L190">reference to FFC</a> in bitcoingui.cpp:</p>
             <pre>sendCoinsAction->setStatusTip(tr("Transfer FFC to another Wallet"));</pre>
             <p>Fireflycoin is itself is also a minimal-change clone of ZetaCoin, demonstrated by the <a href="https://github.com/dannyasia/FireflyCoin-master/blob/master/src/qt/askpassphrasedialog.cpp#L101">reference to ZETACOINS</a> in askpassphrasedialog.cpp:</p>

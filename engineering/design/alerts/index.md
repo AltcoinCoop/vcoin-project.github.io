@@ -8,9 +8,7 @@ image:
 
 # Alerts
 
-## Header
-
-Text.
+We need to develop a solution for curation of the private key that enables alert messages to be broadcast to all nodes.
 
 ---
 
