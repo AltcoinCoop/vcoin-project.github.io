@@ -6,6 +6,37 @@ image:
   feature:
 ---
 
+# [Semantic analysis](https://dandelion.eu/)
+
+“Dandelion API Semantic Text Analytics as a service”. 
+
+> ### Entity Extraction
+> Find mentions of places, persons, brands and events in documents and social media. Easily get additional data about the entities.
+> 
+> ### Text & Content Classification
+> Classify multilingual text into standard, pre-defined taxonomies or build your own custom classification scheme in minutes.
+> 
+> ### Sentiment Analysis
+> Identify whether the expressed opinion in short texts (like product reviews) is positive, negative, or neutral.
+> 
+> ### Keywords / Concepts Extraction
+> Automatically identify important, contextually relevant, concepts and key-phrases in articles and social media posts.
+> 
+> ### Semantic Similarity
+> Compare two texts and compute their syntactic and semantic similarity. Understand when two texts are about the same subject.
+> 
+> ### Article Extraction
+> Extract clean text article from newspapers, blogs and other websites. Remove boilerplate and advertising and get the article full text and images.
+
+Looks good, so use as blueprint for a VCN-charging SaaS.
+
+**Secret sauce:** [GATE](https://en.wikipedia.org/wiki/General_Architecture_for_Text_Engineering)
+
+> “General Architecture for Text Engineering or GATE is a Java suite of tools originally developed at the University of Sheffield beginning in 1995 and now used worldwide by a wide community of scientists, companies, teachers and students for many natural language processing tasks, including information extraction in many languages.”
+
+![Screenshot](https://upload.wikimedia.org/wikipedia/commons/0/0a/GATE5_main_window.png)
+
+
 # [Peer-to-peer insurance](https://en.wikipedia.org/wiki/Peer-to-peer_insurance)
 
 The aim of peer-to-peer insurance concepts is to make insurance cheaper. For this purpose, a certain number of policyholders pool together. In the event of any claim they support each other financially. If there is no claim, the insurance premiums are reduced.
@@ -50,3 +81,43 @@ It will be interesting to see if peer-to-peer insurance takes off in the same wa
 > “Each month, the bank has a drawing with one $200 winner and four $50 winners. At the end of the year, it will give away a jackpot of $5,000. Customers get one drawing entry for every $25 increase in their account balance. To encourage savings, the bank allows only one withdrawal from a jackpot savings account per month, or else depositors pay a $5 withdrawal fee.”
 
 ---
+
+### Altcoin features
+
+As [posted on bitcointalk.org](https://bitcointalk.org/index.php?topic=1285351.0)
+
+* Proof of Work (all variants) Consensus Algorithm
+* Proof of Stake (all variants) Consensus Algorithm
+* Large Network Effect (BTC, LTC, etc.. (arguable for a few other cryptos as well)
+* High Scalability
+* High Transaction Speeds
+* Reduced Blockchain Bloat
+* Voting
+* Scripting Languages
+* A large choice of exchanges
+* High liquidity
+* Privacy / Anonymity
+* A Bitcoin sidechain
+* Decentralized Exchange
+* In-Wallet Block Explorer
+* Smooth Block Reward Halvings
+* Demurrage
+* Ability to Make Recurring Payments
+* Decentralized Markets
+* Atomic Transactions
+* Automatic Stealth Addresses
+* Confidential Transactions
+* Ring Signatures
+* Telepods
+* Masternodes
+* Hireable Employees (a la witnesses in Bitshares)
+* Wide Merchant Acceptance
+* Market Pegged Assets (al la BITUSD, BITBTC, BITGOLD, NUBITS, etc.)
+* Multi-Signature Addresses (or Account Permission Systems)
+* File Storage
+* Sharedropped Cryptocurrencies
+* Cryptocurrencies Ran by Banks
+* Cryptocurrencies Ran by Governments
+* TOR/I2P Compatibility
+* Decentralized Application Stores/Browsers
+* Mobile Wallets

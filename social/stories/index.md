@@ -1,6 +1,6 @@
 ---
 layout: socpage
-title: Why “stories”, isn’t that a bit touchy-feely?
+title: Why “stories”? Isn’t that a bit touchy-feely?
 excerpt: An explanation why we need and use stories to communicate and help dispel disrupive misperceptions 
 image:
   feature:
@@ -31,3 +31,15 @@ There is a need to generate this “appropriate information”. There is none av
 So, this is a place to publish stories that people consider to be worth retailing, the “appropriate information” that informs others in an accessible and effective way, where the social norms *really* lie.
 
 <a class="ui large button" href="/social/stories/pete-vinky-and-i.html">Tell me a story</a>
+
+See ...
+
+* [Allegories](/social/stories/allegories.html)
+* [Cultural commons](/social/stories/cultural-commons.html)
+* [Pete, Vinky and I](/social/stories/pete-vinky-and-i.html)
+* [Allegories](/social/stories/the-snowball-effect-katherine-maclean.html)
+
+
+As to why ... “The Critical Periphery in the Growth of Social Protests”, [PLOSONE](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0143611)
+
+> “Social media have provided instrumental means of communication in many recent political protests. The efficiency of online networks in disseminating timely information has been praised by many commentators; at the same time, users are often derided as “slacktivists” because of the shallow commitment involved in clicking a forwarding button. Here we consider the role of these peripheral online participants, the immense majority of users who surround the small epicenter of protests, representing layers of diminishing online activity around the committed minority. We analyze three datasets tracking protest communication in different languages and political contexts through the social media platform Twitter and employ a network decomposition technique to examine their hierarchical structure. We provide consistent evidence that peripheral participants are critical in increasing the reach of protest messages and generating online content at levels that are comparable to core participants. Although committed minorities may constitute the heart of protest movements, our results suggest that their success in maximizing the number of online citizens exposed to protest messages depends, at least in part, on activating the critical periphery. Peripheral users are less active on a per capita basis, but their power lies in their numbers: their aggregate contribution to the spread of protest messages is comparable in magnitude to that of core participants. An analysis of two other datasets unrelated to mass protests strengthens our interpretation that core-periphery dynamics are characteristically important in the context of collective action events. Theoretical models of diffusion in social networks would benefit from increased attention to the role of peripheral nodes in the propagation of information and behavior.”

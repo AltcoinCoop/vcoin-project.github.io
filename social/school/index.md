@@ -21,8 +21,20 @@ image:
 - [The social network illusion](/social/school/social-network-illusion.html), why some messages spread like wildfire through social media and others don’t.
 - [Decentralised thinking](/social/school/thinking.html), aka “distributed intelligence”
 - [Unique blockchain storage](/social/school/unique-blockchain-storage.html), an algorithmic solution to proving that a node is running a complete blockchain
+- [state of bitcoin multisig](/social/school/state-of-bitcoin-multisig.html), the history of multisig in Bitcoin and how it is used, by [Antoine Le Calvez](https://medium.com/@alcio/the-state-of-bitcoin-multisig-82b3bf09b1ca#.i5p6z085t)
+- [School of Data](/social/school/school-of-data.html) School of Data’s mission is to teach people how to gain powerful insights and create compelling stories using data.
+- [Network Organisations](/social/school/network-organisations.html) A (1990) review of Walter Powell’s book “Neither Market Nor Hierarchy: Network Forms of Organization” 
+- [p2pu.org](/social/school/p2pu-org.html) a university for the Web. Built by an open community. Learning by everyone, for everyone, about almost anything and completely free.
+- [Whose Network](/social/school/whose-network.html)  A review of “Why It’s Kicking Off Everywhere”, for its critical stance on asserting inevitable taint from the hierarchy via embeddedness, to which V and other peer-to-peer networks are inherently immune.
+- [Twenty reasons why it’s kicking off](/social/school/twenty-reasons-why.html)
+Reflections on discussions that took place at “The Really Free School” in Bloomsbury in February 2011: technology has been at the heart of the global unrest, and any parallels are less with 1968, and more with 1914.
 
-## Use-case-ideas
+## Use case ideas
+
+[Index](/social/school/use-case-ideas/)
+
+Specifics ...
+
 - [5 industry scenarios](/social/school/use-case-ideas/5-industry-scenarios.html) that are ripe for disruption
 - [Peer-to-peer insurance](/social/school/use-case-ideas/peer-to-peer-insurance.html), how it works, who’s doing it.
 - [Bithire](/social/school/use-case-ideas/peer-to-peer-employment.html), a fatally limited model of how peer-to-peer employment might (not) work.

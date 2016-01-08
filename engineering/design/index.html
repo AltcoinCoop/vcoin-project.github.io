@@ -1,7 +1,7 @@
 ---
 layout: engpage
 title: VCoin - Design notes
-excerpt: VCoin was a foundling, a project abandoned on cryptocointalk and rescued out of some people offended at the lack of even a minimal effort. So minimal effort is now being expended.
+excerpt: VCoin was a foundling, a project abandoned on cryptocointalk and rescued by some people offended at the lack of even a minimal effort. So minimal effort is now being expended.
 tags: [home, vcoin, software, crypto, peer-to-peer]
 image:
   feature:
@@ -10,14 +10,22 @@ image:
     <div class="ui vertical stripe segment">
       <div class="ui middle aligned stackable grid container">
         <div class="row">
-          <div class="ten wide column">
-            <h3 class="ui header">VCoin design notes</h3>
-            <p>Getsum ipsum lorem</p>
-            <h3 class="ui header">Other notes</h3>
-            <p>stuff</p>
-          </div>
-          <div class="four wide right floated column">
-            <img src="/assets/images/wireframe/square-image.png" class="ui large bordered rounded image">
+          <div class="column">
+            <h3 class="ui header">VCoin design notes, collated from prior postings.</h3>
+            <p><img src="/assets/images/coins/bitcoin_btc.png"/> <img src="/assets/images/coins/zetacoin_zet.png"/> <img src="/assets/images/coins/fireflycoin_ffc.png"/> <img src="/assets/images/coins/vcoin_vcn.png"/></p>
+            <p>Originally, VCoin’s clone heritage was: FireflyCoin -&gt; ZetaCoin -&gt; Bitcoin</p>
+            <p>Studying the code tells us that VCoin as originally published on cryptocointalk is a minimal-change clone of Fireflycoin, demonstrated by the <a href="https://github.com/vcoindev/vcoin/blob/master/src/qt/bitcoingui.cpp#L190">reference to FFC</a> in bitcoingui.cpp:</p>
+            <pre>sendCoinsAction->setStatusTip(tr("Transfer FFC to another Wallet"));</pre>
+            <p>Fireflycoin is itself is also a minimal-change clone of ZetaCoin, demonstrated by the <a href="https://github.com/dannyasia/FireflyCoin-master/blob/master/src/qt/askpassphrasedialog.cpp#L101">reference to ZETACOINS</a> in askpassphrasedialog.cpp:</p>
+            <pre>tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR ZETACOINS</b>!")</pre>
+            <p>So, I re-seated VCoin back into the ZetaCoin commit history and merge-upgraded to the latest ZetaCoin 0.8.x version (0.8.99), <a href="https://github.com/gjhiggins/vcoin-dev">https://github.com/gjhiggins/vcoin-dev</a>. The changes I made are limited to the rebranding and the addition of <a href="https://github.com/gjhiggins/vcoin-dev/commit/2791dd31b564f4e89d7273d31612ec9c0a501982">the code implementing the diffplot chart</a>.
+            <p>I saw a potential rapid development path that may not involve extensive re-coding: ZetaCoin-0.8.99 -&gt; ZetaCoin-0.9.2 -&gt; Bitcoin-0.9.2 and from there to Bitcoin 0.10.</p>
+            <p>This approach would rule out overlay network altcoins (*nodes), there's a crop of 0.8 clones and a couple at 0.9 (IIRC), so adapting an overlay network coin comes (atm) at the cost of (at least temporarily) limiting the upgrading to 0.8/9.</p>
+            <p>I think a Core 0.10 solution has to be the most forward-looking strategy, there's no substantive mainstream development of the 0.8 or 0.9 series now, we'd be limited to picking from an array of hacks introduced by random altcoin devs. Still, it might be an effective interim position until a more coherent and compelling brand story can be developed.</p>
+            <p>There are two profound problems that require addressing before the *node hype even begins to sound plausible: i) a solution or workaround for the symbol grounding problem - the only reliable information is that which is stored in the blockchain and secured by cryptography, all information obtained from the “outside world” demands a trusted third party - for which there are already commercial solutions and ii) a solution or workaround to the problem that the network inherently cannot conceal the content of a private key, so cannot initiate transactions - so no “automatic contracts” -- in reality, a trusted third party is required and, as before, commercial solutions already exist.</p>
+            <p>AFAIK, the only actual, functioning innovation from overlay networks in cryptocurrency has been “instant transactions”, relying on an augmented protocol used by the overlay network population to speed confirmations. That's not to be sneezed at for a coin with ambitions for wide adoption but that's an ambition for the community to discover within itself.</p>
+            <h3 class="ui header">Notes on perceptions</h3>
+            <p>Positive perceptions: (“seems to have popped under the radar of the lunatics that cohabit in this asylum”, “a fine coin, the whole altcoin scene is dodgy”, “a stable good coin”) seem to point towards a more general notion which I'd translate into a brand value of “authentic” (I'm using a very broad brush) which I see as an encouraging and useful start.</p>
           </div>
         </div>
       </div>
@@ -25,15 +33,24 @@ image:
 
     <div class="ui vertical stripe segment">
       <div class="ui text container">
-        <h3 class="ui header">Or this for engineering</h3>
-        <p>Stuff with a link, I guess.</p>
+        <h3 class="ui header">Engineering perspective</h3>
+          <p>I used a Python script (for precision) to rebrand VCoin as ZenCoin, I used the same script to rebrand ZetaCoin 0.8.2 as ZenCoin, too.</p>
+          <p>I then used meld to compare the two codebases side by side. (Rebranding to the common namestring ZetaCoin suppresses any naming differences and reveals just the differences in variable bindings, parameter settings and changes to the code functionality. I inspected the differences between VCoin and ZetaCoin 0.8.2 and found them unexceptional, restricted to just the economic parameters and key differentiating variables such as pchMessageStart, et al. Once I was satisfied that VCoin was devoid of nasty surprises, I junked the zenified coins, checked out a fresh copy of Zetacoin, created a vcoin branch and overwrote the source with VCoin:</p>
+          <pre>cd vcoin; rm -rf .git; tar cf - . | (cd ../zetacoin; tar xf -)</pre>
+          <p>Because VCoin is an open source project, I am comfortable using SmartGit as a my click'n'drool tool to work my way through, committing the (vcoin) parameter changes (and the handful of other changes required for the diffplot feature).</p>
+          <p>End result is: either “a branch of the latest version of 0.8.x ZetaCoin, rebranded as VCoin” or “a version of VCoin upgraded to Zetacoin 0.8.7.99”, whichever way you want to look at it.</p>
+          <p>That isn't the most recent version of ZetaCoin though, ZetaCoin has been ported to Bitcoin Core 0.9.2. That 8-&gt;9 major version change denotes significant changes in the codebase. The meld listing is nearly all blue, just about everything has changed. Fortunately, there is a bit of wiggle room: the differences between ZetaCoin 0.8 and VCoin 0.8 are restricted to just parameter and variable changes. The difference between ZetaCoin 0.8 and 0.9.2 is in the parameters and that also characterises the difference between a VCoin rebranding of Zetacoin 0.8 and a VCoin rebranding of Zetacoin 0.9. In principle, all I need to do is copy over the parameters/variable bindings and Bob's your uncle.</p>
+          <p>After that, we're on our own. And there is a ways to go yet, ZetaCoin is a major version behind Bitcoin Core which is now at 0.10 (and notes for 0.11 are already appearing in the commit descriptions). Fortunately I have, for my own porpoises, developed a template-based approach for re-branding a Bitcoin Core 0.[9|10] codebase. As you might infer, it really only works for straightforward clones ... like VCoin</p>
+          <p>So, in theory, all I need to do is plug in the parameters and out will pop an upgraded VCoin, the first altcoin to be based on Bitcoin Core 0.10.2.</p>
+          <p>And, I need not write a single line of C++ ... which means people can sleep more soundly in their beds (mainly, me).</p>
+          <p>It is important to recognise that the current performance of VCoin is felicitous and entirely due to its selection of parameters and an unchanged Bitcoin core functionality. A VCoin based on Bitcoin 0.10.2 may well have those same properties, assuming that Bitcoin Core 0.10.2 behaves as smoothly as Bitcoin 0.8.2.</p>
+          <p>I'd prefer to break new ground and for VCoin not to have “a dev” in the conventional altcoin sense. I'd expect some members of the community with a technical interest to engage at a technical level, others may seek to develop technical skills. At least, that's my expectation based on experience elsewhere. It definitely shouldn't be formalised, that's my sense.</p>
+          <p>So, that's the technical landscape according to my perceptions.</p>
+          <p>There are some profound issues related to community ownership and control of the private key that authorises the broadcast of CAlert messages, that's something that unfortunately cannot be crowdsourced, we'll just have to be innovative about it. A technical solution is infeasible, we are obliged to seek a social solution to the problem. However, whatever we come up with will also be invaluable as a solution for other instances of the same problem of establishing community ownership of resources in a plausibly decentralised way.</p>
+          <p>As ever, this is a p2p application and depends crucially on community consensus of action in that it's entirely up to the community to adopt a change to the current implementation or to choose not to, whether it's an upgrade to a more recent version, fancier graphics, additional services or whatever.</p>
+          <p>My experience is that by and large, people learn fairly quickly to identify those whose technical advice is worth taking seriously, i.e. advice from a stable core of technically knowledgeable people who can describe in accessible terms the options and tradeoffs.</p>
+          <p>As Mark Twain once wrote: I apologise for the length of this letter, had I more time it would have been shorter.</p>
         <a class="ui large button">Read More</a>
-        <h4 class="ui horizontal header divider">
-          <a href="#">Horizontal header text</a>
-        </h4>
-        <h3 class="ui header">Other stuff</h3>
-        <p>More text here</p>
-        <a class="ui large button">Do something</a>
       </div>
     </div>
 

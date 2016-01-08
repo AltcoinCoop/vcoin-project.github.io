@@ -1,6 +1,6 @@
 ---
 layout: engpage
-title: VCoin - Roadmap
+title: V - Roadmap
 excerpt: What kind of a roadmap can you have when no-one’s at the wheel?
 tags: [home, vcoin, software, crypto, peer-to-peer]
 slug: roadmap
@@ -8,75 +8,102 @@ image:
   feature:
 ---
 
-    <div class="container">
-      <div class="ui sub secondary pointing menu">
-        <a id="index" class="item" href="/engineering/">Index</a>
-        <a id="specs" class="item" href="/engineering/specs/">Technical specs</a>
-        <a id="charts" class="item" href="/engineering/charts/">Charts</a>
-        <a id="design" class="item" href="/engineering/design/">Design notes</a>
-        <a id="roadmap" class="item" href="/engineering/roadmap/">Roadmap</a>
-        <a id="electrum" class="item" href="/engineering/electrum/">Electrum</a>
-      </div>
-    </div>
-
     <div class="ui vertical stripe segment">
       <div class="ui text container">
-        <h3 class="ui header">Destinations</h3>
-        <p>Stuff with a link, I guess.</p>
-        <a class="ui large button">Read More</a>
+        <h3 class="ui header">Possible directions</h3>
+        <p>Organised by level of complexity.</p>
+        <!-- <a class="ui large button">Read More</a> -->
         <h4 class="ui horizontal header divider">
-          <a href="#">Horizontal header text</a>
+          <a href="#">Level One</a>
         </h4>
-        <h3 class="ui header">Yet more stuff</h3>
-        <p>More text here</p>
-        <a class="ui large button">Do something</a>
+        <h3 class="ui header">Level One</h3>
+        <p>Wallets. Transactions. Signing. Faucets.</p>
+        <!-- <a class="ui large button">Examples</a> -->
+        <h4 class="ui horizontal header divider">
+          <a href="#">Level Two</a>
+        </h4>
+        <h3 class="ui header">Level Two</h3>
+        <p>Multisig. Notarisation.</p>
+        <!-- <a class="ui large button">Examples</a> -->
       </div>
     </div>
 
     <div class="ui vertical stripe segment">
       <div class="ui middle aligned stackable grid container">
         <div class="row">
-          <div class="ten wide column">
-            <h3 class="ui header">VCoin roadmap</h3>
-            <p>First this, them that</p>
-            <h3 class="ui header">Other notes</h3>
-            <p>Other stuff even later</p>
+          <div class="three wide column">
+            <h3 class="ui header">Level Three</h3>
+            <p>Time-locked transactions. “Smart” contracts. Alternative finance.</p>
           </div>
-          <div class="four wide right floated column">
-            <img src="/assets/images/wireframe/square-image.png" class="ui large bordered rounded image">
+          <div class="eleven wide column">
+            <img src="/assets/images/posts/alternative-finance.png" class="ui huge bordered image">
+          </div>
+        </div>
+        <div class="row">
+          <div class="fourteen wide column">
+            <div class="ui segment">
+              <p>One approach would be to forge higher-level tools from the tx components. For example, to support invoice trading on the blockchain might require:</p>
+              <ol>
+                <li>a tool for notarisation of references to <a href="https://opencorporates.com/companies/gb/08527423">online business provenance records</a></li>
+                <li>a tool for creating precise, canonical descriptions of invoices in RDF supported by <a href="http://www.omg.org/spec/EDMC-FIBO/BE/1.0/Beta2/index.htm">an appropriate OWL ontology</a></li>
+                <li>a tool to create blockchain-notarised links between i) and ii)</li>
+              </ol>
+              <p>Invoice trading is a financial service provided for fiat currencies which would work just as well (if not better, due to the more efficient global coverage) with VCN. It may offer some protection from exchange rate volatility for those businesses that are obliged to maintain a close coupling between VCN and fiat.</p>
+              <a class="ui large button">Examples</a>
+            </div>
+
+
+            <div class="ui segment">
+              <h3 class="ui header">SwapBill: Python-implemented, burn-based, cross-chain exchange</h3>
+              <p>SwapBill (<a href="http://swapbill.readthedocs.org/en/latest/index.html" title="ReadTheDocs documentation for SwapBill">docs</a>, <a href="https://github.com/crispweed/swapbill" title="Swapbill code repository on Github">source</a>) is an ‘embedded’ cryptocurrency protocol, which means that SwapBill transactions are hosted on an existing blockchain.</p>
+              <p>The primary purpose for SwapBill is to introduce trustless exchange features such as ‘atomic’ exchange between coins hosted on different blockchains.</p>
+              <p>The SwapBill protocol defines a subset of host transactions which are also considered valid SwapBill transactions, with additional control information encoded into these special transactions, and with protocol rules for how these transactions then act on a global SwapBill state.</p>
+            </div>
+
+
+            <div class="ui segment">
+              <h4 class="ui header"><a href="https://medium.com/@abhasvc/what-happens-to-alternative-lenders-when-the-market-tanks-a0794107a93f#.6tdkvif7l">An investor writes about alternative lenders in a market contraction context</a> and we note the implicit warning: ”just because you can draw a box around it doesn’t mean to say that you can actually <em>do</em> it”</h4>
+              <p>Alternative lenders are sliced in many ways — marketplace vs. balance sheet, super-prime vs. sub-prime vs. underbanked, consumers vs. small businesses, etc. — so we employed a more simplistic framework that captures what we believe are the most relevant factors in assessing a lender’s market resilience:</p>
+              <ul>
+                <li><p><strong>Underwriting Sophistication</strong> — use of technology and non-traditional criteria to identify the lowest-risk borrowers within a risk band</p></li>
+                <li><p><strong>Borrower Credit Quality</strong> — relative proportion of higher credit quality borrowers who are less likely to default during a market contraction</p></li>
+                <li><p><strong>Shorter Loan Duration</strong> — relative proportion of short duration loans that are, in turn, less susceptible to sustained market contractions</p></li>
+                <li><p><strong>Higher LTV/CAC Ratio</strong> — higher ratios today leave more room for ratio compression that could occur during a contraction</p></li>
+                <li><p><strong>Ease of Customer Acquisition</strong> — a streamlined customer acquisition operation can better adapt to different credit environments (shift to higher quality borrowers, etc.)</p></li>
+              </ul>
+              <p>For every company, each factor is qualitatively scored from 0–4 (0 is low and 4 is high; see appendix for scoring rationale) and the mean is computed. The lenders are then ranked by their average score and grouped into high, medium, and low buckets directionally reflecting their ability to endure a market contraction.</p>
+              <a class="ui large button">Examples</a>
+            </div>
+
+
+            <div class="ui segment">
+              <h4 class="ui header"><a href="http://www.theguardian.com/global-development-professionals-network/2015/jun/10/the-microfinance-delusion-who-really-wins">Microfinance does not help redress poverty, at best it had no impact, at worst it exacerbates it.</a></h4>
+              <blockquote><p>“... it turns out that microfinance usually ends up making poverty worse. The reasons for this are fairly simple. Most microfinance loans are used to fund consumption – to help people buy the basic necessities they need to survive. In South Africa, for example, consumption accounts for 94% of microfinance use. As a result, borrowers don’t generate any new income that they can use to repay their loans so they end up taking out new loans to repay the old ones, wrapping themselves in layers of debt.</p>
+              <p>When micro-loans are used to fund new businesses, budding entrepreneurs tend to encounter a lack of consumer demand. After all, their potential customers are poor and low on cash, and what little money they do have gets spent on basic goods that tend already to be available. In this context, new businesses end up displacing already-existing ones, yielding no net increase in employment and incomes. And that’s the best of the likely outcomes. The worst – and much more likely – is that the new businesses fail, which then leads, once again, to vicious cycles of over-indebtedness that drive borrowers even further into poverty</p>
+              <p>...</p>
+              <p>This is not to say that we should abolish microfinance altogether, but simply that microfinance will never work until we address the background conditions that produce poverty in the first place. We also need to set up the right systems for small businesses to succeed, such as strong subsidies, state assistance, and welfare support to prop up entrepreneurs when they fail – the very systems that neoliberalism has convinced us to abandon.</p>
+            </div>
+
+
+
+            <div class="ui segment">
+              <h4 class="ui header"><a href="http://www.uncitral.org/pdf/english/workinggroups/wg_3/crp2-e.pdf">Online dispute resolution for cross-border electronic commerce transactions - submission by the Russian Federation</a></h4>
+              <p>ESCAP INTERIM INTERGOVERNMENTAL STEERING GROUP ON FACILITATION OF TRANSBOUNDARY PAPERLESS TRADE</p>
+              <blockquote>
+                <p>With regard to the risks existing in global telecommunications networks, especially relevant becomes the task of ensuring trust and legal validity of related electronic documents. Solutions to meet these characteristics of the electronic documents of international e-Commerce are realized in the form of infrastructure of transboundary trust space (TTS) — a set of legal, organizational and technical conditions and requirements recommended by the specialized agencies of the United Nations and other specialized international organizations with the aim of ensuring confidence in the international exchange of electronic documents and data between actors (subjects) of electronic interaction. The technological basis of TTS is the set of services of a trusted third party (TTP).</p>
+                <p>The most obvious for these technology application areas, along with solving problems of documentary maintenance of various types of border controls of goods (veterinary, phytosanitary, transport, etc.), providing transboundary banking services, telemedicine systems and learning systems, were traditionally considered cross-border electronic trading, in particular electronic public procurement with the participation of foreign suppliers. Legal and technological aspects of the use of the services of a trusted third party were developed in the framework of international formats (SCO, EAEC, APEC, RCC, CIS, EU and others), as well as to address business challenges. The techniques of cross-border interoperability of electronic signatures and electronic identification on the basis of TTP services are actively applied within the framework of pan-European projects PEPPOL and STORK. The flagship of the practical use of TTP services is currently the Eurasian Economic Union, which uses TTP as the basis of the infrastructure of the transboundary space of trust in the context of creating an integrated information system combining dozens of cross-border information processes. The strategy for the development of this infrastructure involves connecting to it not only public authorities of the EAEU member States, but also companies and individuals.</p>
+              </blockquote>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="ui vertical stripe segment">
-      <div class="ui middle aligned stackable grid container">
-        <div class="row">
-          <div class="ten wide column">
-            <h3 class="ui header">Brokers vent anger at FCA over opaque UK lending criteria</h3>
-            <p>A Financial Conduct Authority mortgage boss has expressed concern after listening to brokers' struggles to meet unpublished and non-transparent lender criteria. <a href="http://www.mortgagesolutions.co.uk/news/brokers-vent-anger-to-fca-on-opaque-lending-criteria/">(link)</a>.</p>
-            <p>Mortgage policy manager Lynda Blackwell heard brokers’ tales of frustration with often-unpublished lender affordability criteria at The Mortgage and Protection Event 2013. <strong><em>Having apparently strong cases rejected with no explanation is a particular problem.</em></strong></p>
-            <p>Blackwell stressed the regulator only expected brokers to try to meet lenders’ published ‘headline’ criteria. She said <span style="color:red"><strong><em>the lack of explanation around rejected cases is a concern in terms of broker record-keeping: “We would expect the reason the application didn’t proceed to be on file.”</em></strong></span></p>
-            <p>Brokers vented their anger at the conference after Blackwell addressed <span style="color:red"><strong><em>the issue of the difference between published headline rates and lenders’ “black box” of internal affordability criteria</em></strong></span> raised by Legal &amp; General housing boss <a href="http://www.mortgagesolutions.co.uk/mortgage-solutions/blog-post/2305067/the-mortgage-market-s-big-unanswered-question-l-g">Stephen Smith in a blog for Mortgage Solutions</a>. Other concerns included the cost to clients if apparently strong applications fail and the impact on broker reputations.</p>
-            <p>Having forecast the Mortgage Market Review will increase opportunities for brokers earlier in her talk, she commented: “It seems the MMR is putting a spotlight on the way the relationship [between lenders and brokers] is not working very well at all.”</p>
-            <p>The FCA is listening to broker representatives such as the Association of Mortgage Intermediaries and <span style="color:red"><strong><em>proposals such as date stamping cases in order to monitor criteria changes over time</em></strong></span> and more consistent published lender criteria. Blackwell said she is willing to hear from other broker groups as well.</p>
-            <p><em>Domain-specific opportunity</em> ^^^^</p>
-            <h3 class="ui header">Referenced blog post</h3>
-            <blockquote style="font-size:90%; color: #666">
-              <p>Most of the issues that intermediaries are thinking about on MMR come directly from the regulator’s rules. But there is one which sits squarely with the mortgage lenders. And we need an answer on it pretty fast.</p>
-              <p>Under MMR, mortgage intermediaries are responsible for ensuring mortgage applications are submitted which meet the ‘lender’s expected affordability criteria’. This term is not defined – so what are we to think? Does it mean simply the criteria by which sourcing systems operate – LTV limits for example?</p>
-              <p>Probably not – that is too basic. So does it more likely mean <span style="color:#ff9e04"><strong><em>the criteria of a lender which sit behind the headline product – what income, debt and expenditure requirements there are, whether the product is available to first time buyers, etc?</em></strong></span> If it is this latter, more likely requirement, <span style="color:red"><strong><em>exactly where does an intermediary get this information and how can they prove these were the criteria in place at this exact time on this exact date?</em></strong></span></p>
-              <p>At present, an intermediary wishing to have a complete file to be able to demonstrate to the FCA they have chosen the best deal for his client, can take <span style="color:red"><strong><em>a screen shot of the sourcing results. This will show, date and time stamped, where the top products were selected from. A clear, date stamped record, which can be held on file.</em></strong></span></p>
-              <p>No such ability exists for ‘lender’s expected affordability criteria’. <span style="color:#FF9E04"><strong><em>Lenders are inconsistent. They publish their criteria in different formats and on different systems – some on the sourcing system notes pages, some on their own websites. There is no industry standard format. Some are short and succinct and some are very long and detailed. Some, very few in our experience, are dated. And the situation is worse where the notes say ‘refer to lender’ – for more complicated affordability issues.</em></strong></span></p>
-              <p>So here we are, five months away from MMR day and we do not have the answer to this question.</p>
-              <p>There are some further issues stem from this – for example, how will an intermediary record a case where, after discussion, the lender has accepted it, but outside their ‘expected criteria’? What will the lender give the intermediary to show they were happy with this case?</p>
-              <p>So, <span style="color:#0BAD14"><strong><em>a plea to the lender fraternity: can you please start talking to each other about this and come up with a simple, industry view and ideally, a standard format for publishing your criteria?</em></strong></span> It’s not much to ask.</p>
-              <p>Stephen Smith is director of housing and external affairs at Legal &amp; General</p>
-            </blockquote>
-          </div>
-          <div class="four wide right floated column">
-            <img src="/assets/images/wireframe/square-image.png" class="ui large bordered rounded image">
-          </div>
-        </div>
-      </div>
-    </div>
+
+
+
+
+
+
+
