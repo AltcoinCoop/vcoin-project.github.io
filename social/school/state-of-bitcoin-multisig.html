@@ -1,0 +1,49 @@
+---
+layout: socpage
+title: The state of Bitcoin multisig (Antoine Le Calvez) 
+excerpt: <a href="https://medium.com/@alcio/the-state-of-bitcoin-multisig-82b3bf09b1ca#.i5p6z085t">Antoine Le Calvez</a> looks at the history of multisig, how it is used in the Bitcoin environment and how it will shape its future.
+image:
+  feature:
+---
+
+<style type="text/css">p {font-family:serif; font-size:1.16rem !important;line-height:1.6rem;}</style>
+
+<div class="ui segment">
+  <div class="ui header">What is multisig?</div>
+  <p>Multisig is a technique that allows several public keys to sign for the release of bitcoins. For example, Alice, Bob and Charlie can secure 1 BTC so that the agreement of only two of them is needed to spend it.</p>
+  <p>When Bitcoin was created, bitcoins could only be secured by using one public key. Using only one public key means that whoever knows the private key associated with that public key can spend the bitcoins it secures.</p>
+  <p>The no-single-point-of-failure rule, essential to reliable and secure systems, is not respected: the loss or revelation of a private key means the loss of bitcoins for the rightful owner.</p>
+  <p>A first practical solution for this problem was to use a known cryptographic method called secret sharing. It consists of breaking down a private key into independent parts (called shares). A fixed number of shares (less than the number of existing ones) can be used to reconstruct the private key. That way, the loss or revelation of a single share does not compromise the bitcoins.</p>
+  <p>However, this does not plugs well with the existing Bitcoin software: you have to use external tools to create and combine shares. Furthermore, in order to spend bitcoins, you have to gather a critical number of shares in one place, meaning that the no-single-point-of-failure rule isn’t yet respected.</p>
+  <p>The solution was in the Bitcoin Core code all along. Included since its beginning but made non-standard were two script operators allowing the use of multisignature with normal Bitcoin public keys. As the private keys needed to validate a multisignature transactions do not have to be gathered in the same place, security is greatly improved compared to using a single private key or cryptographic shares.</p>
+  <p>A Bitcoin Improvement Proposal, <a href="https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki" data-href="https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki" class="markup--anchor markup--p-anchor" rel="nofollow">BIP 11</a>, made this type of transaction standard but limited the maximum number of keys to 3. In December 20th, 2011, BIP 11 support was added to the Bitcoin Core code and in late January 2012, the first BIP 11 type transactions appeared on the blockchain.</p>
+</div>
+
+<div class="ui segment">
+  <div class="ui header">Multisig and Pay-to-script-hash</div>
+  <p>Even if multisig had been possible since early 2012 thanks to BIP 11, it really saw adoption thanks to another transaction type: <a href="https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki" data-href="https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki" class="markup--anchor markup--p-anchor" rel="nofollow">pay-to-script-hash</a> or P2SH. This new type made it possible to use arbitrary scripts to validate transactions. Before its introduction, only a restricted set of script types could be used to validate them.</p>
+  <p>With the possibility to execute arbitrary scripts, the maximum number of keys in a multisig script also increased from the maximum of 3 that BIP-11 type multisig accepted to the 15 compressed keys and corresponding signatures it’s possible to pack in a P2SH script.</p>
+  <p>Most importantly, P2SH added a new Bitcoin address format. With BIP 11, you couldn’t give an address for someone to send bitcoins to: you had to explicitly tell how to send bitcoins to your multisig setup (what keys, how many are needed to validate spending, how to order them,&nbsp;…).</p>
+  <p>P2SH put using multisig on the same level of ease as using a single public key. Using this new technology, a great number of online wallets and software emerged, making using Bitcoin more secure.</p>
+</div>
+
+<div class="ui segment">
+  <div class="ui header">Multisig today</div>
+  <p>More than 65.79 millions of bitcoins have been transacted using multisig, the great majority (more than 99%) using P2SH. This shows how vital P2SH has been to multisig adoption.</p>
+  <p>And now that <a href="http://p2sh.info" data-href="http://p2sh.info" rel="nofollow">more than 10% of bitcoins are secured by P2SH addresses</a> (and most of them use multisig), it is safe to say that multisig took an very important place in the Bitcoin ecosystem in the last two years.</p>
+  <p>Among multisig’s possible use cases, two emerges as the most popular:</p>
+  <div class="ui list">
+    <div class="item">2-of-3 multisig with 46.9 millions of BTC transacted by 1.1M addresses.</div>
+    <div class="item">2-of-2 multisig with 13.3 millions of BTC transacted by 261,000 addresses.</div>
+  </div>
+  <p>It is however interesting to notice that among the 10 busiest P2SH addresses (those receiving and sending the most bitcoins), the top 4 uses 2-of-2 multisig, accounting for around 80% of all bitcoins transacted for 2-of-2 multisig. That makes 2-of-3 multisig the most commonly used multisig setup.</p>
+  <p>2-of-3 multisig is generally used by having a user generate two keys: one is saved as a backup, the other saved on a wallet&nbsp;; the remaining key is created and stored by the wallet provider. To spend bitcoins, both the user and the wallet provider sign transactions. If the user or the wallet provider were to lose their key, the backup one can be used to move the funds, but it is impossible for the wallet provider to spend the user’s funds.</p>
+</div>
+
+<div class="ui segment">
+  <div class="ui header">And now what?</div>
+  <p>The release of Bitcoin Core 0.11.2 introduces a new script operator to the instruction set: <a href="https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki" data-href="https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki" class="markup--anchor markup--p-anchor" rel="nofollow">OP_CHECKLOCKTIMEVERIFY</a>, abbreviated to CLTV.</p>
+  <p>This new operator allows a transaction output to be made unspendable until some point in the future. While a similar feature is available through simply setting a transaction’s locktime in the future, CLTV can be combined with other script instructions, like multisig or arithmetic operators, to create complex contracts.</p>
+  <p>For example, you could create a 2-of-3 multisig output that becomes a 1-of-3 after a given date. The introduction of CLTV is another step towards more complex Bitcoin uses.</p>
+  <p>Another important step that’s taking shape right now is payment channels. A payment channel allows a party to make repeated micropayments to another party using multisig, without spamming the blockchain, only by publishing the first and the last transaction of the stream. Several variants of this idea, like the <a href="https://lightning.network/" rel="nofollow">Lightning network</a>, extend it to allows users to securely transact bitcoins through a network of payment channels without publishing every transaction to the blockchain.</p>
+</div>
