@@ -15,4 +15,4 @@ image:
 
 And that’s how it starts, unsupported opinion masquerading as factual assertion, encouraging a new consensus perception that “flat is good”.
 
----
+
