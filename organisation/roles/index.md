@@ -26,6 +26,7 @@ With teamwork playing an increasingly important role in the classroom, the workp
 In the 192 groups of varying sizes, authors tested the hypothesis that group collective intelligence—or the idea that a group’s aptitude for performing one task is correlated with its ability to successfully navigate other tasks—would be present. Groups were asked to undertake visual puzzle solving, collective brainstorming, moral decision-making, and bargaining for resources. Group collective intelligence was found to exist separately from individual intelligence. Its main predictors are social sensitivity, the distribution of conversational turn-taking, and the proportion of female group members.
 
 Groups where a few people dominated the conversation had less collective intelligence than groups in which many members took turns talking.
+
 Social sensitivity, or the ability to empathize with and appreciate another’s viewpoint, is the only predictor that reached statistical significance. Social sensitivity was measured by the “Reading the Mind in the Eyes” test, which measures how well one can make inferences about what others are thinking or feeling simply by looking at the eyes.
 
 Collective intelligence is positively correlated with the proportion of females in the group, as women score higher on social sensitivity. Groups with more females had a higher collective social sensitivity, leading to a higher collective intelligence.
